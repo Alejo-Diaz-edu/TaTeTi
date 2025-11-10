@@ -1,0 +1,61 @@
+|Almace1
+JUGADOR_1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+RESET_2 => inst12.IN1
+CLK => inst8.CLK
+CLK => inst.CLK
+IN_2 => lpm_mux0:inst4.data0
+RESET_1 => inst9.IN1
+IN_1 => lpm_mux0:inst3.data0
+JUGADOR_2-IA <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Almace1|lpm_mux0:inst4
+data0 => LPM_MUX:LPM_MUX_component.DATA[0][0]
+data1 => LPM_MUX:LPM_MUX_component.DATA[1][0]
+sel => LPM_MUX:LPM_MUX_component.SEL[0]
+result <= LPM_MUX:LPM_MUX_component.RESULT[0]
+
+
+|Almace1|lpm_mux0:inst4|LPM_MUX:LPM_MUX_component
+data[0][0] => mux_96e:auto_generated.data[0]
+data[1][0] => mux_96e:auto_generated.data[1]
+sel[0] => mux_96e:auto_generated.sel[0]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= mux_96e:auto_generated.result[0]
+
+
+|Almace1|lpm_mux0:inst4|LPM_MUX:LPM_MUX_component|mux_96e:auto_generated
+data[0] => result_node[0]~1.IN1
+data[1] => result_node[0]~0.IN1
+result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => result_node[0]~0.IN0
+sel[0] => _~0.IN0
+
+
+|Almace1|lpm_mux0:inst3
+data0 => LPM_MUX:LPM_MUX_component.DATA[0][0]
+data1 => LPM_MUX:LPM_MUX_component.DATA[1][0]
+sel => LPM_MUX:LPM_MUX_component.SEL[0]
+result <= LPM_MUX:LPM_MUX_component.RESULT[0]
+
+
+|Almace1|lpm_mux0:inst3|LPM_MUX:LPM_MUX_component
+data[0][0] => mux_96e:auto_generated.data[0]
+data[1][0] => mux_96e:auto_generated.data[1]
+sel[0] => mux_96e:auto_generated.sel[0]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= mux_96e:auto_generated.result[0]
+
+
+|Almace1|lpm_mux0:inst3|LPM_MUX:LPM_MUX_component|mux_96e:auto_generated
+data[0] => result_node[0]~1.IN1
+data[1] => result_node[0]~0.IN1
+result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => result_node[0]~0.IN0
+sel[0] => _~0.IN0
+
+

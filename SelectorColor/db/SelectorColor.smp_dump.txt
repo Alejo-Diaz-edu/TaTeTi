@@ -1,8 +1,0 @@
-
-State Machine - |Colores|state
-Name state.Violeta state.Fucsia state.Amarillo state.Azul state.Lima 
-state.Lima 0 0 0 0 0 
-state.Azul 0 0 0 1 1 
-state.Amarillo 0 0 1 0 1 
-state.Fucsia 0 1 0 0 1 
-state.Violeta 1 0 0 0 1 
