@@ -1,0 +1,973 @@
+ -- Copyright (C) 1991-2013 Altera Corporation
+ -- Your use of Altera Corporation's design tools, logic functions 
+ -- and other software and tools, and its AMPP partner logic 
+ -- functions, and any output files from any of the foregoing 
+ -- (including device programming or simulation files), and any 
+ -- associated documentation or information are expressly subject 
+ -- to the terms and conditions of the Altera Program License 
+ -- Subscription Agreement, Altera MegaCore Function License 
+ -- Agreement, or other applicable license agreement, including, 
+ -- without limitation, that your use is for the sole purpose of 
+ -- programming logic devices manufactured by Altera and sold by 
+ -- Altera or its authorized distributors.  Please refer to the 
+ -- applicable agreement for further details.
+ -- 
+ -- This is a Quartus II output file. It is for reporting purposes only, and is
+ -- not intended for use as a Quartus II input file. This file cannot be used
+ -- to make Quartus II pin assignments - for instructions on how to make pin
+ -- assignments, please see Quartus II help.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- NC            : No Connect. This pin has no internal connection to the device.
+ -- DNU           : Do Not Use. This pin MUST NOT be connected.
+ -- VCCPGM        : Dedicated power pin for configuration, which MUST be connected to 1.8V, 2.5V or 3.0V depending on the requirements of the configuration device.
+ -- VCCINT        : Dedicated power pin, which MUST be connected to VCC  (1.2V).
+ -- VCCIO         : Dedicated power pin, which MUST be connected to VCC
+ --                 of its bank.
+ --					Bank 3:		2.5V
+ --					Bank 4:		2.5V
+ --					Bank 5:		2.5V
+ --					Bank 6:		2.5V
+ --					Bank 7:		2.5V
+ --					Bank 8:	2.5V
+ --					Bank 9:	2.5V
+ -- RREF          : External reference resistor for the quad, MUST be connected to
+ --                 GND via a 2k Ohm resistor.
+ -- GND           : Dedicated ground pin. Dedicated GND pins MUST be connected to GND.
+ --					It can also be used to report unused dedicated pins. The connection
+ --					on the board for unused dedicated pins depends on whether this will
+ --					be used in a future design. One example is device migration. When
+ --					using device migration, refer to the device pin-tables. If it is a
+ --					GND pin in the pin table or if it will not be used in a future design
+ --					for another purpose the it MUST be connected to GND. If it is an unused
+ --					dedicated pin, then it can be connected to a valid signal on the board
+ --					(low, high, or toggling) if that signal is required for a different
+ --					revision of the design.
+ -- GND+          : Unused input pin. It can also be used to report unused dual-purpose pins.
+ --					This pin should be connected to GND. It may also be connected  to a
+ --					valid signal  on the board  (low, high, or toggling)  if that signal
+ --					is required for a different revision of the design.
+ -- GND*          : Unused  I/O  pin.   For transceiver I/O banks, connect each pin marked GND*
+ --           	    either individually through a 10k Ohm resistor to GND or tie all pins
+ --           	    together and connect through a single 10k Ohm resistor to GND.
+ -- RESERVED      : Unused I/O pin, which MUST be left unconnected.
+ -- RESERVED_INPUT    : Pin is tri-stated and should be connected to the board.
+ -- RESERVED_INPUT_WITH_WEAK_PULLUP    : Pin is tri-stated with internal weak pull-up resistor.
+ -- RESERVED_INPUT_WITH_BUS_HOLD       : Pin is tri-stated with bus-hold circuitry.
+ -- RESERVED_OUTPUT_DRIVEN_HIGH        : Pin is output driven high.
+ -- GXB_GND*      : Unused GXB Receiver or dedicated reference clock pin. This pin
+ --                 must be connected to GXB_GND through a 10k Ohm resistor.
+ -- GXB_NC        : Unused GXB Transmitter or dedicated clock output pin. This pin
+ --                 must not be connected.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- Pin directions (input, output or bidir) are based on device operating in user mode.
+ ---------------------------------------------------------------------------------
+
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+CHIP  "OutputLuces"  ASSIGNED TO AN: EP4CGX150DF31I7
+
+Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
+-------------------------------------------------------------------------------------------------------------
+NC                           : A2        :        :                   :         :           :                
+~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP : A3        : input  : 2.5 V             :         : 9         : N              
+CeldaB[7]                    : A4        : input  : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : A5        :        :                   :         : 8         :                
+Celda12[17]                  : A6        : input  : 2.5 V             :         : 8         : N              
+CeldaB[6]                    : A7        : input  : 2.5 V             :         : 8         : N              
+Celda5[23]                   : A8        : input  : 2.5 V             :         : 8         : N              
+CeldaA[9]                    : A9        : input  : 2.5 V             :         : 8         : N              
+CeldaD[12]                   : A10       : input  : 2.5 V             :         : 8         : N              
+Celda14[7]                   : A11       : input  : 2.5 V             :         : 8         : N              
+Celda5[3]                    : A12       : input  : 2.5 V             :         : 8         : N              
+Celda8[0]                    : A13       : input  : 2.5 V             :         : 8         : N              
+Celda13[17]                  : A14       : input  : 2.5 V             :         : 8         : N              
+GND+                         : A15       :        :                   :         : 7         :                
+Celda7[15]                   : A16       : input  : 2.5 V             :         : 7         : N              
+Celda14[15]                  : A17       : input  : 2.5 V             :         : 7         : N              
+Celda14[5]                   : A18       : input  : 2.5 V             :         : 7         : N              
+CeldaC[1]                    : A19       : input  : 2.5 V             :         : 7         : N              
+Celda15[10]                  : A20       : input  : 2.5 V             :         : 7         : N              
+Celda6[16]                   : A21       : input  : 2.5 V             :         : 7         : N              
+CeldaD[13]                   : A22       : input  : 2.5 V             :         : 7         : N              
+Celda9[12]                   : A23       : input  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : A24       :        :                   :         : 7         :                
+CeldaB[2]                    : A25       : input  : 2.5 V             :         : 7         : N              
+Celda6[20]                   : A26       : input  : 2.5 V             :         : 7         : N              
+Celda7[4]                    : A27       : input  : 2.5 V             :         : 7         : N              
+Celda8[22]                   : A28       : input  : 2.5 V             :         : 7         : N              
+CeldaA[4]                    : A29       : input  : 2.5 V             :         : 7         : N              
+GXB_GND*                     : AA1       :        :                   :         : QL0       :                
+GXB_GND*                     : AA2       :        :                   :         : QL0       :                
+GND                          : AA3       : gnd    :                   :         :           :                
+GND                          : AA4       : gnd    :                   :         :           :                
+GND                          : AA5       : gnd    :                   :         :           :                
+VCCL_GXB                     : AA6       : power  :                   : 1.2V    :           :                
+VCCA                         : AA7       : power  :                   : 2.5V    :           :                
+GND                          : AA8       : gnd    :                   :         :           :                
+VCCA                         : AA9       : power  :                   : 2.5V    :           :                
+VCCINT                       : AA10      : power  :                   : 1.2V    :           :                
+GND                          : AA11      : gnd    :                   :         :           :                
+Celda8[10]                   : AA12      : input  : 2.5 V             :         : 3         : N              
+Celda5[4]                    : AA13      : input  : 2.5 V             :         : 3         : N              
+VCCINT                       : AA14      : power  :                   : 1.2V    :           :                
+Celda10[4]                   : AA15      : input  : 2.5 V             :         : 3         : N              
+CeldaD[21]                   : AA16      : input  : 2.5 V             :         : 3         : N              
+Celda8[15]                   : AA17      : input  : 2.5 V             :         : 4         : N              
+Celda8[18]                   : AA18      : input  : 2.5 V             :         : 4         : N              
+GND                          : AA19      : gnd    :                   :         :           :                
+Celda8[19]                   : AA20      : input  : 2.5 V             :         : 4         : N              
+Celda10[10]                  : AA21      : input  : 2.5 V             :         : 4         : N              
+Celda14[8]                   : AA22      : input  : 2.5 V             :         : 5         : N              
+VCCIO5                       : AA23      : power  :                   : 2.5V    : 5         :                
+VCCIO5                       : AA24      : power  :                   : 2.5V    : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA25      :        :                   :         : 5         :                
+Celda11[1]                   : AA26      : input  : 2.5 V             :         : 5         : N              
+Celda7[8]                    : AA27      : input  : 2.5 V             :         : 5         : N              
+Celda13[14]                  : AA28      : input  : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA29      :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA30      :        :                   :         : 5         :                
+GND                          : AB1       : gnd    :                   :         :           :                
+GND                          : AB2       : gnd    :                   :         :           :                
+GXB_NC                       : AB3       :        :                   :         : QL0       :                
+GXB_NC                       : AB4       :        :                   :         : QL0       :                
+GND                          : AB5       : gnd    :                   :         :           :                
+GND                          : AB6       : gnd    :                   :         :           :                
+GND                          : AB7       : gnd    :                   :         :           :                
+VCCINT                       : AB8       : power  :                   : 1.2V    :           :                
+CONF_DONE                    : AB9       :        :                   :         : 3         :                
+GND                          : AB10      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB11      :        :                   :         : 3         :                
+VCCIO3                       : AB12      : power  :                   : 2.5V    : 3         :                
+Celda13[6]                   : AB13      : input  : 2.5 V             :         : 3         : N              
+Celda13[8]                   : AB14      : input  : 2.5 V             :         : 3         : N              
+VCCIO3                       : AB15      : power  :                   : 2.5V    : 3         :                
+Celda16[19]                  : AB16      : input  : 2.5 V             :         : 3         : N              
+Celda12[8]                   : AB17      : input  : 2.5 V             :         : 4         : N              
+VCCIO4                       : AB18      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AB19      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AB20      : power  :                   : 2.5V    : 4         :                
+Celda8[7]                    : AB21      : input  : 2.5 V             :         : 4         : N              
+CeldaD[18]                   : AB22      : input  : 2.5 V             :         : 4         : N              
+VCCD_PLL                     : AB23      : power  :                   : 1.2V    :           :                
+VCCA                         : AB24      : power  :                   : 2.5V    :           :                
+Celda15[3]                   : AB25      : input  : 2.5 V             :         : 5         : N              
+Celda8[1]                    : AB26      : input  : 2.5 V             :         : 5         : N              
+Celda10[21]                  : AB27      : input  : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB28      :        :                   :         : 5         :                
+CeldaD[19]                   : AB29      : input  : 2.5 V             :         : 5         : N              
+Celda9[15]                   : AB30      : input  : 2.5 V             :         : 5         : N              
+GXB_GND*                     : AC1       :        :                   :         : QL0       :                
+GXB_GND*                     : AC2       :        :                   :         : QL0       :                
+GND                          : AC3       : gnd    :                   :         :           :                
+GND                          : AC4       : gnd    :                   :         :           :                
+GND                          : AC5       : gnd    :                   :         :           :                
+GND                          : AC6       : gnd    :                   :         :           :                
+MSEL2                        : AC7       :        :                   :         : 3         :                
+MSEL3                        : AC8       :        :                   :         : 3         :                
+VCCIO3                       : AC9       : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AC10      : power  :                   : 2.5V    : 3         :                
+GND                          : AC11      : gnd    :                   :         :           :                
+VCCIO3                       : AC12      : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AC13      : power  :                   : 2.5V    : 3         :                
+GND                          : AC14      : gnd    :                   :         :           :                
+VCCIO3                       : AC15      : power  :                   : 2.5V    : 3         :                
+Celda14[17]                  : AC16      : input  : 2.5 V             :         : 3         : N              
+GND                          : AC17      : gnd    :                   :         :           :                
+VCCIO4                       : AC18      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AC19      : power  :                   : 2.5V    : 4         :                
+GND                          : AC20      : gnd    :                   :         :           :                
+VCCIO4                       : AC21      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AC22      : power  :                   : 2.5V    : 4         :                
+GND                          : AC23      : gnd    :                   :         :           :                
+GND                          : AC24      : gnd    :                   :         :           :                
+Celda10[3]                   : AC25      : input  : 2.5 V             :         : 5         : N              
+GND                          : AC26      : gnd    :                   :         :           :                
+Celda15[9]                   : AC27      : input  : 2.5 V             :         : 5         : N              
+Celda5[1]                    : AC28      : input  : 2.5 V             :         : 5         : N              
+GND                          : AC29      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC30      :        :                   :         : 5         :                
+GND                          : AD1       : gnd    :                   :         :           :                
+GND                          : AD2       : gnd    :                   :         :           :                
+VCCA_GXB                     : AD3       : power  :                   : 2.5V    :           :                
+VCCL_GXB                     : AD4       : power  :                   : 1.2V    :           :                
+GND                          : AD5       : gnd    :                   :         :           :                
+CeldaD[8]                    : AD6       : input  : 2.5 V             :         : 3         : N              
+MSEL0                        : AD7       :        :                   :         : 3         :                
+MSEL1                        : AD8       :        :                   :         : 3         :                
+CeldaC[21]                   : AD9       : input  : 2.5 V             :         : 3         : N              
+Celda11[17]                  : AD10      : input  : 2.5 V             :         : 3         : N              
+VCCIO3                       : AD11      : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AD12      : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AD13      : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AD14      : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AD15      : power  :                   : 2.5V    : 3         :                
+Celda16[5]                   : AD16      : input  : 2.5 V             :         : 4         : N              
+VCCIO4                       : AD17      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AD18      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AD19      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AD20      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AD21      : power  :                   : 2.5V    : 4         :                
+Celda15[17]                  : AD22      : input  : 2.5 V             :         : 4         : N              
+Celda13[9]                   : AD23      : input  : 2.5 V             :         : 4         : N              
+Celda10[5]                   : AD24      : input  : 2.5 V             :         : 4         : N              
+Celda8[12]                   : AD25      : input  : 2.5 V             :         : 5         : N              
+Celda14[6]                   : AD26      : input  : 2.5 V             :         : 5         : N              
+CeldaD[9]                    : AD27      : input  : 2.5 V             :         : 5         : N              
+CeldaA[22]                   : AD28      : input  : 2.5 V             :         : 5         : N              
+Celda7[16]                   : AD29      : input  : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD30      :        :                   :         : 5         :                
+RREF                         : AE1       :        :                   :         :           :                
+GND                          : AE2       : gnd    :                   :         :           :                
+Celda11[20]                  : AE3       : input  : 2.5 V             :         : 3         : N              
+Celda8[5]                    : AE4       : input  : 2.5 V             :         : 3         : N              
+Celda12[18]                  : AE5       : input  : 2.5 V             :         : 3         : N              
+Celda7[5]                    : AE6       : input  : 2.5 V             :         : 3         : N              
+~ALTERA_NCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : AE7       : output : 2.5 V             :         : 3         : N              
+CeldaA[16]                   : AE8       : input  : 2.5 V             :         : 3         : N              
+CeldaB[1]                    : AE9       : input  : 2.5 V             :         : 3         : N              
+CeldaC[3]                    : AE10      : input  : 2.5 V             :         : 3         : N              
+Celda16[14]                  : AE11      : input  : 2.5 V             :         : 3         : N              
+CeldaD[20]                   : AE12      : input  : 2.5 V             :         : 3         : N              
+Celda5[19]                   : AE13      : input  : 2.5 V             :         : 3         : N              
+CeldaC[22]                   : AE14      : input  : 2.5 V             :         : 3         : N              
+CeldaB[16]                   : AE15      : input  : 2.5 V             :         : 3         : N              
+Celda5[22]                   : AE16      : input  : 2.5 V             :         : 4         : N              
+CeldaB[5]                    : AE17      : input  : 2.5 V             :         : 4         : N              
+CeldaC[8]                    : AE18      : input  : 2.5 V             :         : 4         : N              
+Celda10[11]                  : AE19      : input  : 2.5 V             :         : 4         : N              
+CeldaC[20]                   : AE20      : input  : 2.5 V             :         : 4         : N              
+CeldaA[6]                    : AE21      : input  : 2.5 V             :         : 4         : N              
+Celda6[13]                   : AE22      : input  : 2.5 V             :         : 4         : N              
+Celda11[13]                  : AE23      : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE24      :        :                   :         : 4         :                
+Celda6[22]                   : AE25      : input  : 2.5 V             :         : 5         : N              
+Celda6[17]                   : AE26      : input  : 2.5 V             :         : 5         : N              
+Celda11[9]                   : AE27      : input  : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE28      :        :                   :         : 5         :                
+CeldaD[0]                    : AE29      : input  : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE30      :        :                   :         : 5         :                
+GND                          : AF1       : gnd    :                   :         :           :                
+GND                          : AF2       : gnd    :                   :         :           :                
+CeldaA[8]                    : AF3       : input  : 2.5 V             :         : 3         : N              
+CeldaB[10]                   : AF4       : input  : 2.5 V             :         : 3         : N              
+GND                          : AF5       : gnd    :                   :         :           :                
+Celda9[7]                    : AF6       : input  : 2.5 V             :         : 3         : N              
+Celda6[15]                   : AF7       : input  : 2.5 V             :         : 3         : N              
+GND                          : AF8       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF9       :        :                   :         : 3         :                
+Celda7[7]                    : AF10      : input  : 2.5 V             :         : 3         : N              
+GND                          : AF11      : gnd    :                   :         :           :                
+Celda5[21]                   : AF12      : input  : 2.5 V             :         : 3         : N              
+Celda11[0]                   : AF13      : input  : 2.5 V             :         : 3         : N              
+GND                          : AF14      : gnd    :                   :         :           :                
+Celda16[17]                  : AF15      : input  : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF16      :        :                   :         : 4         :                
+GND                          : AF17      : gnd    :                   :         :           :                
+Celda12[13]                  : AF18      : input  : 2.5 V             :         : 4         : N              
+Celda5[6]                    : AF19      : input  : 2.5 V             :         : 4         : N              
+GND                          : AF20      : gnd    :                   :         :           :                
+CeldaC[11]                   : AF21      : input  : 2.5 V             :         : 4         : N              
+Celda15[6]                   : AF22      : input  : 2.5 V             :         : 4         : N              
+GND                          : AF23      : gnd    :                   :         :           :                
+Celda11[10]                  : AF24      : input  : 2.5 V             :         : 4         : N              
+Celda15[0]                   : AF25      : input  : 2.5 V             :         : 4         : N              
+GND                          : AF26      : gnd    :                   :         :           :                
+Celda13[12]                  : AF27      : input  : 2.5 V             :         : 5         : N              
+Celda16[15]                  : AF28      : input  : 2.5 V             :         : 5         : N              
+GND                          : AF29      : gnd    :                   :         :           :                
+CeldaA[18]                   : AF30      : input  : 2.5 V             :         : 5         : N              
+NC                           : AG1       :        :                   :         :           :                
+GND                          : AG2       : gnd    :                   :         :           :                
+Celda11[14]                  : AG3       : input  : 2.5 V             :         : 3         : N              
+Celda5[0]                    : AG4       : input  : 2.5 V             :         : 3         : N              
+Celda9[9]                    : AG5       : input  : 2.5 V             :         : 3         : N              
+Celda6[21]                   : AG6       : input  : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AG7       :        :                   :         : 3         :                
+Celda10[17]                  : AG8       : input  : 2.5 V             :         : 3         : N              
+Celda13[11]                  : AG9       : input  : 2.5 V             :         : 3         : N              
+Celda16[21]                  : AG10      : input  : 2.5 V             :         : 3         : N              
+Celda11[6]                   : AG11      : input  : 2.5 V             :         : 3         : N              
+Celda16[4]                   : AG12      : input  : 2.5 V             :         : 3         : N              
+Celda9[5]                    : AG13      : input  : 2.5 V             :         : 3         : N              
+CeldaD[23]                   : AG14      : input  : 2.5 V             :         : 3         : N              
+Celda12[21]                  : AG15      : input  : 2.5 V             :         : 3         : N              
+Celda15[19]                  : AG16      : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AG17      :        :                   :         : 4         :                
+CeldaC[5]                    : AG18      : input  : 2.5 V             :         : 4         : N              
+Celda6[23]                   : AG19      : input  : 2.5 V             :         : 4         : N              
+Celda8[17]                   : AG20      : input  : 2.5 V             :         : 4         : N              
+Celda6[14]                   : AG21      : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AG22      :        :                   :         : 4         :                
+Celda12[15]                  : AG23      : input  : 2.5 V             :         : 4         : N              
+CeldaA[2]                    : AG24      : input  : 2.5 V             :         : 4         : N              
+Celda13[7]                   : AG25      : input  : 2.5 V             :         : 4         : N              
+Celda15[21]                  : AG26      : input  : 2.5 V             :         : 4         : N              
+Celda8[16]                   : AG27      : input  : 2.5 V             :         : 4         : N              
+Celda14[23]                  : AG28      : input  : 2.5 V             :         : 4         : N              
+CeldaC[12]                   : AG29      : input  : 2.5 V             :         : 5         : N              
+Celda10[2]                   : AG30      : input  : 2.5 V             :         : 5         : N              
+NC                           : AH1       :        :                   :         :           :                
+Celda6[1]                    : AH2       : input  : 2.5 V             :         : 3         : N              
+Celda15[15]                  : AH3       : input  : 2.5 V             :         : 3         : N              
+Celda15[11]                  : AH4       : input  : 2.5 V             :         : 3         : N              
+Celda11[21]                  : AH5       : input  : 2.5 V             :         : 3         : N              
+Celda14[10]                  : AH6       : input  : 2.5 V             :         : 3         : N              
+CeldaC[15]                   : AH7       : input  : 2.5 V             :         : 3         : N              
+Celda13[4]                   : AH8       : input  : 2.5 V             :         : 3         : N              
+Celda9[8]                    : AH9       : input  : 2.5 V             :         : 3         : N              
+CeldaA[13]                   : AH10      : input  : 2.5 V             :         : 3         : N              
+Celda16[6]                   : AH11      : input  : 2.5 V             :         : 3         : N              
+Celda14[12]                  : AH12      : input  : 2.5 V             :         : 3         : N              
+Celda13[15]                  : AH13      : input  : 2.5 V             :         : 3         : N              
+Celda6[12]                   : AH14      : input  : 2.5 V             :         : 3         : N              
+Celda12[20]                  : AH15      : input  : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AH16      :        :                   :         : 3         :                
+Celda5[20]                   : AH17      : input  : 2.5 V             :         : 4         : N              
+Celda14[0]                   : AH18      : input  : 2.5 V             :         : 4         : N              
+CeldaB[19]                   : AH19      : input  : 2.5 V             :         : 4         : N              
+Celda11[22]                  : AH20      : input  : 2.5 V             :         : 4         : N              
+Celda6[19]                   : AH21      : input  : 2.5 V             :         : 4         : N              
+Celda16[3]                   : AH22      : input  : 2.5 V             :         : 4         : N              
+Celda15[16]                  : AH23      : input  : 2.5 V             :         : 4         : N              
+CeldaA[23]                   : AH24      : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AH25      :        :                   :         : 4         :                
+Celda12[0]                   : AH26      : input  : 2.5 V             :         : 4         : N              
+Celda12[22]                  : AH27      : input  : 2.5 V             :         : 4         : N              
+CeldaA[5]                    : AH28      : input  : 2.5 V             :         : 4         : N              
+Celda14[2]                   : AH29      : input  : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AH30      :        :                   :         : 5         :                
+nSTATUS                      : AJ1       :        :                   :         : 3         :                
+GND                          : AJ2       : gnd    :                   :         :           :                
+Celda6[4]                    : AJ3       : input  : 2.5 V             :         : 3         : N              
+CeldaA[10]                   : AJ4       : input  : 2.5 V             :         : 3         : N              
+GND                          : AJ5       : gnd    :                   :         :           :                
+Celda16[10]                  : AJ6       : input  : 2.5 V             :         : 3         : N              
+Celda13[23]                  : AJ7       : input  : 2.5 V             :         : 3         : N              
+GND                          : AJ8       : gnd    :                   :         :           :                
+Celda12[1]                   : AJ9       : input  : 2.5 V             :         : 3         : N              
+CeldaC[6]                    : AJ10      : input  : 2.5 V             :         : 3         : N              
+GND                          : AJ11      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AJ12      :        :                   :         : 3         :                
+SalidaLeds                   : AJ13      : output : 2.5 V             :         : 3         : N              
+GND                          : AJ14      : gnd    :                   :         :           :                
+Celda13[19]                  : AJ15      : input  : 2.5 V             :         : 4         : N              
+Celda12[6]                   : AJ16      : input  : 2.5 V             :         : 4         : N              
+GND                          : AJ17      : gnd    :                   :         :           :                
+Celda8[14]                   : AJ18      : input  : 2.5 V             :         : 4         : N              
+CeldaD[10]                   : AJ19      : input  : 2.5 V             :         : 4         : N              
+GND                          : AJ20      : gnd    :                   :         :           :                
+Celda15[23]                  : AJ21      : input  : 2.5 V             :         : 4         : N              
+Celda10[16]                  : AJ22      : input  : 2.5 V             :         : 4         : N              
+GND                          : AJ23      : gnd    :                   :         :           :                
+CeldaC[17]                   : AJ24      : input  : 2.5 V             :         : 4         : N              
+Celda6[0]                    : AJ25      : input  : 2.5 V             :         : 4         : N              
+GND                          : AJ26      : gnd    :                   :         :           :                
+Celda16[22]                  : AJ27      : input  : 2.5 V             :         : 4         : N              
+CeldaB[9]                    : AJ28      : input  : 2.5 V             :         : 4         : N              
+GND                          : AJ29      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AJ30      :        :                   :         : 5         :                
+NC                           : AK2       :        :                   :         :           :                
+Celda9[20]                   : AK3       : input  : 2.5 V             :         : 3         : N              
+Celda5[5]                    : AK4       : input  : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AK5       :        :                   :         : 3         :                
+CeldaC[7]                    : AK6       : input  : 2.5 V             :         : 3         : N              
+Celda6[10]                   : AK7       : input  : 2.5 V             :         : 3         : N              
+Celda6[11]                   : AK8       : input  : 2.5 V             :         : 3         : N              
+CeldaB[21]                   : AK9       : input  : 2.5 V             :         : 3         : N              
+Celda5[2]                    : AK10      : input  : 2.5 V             :         : 3         : N              
+CeldaD[17]                   : AK11      : input  : 2.5 V             :         : 3         : N              
+Celda10[0]                   : AK12      : input  : 2.5 V             :         : 3         : N              
+CeldaC[19]                   : AK13      : input  : 2.5 V             :         : 3         : N              
+Celda10[14]                  : AK14      : input  : 2.5 V             :         : 3         : N              
+Celda13[0]                   : AK15      : input  : 2.5 V             :         : 4         : N              
+Celda12[5]                   : AK16      : input  : 2.5 V             :         : 4         : N              
+CeldaA[19]                   : AK17      : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AK18      :        :                   :         : 4         :                
+Celda9[17]                   : AK19      : input  : 2.5 V             :         : 4         : N              
+Celda12[2]                   : AK20      : input  : 2.5 V             :         : 4         : N              
+Celda9[3]                    : AK21      : input  : 2.5 V             :         : 4         : N              
+Celda14[13]                  : AK22      : input  : 2.5 V             :         : 4         : N              
+Celda9[10]                   : AK23      : input  : 2.5 V             :         : 4         : N              
+Celda11[8]                   : AK24      : input  : 2.5 V             :         : 4         : N              
+Celda15[14]                  : AK25      : input  : 2.5 V             :         : 4         : N              
+CeldaD[4]                    : AK26      : input  : 2.5 V             :         : 4         : N              
+Celda15[13]                  : AK27      : input  : 2.5 V             :         : 4         : N              
+Celda7[22]                   : AK28      : input  : 2.5 V             :         : 4         : N              
+Celda5[14]                   : AK29      : input  : 2.5 V             :         : 4         : N              
+nCONFIG                      : B1        :        :                   :         : 9         :                
+GND                          : B2        : gnd    :                   :         :           :                
+~ALTERA_DCLK~                : B3        : output : 2.5 V             :         : 9         : N              
+~ALTERA_NCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : B4        : input  : 2.5 V             :         : 9         : N              
+GND                          : B5        : gnd    :                   :         :           :                
+Celda16[9]                   : B6        : input  : 2.5 V             :         : 8         : N              
+Celda15[20]                  : B7        : input  : 2.5 V             :         : 8         : N              
+GND                          : B8        : gnd    :                   :         :           :                
+Celda10[23]                  : B9        : input  : 2.5 V             :         : 8         : N              
+Celda14[21]                  : B10       : input  : 2.5 V             :         : 8         : N              
+GND                          : B11       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B12       :        :                   :         : 8         :                
+Celda15[2]                   : B13       : input  : 2.5 V             :         : 8         : N              
+GND                          : B14       : gnd    :                   :         :           :                
+GND+                         : B15       :        :                   :         : 7         :                
+CeldaD[5]                    : B16       : input  : 2.5 V             :         : 7         : N              
+GND                          : B17       : gnd    :                   :         :           :                
+CeldaB[4]                    : B18       : input  : 2.5 V             :         : 7         : N              
+Celda15[22]                  : B19       : input  : 2.5 V             :         : 7         : N              
+GND                          : B20       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B21       :        :                   :         : 7         :                
+CeldaC[13]                   : B22       : input  : 2.5 V             :         : 7         : N              
+GND                          : B23       : gnd    :                   :         :           :                
+Celda14[1]                   : B24       : input  : 2.5 V             :         : 7         : N              
+CeldaB[8]                    : B25       : input  : 2.5 V             :         : 7         : N              
+GND                          : B26       : gnd    :                   :         :           :                
+CeldaA[14]                   : B27       : input  : 2.5 V             :         : 7         : N              
+Celda11[4]                   : B28       : input  : 2.5 V             :         : 7         : N              
+GND                          : B29       : gnd    :                   :         :           :                
+Celda8[6]                    : B30       : input  : 2.5 V             :         : 7         : N              
+nCE                          : C1        :        :                   :         : 9         :                
+Celda9[22]                   : C2        : input  : 2.5 V             :         : 8         : N              
+CeldaA[21]                   : C3        : input  : 2.5 V             :         : 8         : N              
+Celda10[1]                   : C4        : input  : 2.5 V             :         : 8         : N              
+Celda7[6]                    : C5        : input  : 2.5 V             :         : 8         : N              
+Celda13[13]                  : C6        : input  : 2.5 V             :         : 8         : N              
+Celda11[2]                   : C7        : input  : 2.5 V             :         : 8         : N              
+Celda12[16]                  : C8        : input  : 2.5 V             :         : 8         : N              
+CeldaB[20]                   : C9        : input  : 2.5 V             :         : 8         : N              
+Celda13[1]                   : C10       : input  : 2.5 V             :         : 8         : N              
+Celda11[5]                   : C11       : input  : 2.5 V             :         : 8         : N              
+Celda12[9]                   : C12       : input  : 2.5 V             :         : 8         : N              
+Celda16[18]                  : C13       : input  : 2.5 V             :         : 8         : N              
+Celda13[3]                   : C14       : input  : 2.5 V             :         : 8         : N              
+Celda9[16]                   : C15       : input  : 2.5 V             :         : 8         : N              
+CeldaB[15]                   : C16       : input  : 2.5 V             :         : 8         : N              
+Celda16[1]                   : C17       : input  : 2.5 V             :         : 7         : N              
+Celda16[11]                  : C18       : input  : 2.5 V             :         : 7         : N              
+Celda5[8]                    : C19       : input  : 2.5 V             :         : 7         : N              
+Celda8[3]                    : C20       : input  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : C21       :        :                   :         : 7         :                
+Celda11[11]                  : C22       : input  : 2.5 V             :         : 7         : N              
+CeldaB[3]                    : C23       : input  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : C24       :        :                   :         : 7         :                
+Celda14[9]                   : C25       : input  : 2.5 V             :         : 7         : N              
+Celda8[21]                   : C26       : input  : 2.5 V             :         : 7         : N              
+Celda11[18]                  : C27       : input  : 2.5 V             :         : 7         : N              
+Celda12[7]                   : C28       : input  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : C29       :        :                   :         : 6         :                
+CeldaB[13]                   : C30       : input  : 2.5 V             :         : 6         : N              
+Celda16[20]                  : D1        : input  : 2.5 V             :         : 8         : N              
+GND                          : D2        : gnd    :                   :         :           :                
+Celda12[14]                  : D3        : input  : 2.5 V             :         : 8         : N              
+Celda7[10]                   : D4        : input  : 2.5 V             :         : 8         : N              
+Celda5[11]                   : D5        : input  : 2.5 V             :         : 8         : N              
+Celda14[4]                   : D6        : input  : 2.5 V             :         : 8         : N              
+CeldaC[9]                    : D7        : input  : 2.5 V             :         : 8         : N              
+CeldaC[2]                    : D8        : input  : 2.5 V             :         : 8         : N              
+Celda10[18]                  : D9        : input  : 2.5 V             :         : 8         : N              
+Celda6[2]                    : D10       : input  : 2.5 V             :         : 8         : N              
+Celda10[7]                   : D11       : input  : 2.5 V             :         : 8         : N              
+Celda10[13]                  : D12       : input  : 2.5 V             :         : 8         : N              
+CeldaB[12]                   : D13       : input  : 2.5 V             :         : 8         : N              
+Celda9[19]                   : D14       : input  : 2.5 V             :         : 8         : N              
+Celda15[4]                   : D15       : input  : 2.5 V             :         : 8         : N              
+Celda14[16]                  : D16       : input  : 2.5 V             :         : 8         : N              
+Celda15[8]                   : D17       : input  : 2.5 V             :         : 7         : N              
+Celda13[10]                  : D18       : input  : 2.5 V             :         : 7         : N              
+Celda9[13]                   : D19       : input  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D20       :        :                   :         : 7         :                
+Celda9[6]                    : D21       : input  : 2.5 V             :         : 7         : N              
+Celda7[17]                   : D22       : input  : 2.5 V             :         : 7         : N              
+CeldaA[7]                    : D23       : input  : 2.5 V             :         : 7         : N              
+Celda9[23]                   : D24       : input  : 2.5 V             :         : 7         : N              
+Celda10[19]                  : D25       : input  : 2.5 V             :         : 7         : N              
+Celda6[3]                    : D26       : input  : 2.5 V             :         : 7         : N              
+Celda5[9]                    : D27       : input  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D28       :        :                   :         : 7         :                
+CeldaD[2]                    : D29       : input  : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D30       :        :                   :         : 6         :                
+TMS                          : E1        : input  :                   :         : 9         :                
+TDI                          : E2        : input  :                   :         : 9         :                
+Celda7[21]                   : E3        : input  : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : E4        :        :                   :         : 8         :                
+GND                          : E5        : gnd    :                   :         :           :                
+CeldaC[23]                   : E6        : input  : 2.5 V             :         : 8         : N              
+Celda7[13]                   : E7        : input  : 2.5 V             :         : 8         : N              
+GND                          : E8        : gnd    :                   :         :           :                
+Celda12[23]                  : E9        : input  : 2.5 V             :         : 8         : N              
+CeldaA[12]                   : E10       : input  : 2.5 V             :         : 8         : N              
+GND                          : E11       : gnd    :                   :         :           :                
+Celda11[3]                   : E12       : input  : 2.5 V             :         : 8         : N              
+Celda16[8]                   : E13       : input  : 2.5 V             :         : 8         : N              
+GND                          : E14       : gnd    :                   :         :           :                
+CeldaB[22]                   : E15       : input  : 2.5 V             :         : 8         : N              
+Celda5[7]                    : E16       : input  : 2.5 V             :         : 8         : N              
+GND                          : E17       : gnd    :                   :         :           :                
+Celda14[14]                  : E18       : input  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : E19       :        :                   :         : 7         :                
+GND                          : E20       : gnd    :                   :         :           :                
+Celda5[13]                   : E21       : input  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : E22       :        :                   :         : 7         :                
+GND                          : E23       : gnd    :                   :         :           :                
+Celda14[22]                  : E24       : input  : 2.5 V             :         : 7         : N              
+Celda16[23]                  : E25       : input  : 2.5 V             :         : 7         : N              
+GND                          : E26       : gnd    :                   :         :           :                
+Celda8[9]                    : E27       : input  : 2.5 V             :         : 6         : N              
+CeldaC[0]                    : E28       : input  : 2.5 V             :         : 6         : N              
+GND                          : E29       : gnd    :                   :         :           :                
+Celda12[19]                  : E30       : input  : 2.5 V             :         : 6         : N              
+TDO                          : F1        : output :                   :         : 9         :                
+TCK                          : F2        : input  :                   :         : 9         :                
+GND                          : F3        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F4        :        :                   :         : 8         :                
+Celda6[6]                    : F5        : input  : 2.5 V             :         : 8         : N              
+Celda10[8]                   : F6        : input  : 2.5 V             :         : 8         : N              
+Celda8[4]                    : F7        : input  : 2.5 V             :         : 8         : N              
+Celda14[18]                  : F8        : input  : 2.5 V             :         : 8         : N              
+CeldaA[15]                   : F9        : input  : 2.5 V             :         : 8         : N              
+Celda9[2]                    : F10       : input  : 2.5 V             :         : 8         : N              
+Celda16[16]                  : F11       : input  : 2.5 V             :         : 8         : N              
+Celda6[7]                    : F12       : input  : 2.5 V             :         : 8         : N              
+CeldaB[17]                   : F13       : input  : 2.5 V             :         : 8         : N              
+Celda14[19]                  : F14       : input  : 2.5 V             :         : 8         : N              
+CeldaC[16]                   : F15       : input  : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : F16       :        :                   :         : 8         :                
+CeldaD[14]                   : F17       : input  : 2.5 V             :         : 7         : N              
+Celda13[21]                  : F18       : input  : 2.5 V             :         : 7         : N              
+Celda8[2]                    : F19       : input  : 2.5 V             :         : 7         : N              
+Celda12[4]                   : F20       : input  : 2.5 V             :         : 7         : N              
+Celda5[15]                   : F21       : input  : 2.5 V             :         : 7         : N              
+CeldaD[1]                    : F22       : input  : 2.5 V             :         : 7         : N              
+Celda7[12]                   : F23       : input  : 2.5 V             :         : 7         : N              
+Celda5[16]                   : F24       : input  : 2.5 V             :         : 7         : N              
+Celda11[23]                  : F25       : input  : 2.5 V             :         : 7         : N              
+CeldaD[11]                   : F26       : input  : 2.5 V             :         : 6         : N              
+Celda7[1]                    : F27       : input  : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : F28       :        :                   :         : 6         :                
+Celda15[18]                  : F29       : input  : 2.5 V             :         : 6         : N              
+Celda6[8]                    : F30       : input  : 2.5 V             :         : 6         : N              
+GND                          : G1        : gnd    :                   :         :           :                
+GND                          : G2        : gnd    :                   :         :           :                
+GND                          : G3        : gnd    :                   :         :           :                
+GND                          : G4        : gnd    :                   :         :           :                
+GND                          : G5        : gnd    :                   :         :           :                
+Celda7[9]                    : G6        : input  : 2.5 V             :         : 8         : N              
+Celda11[15]                  : G7        : input  : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : G8        :        :                   :         : 8         :                
+~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : G9        : input  : 2.5 V             :         : 9         : N              
+CeldaA[17]                   : G10       : input  : 2.5 V             :         : 8         : N              
+Celda10[12]                  : G11       : input  : 2.5 V             :         : 8         : N              
+CeldaB[14]                   : G12       : input  : 2.5 V             :         : 8         : N              
+Celda16[12]                  : G13       : input  : 2.5 V             :         : 8         : N              
+Celda16[2]                   : G14       : input  : 2.5 V             :         : 8         : N              
+Celda9[4]                    : G15       : input  : 2.5 V             :         : 8         : N              
+Celda7[23]                   : G16       : input  : 2.5 V             :         : 7         : N              
+CeldaC[4]                    : G17       : input  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : G18       :        :                   :         : 7         :                
+VCCIO7                       : G19       : power  :                   : 2.5V    : 7         :                
+Celda9[21]                   : G20       : input  : 2.5 V             :         : 7         : N              
+Celda5[12]                   : G21       : input  : 2.5 V             :         : 7         : N              
+CeldaB[11]                   : G22       : input  : 2.5 V             :         : 7         : N              
+CeldaD[7]                    : G23       : input  : 2.5 V             :         : 7         : N              
+Celda10[22]                  : G24       : input  : 2.5 V             :         : 7         : N              
+Celda11[12]                  : G25       : input  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : G26       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G27       :        :                   :         : 6         :                
+CeldaB[23]                   : G28       : input  : 2.5 V             :         : 6         : N              
+CeldaC[18]                   : G29       : input  : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : G30       :        :                   :         : 6         :                
+GND                          : H1        : gnd    :                   :         :           :                
+GND                          : H2        : gnd    :                   :         :           :                
+GXB_NC                       : H3        :        :                   :         : QL1       :                
+GXB_NC                       : H4        :        :                   :         : QL1       :                
+GND                          : H5        : gnd    :                   :         :           :                
+GND                          : H6        : gnd    :                   :         :           :                
+VCCIO9                       : H7        : power  :                   : 2.5V    : 9         :                
+GND                          : H8        : gnd    :                   :         :           :                
+Celda14[20]                  : H9        : input  : 2.5 V             :         : 8         : N              
+VCCIO8                       : H10       : power  :                   : 2.5V    : 8         :                
+GND                          : H11       : gnd    :                   :         :           :                
+VCCIO8                       : H12       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : H13       : power  :                   : 2.5V    : 8         :                
+GND                          : H14       : gnd    :                   :         :           :                
+VCCIO8                       : H15       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : H16       : power  :                   : 2.5V    : 8         :                
+GND                          : H17       : gnd    :                   :         :           :                
+VCCIO7                       : H18       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : H19       : power  :                   : 2.5V    : 7         :                
+GND                          : H20       : gnd    :                   :         :           :                
+VCCIO7                       : H21       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : H22       : power  :                   : 2.5V    : 7         :                
+GND                          : H23       : gnd    :                   :         :           :                
+CeldaD[15]                   : H24       : input  : 2.5 V             :         : 7         : N              
+Celda13[16]                  : H25       : input  : 2.5 V             :         : 6         : N              
+GND                          : H26       : gnd    :                   :         :           :                
+Celda9[1]                    : H27       : input  : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : H28       :        :                   :         : 6         :                
+GND                          : H29       : gnd    :                   :         :           :                
+Celda7[18]                   : H30       : input  : 2.5 V             :         : 6         : N              
+GXB_GND*                     : J1        :        :                   :         : QL1       :                
+GXB_GND*                     : J2        :        :                   :         : QL1       :                
+GND                          : J3        : gnd    :                   :         :           :                
+GND                          : J4        : gnd    :                   :         :           :                
+GND                          : J5        : gnd    :                   :         :           :                
+VCCA                         : J6        : power  :                   : 2.5V    :           :                
+GND                          : J7        : gnd    :                   :         :           :                
+GND                          : J8        : gnd    :                   :         :           :                
+Celda16[0]                   : J9        : input  : 2.5 V             :         : 8         : N              
+VCCIO8                       : J10       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : J11       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : J12       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : J13       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : J14       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : J15       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : J16       : power  :                   : 2.5V    : 8         :                
+VCCIO7                       : J17       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : J18       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : J19       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : J20       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : J21       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : J22       : power  :                   : 2.5V    : 7         :                
+VCCD_PLL                     : J23       : power  :                   : 1.2V    :           :                
+GND                          : J24       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : J25       :        :                   :         : 6         :                
+Celda10[15]                  : J26       : input  : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : J27       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : J28       :        :                   :         : 6         :                
+Celda5[10]                   : J29       : input  : 2.5 V             :         : 6         : N              
+Celda7[20]                   : J30       : input  : 2.5 V             :         : 6         : N              
+GND                          : K1        : gnd    :                   :         :           :                
+GND                          : K2        : gnd    :                   :         :           :                
+GXB_NC                       : K3        :        :                   :         : QL1       :                
+GXB_NC                       : K4        :        :                   :         : QL1       :                
+VCCL_GXB                     : K5        : power  :                   : 1.2V    :           :                
+VCCD_PLL                     : K6        : power  :                   : 1.2V    :           :                
+GND                          : K7        : gnd    :                   :         :           :                
+GND                          : K8        : gnd    :                   :         :           :                
+VCCINT                       : K9        : power  :                   : 1.2V    :           :                
+VCC_CLKIN8B                  : K10       : power  :                   : 2.5V    : 8B        :                
+GXB_GND*                     : K11       :        :                   :         : 8B        :                
+GND                          : K12       : gnd    :                   :         :           :                
+VCCINT                       : K13       : power  :                   : 1.2V    :           :                
+GND                          : K14       : gnd    :                   :         :           :                
+GXB_GND*                     : K15       :        :                   :         : 8A        :                
+VCC_CLKIN8A                  : K16       : power  :                   : 2.5V    : 8A        :                
+Celda9[0]                    : K17       : input  : 2.5 V             :         : 7         : N              
+CeldaD[6]                    : K18       : input  : 2.5 V             :         : 7         : N              
+Celda13[22]                  : K19       : input  : 2.5 V             :         : 7         : N              
+GND                          : K20       : gnd    :                   :         :           :                
+Celda10[6]                   : K21       : input  : 2.5 V             :         : 7         : N              
+CeldaA[0]                    : K22       : input  : 2.5 V             :         : 7         : N              
+VCCA                         : K23       : power  :                   : 2.5V    :           :                
+Celda7[3]                    : K24       : input  : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : K25       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : K26       :        :                   :         : 6         :                
+Celda7[11]                   : K27       : input  : 2.5 V             :         : 6         : N              
+Celda8[8]                    : K28       : input  : 2.5 V             :         : 6         : N              
+CeldaD[16]                   : K29       : input  : 2.5 V             :         : 6         : N              
+Celda13[2]                   : K30       : input  : 2.5 V             :         : 6         : N              
+GXB_GND*                     : L1        :        :                   :         : QL1       :                
+GXB_GND*                     : L2        :        :                   :         : QL1       :                
+GND                          : L3        : gnd    :                   :         :           :                
+GND                          : L4        : gnd    :                   :         :           :                
+GND                          : L5        : gnd    :                   :         :           :                
+VCCH_GXB                     : L6        : power  :                   : 2.5V    :           :                
+GND                          : L7        : gnd    :                   :         :           :                
+VCCA                         : L8        : power  :                   : 2.5V    :           :                
+GND                          : L9        : gnd    :                   :         :           :                
+GXB_GND*                     : L10       :        :                   :         : 8B        :                
+GXB_GND*                     : L11       :        :                   :         : 8B        :                
+VCCINT                       : L12       : power  :                   : 1.2V    :           :                
+GND                          : L13       : gnd    :                   :         :           :                
+VCCINT                       : L14       : power  :                   : 1.2V    :           :                
+GXB_GND*                     : L15       :        :                   :         : 8A        :                
+VCCINT                       : L16       : power  :                   : 1.2V    :           :                
+GND                          : L17       : gnd    :                   :         :           :                
+VCCINT                       : L18       : power  :                   : 1.2V    :           :                
+GND                          : L19       : gnd    :                   :         :           :                
+VCCINT                       : L20       : power  :                   : 1.2V    :           :                
+GND                          : L21       : gnd    :                   :         :           :                
+VCCIO6                       : L22       : power  :                   : 2.5V    : 6         :                
+GND                          : L23       : gnd    :                   :         :           :                
+VCCIO6                       : L24       : power  :                   : 2.5V    : 6         :                
+Celda13[5]                   : L25       : input  : 2.5 V             :         : 6         : N              
+GND                          : L26       : gnd    :                   :         :           :                
+Celda6[5]                    : L27       : input  : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : L28       :        :                   :         : 6         :                
+GND                          : L29       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L30       :        :                   :         : 6         :                
+GND                          : M1        : gnd    :                   :         :           :                
+GND                          : M2        : gnd    :                   :         :           :                
+GXB_NC                       : M3        :        :                   :         : QL1       :                
+GXB_NC                       : M4        :        :                   :         : QL1       :                
+VCCL_GXB                     : M5        : power  :                   : 1.2V    :           :                
+GND                          : M6        : gnd    :                   :         :           :                
+VCCA_GXB                     : M7        : power  :                   : 2.5V    :           :                
+VCCD_PLL                     : M8        : power  :                   : 1.2V    :           :                
+VCCINT                       : M9        : power  :                   : 1.2V    :           :                
+GXB_GND*                     : M10       :        :                   :         : 8B        :                
+VCCINT                       : M11       : power  :                   : 1.2V    :           :                
+GND                          : M12       : gnd    :                   :         :           :                
+VCCINT                       : M13       : power  :                   : 1.2V    :           :                
+GND                          : M14       : gnd    :                   :         :           :                
+VCCINT                       : M15       : power  :                   : 1.2V    :           :                
+GND                          : M16       : gnd    :                   :         :           :                
+VCCINT                       : M17       : power  :                   : 1.2V    :           :                
+GND                          : M18       : gnd    :                   :         :           :                
+VCCINT                       : M19       : power  :                   : 1.2V    :           :                
+GND                          : M20       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M21       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M22       :        :                   :         : 6         :                
+VCCIO6                       : M23       : power  :                   : 2.5V    : 6         :                
+VCCIO6                       : M24       : power  :                   : 2.5V    : 6         :                
+Celda15[7]                   : M25       : input  : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : M26       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M27       :        :                   :         : 6         :                
+Celda15[1]                   : M28       : input  : 2.5 V             :         : 6         : N              
+CeldaD[3]                    : M29       : input  : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : M30       :        :                   :         : 6         :                
+GXB_GND*                     : N1        :        :                   :         : QL1       :                
+GXB_GND*                     : N2        :        :                   :         : QL1       :                
+GND                          : N3        : gnd    :                   :         :           :                
+GND                          : N4        : gnd    :                   :         :           :                
+VCCH_GXB                     : N5        : power  :                   : 2.5V    :           :                
+GND                          : N6        : gnd    :                   :         :           :                
+VCCL_GXB                     : N7        : power  :                   : 1.2V    :           :                
+VCCINT                       : N8        : power  :                   : 1.2V    :           :                
+GND                          : N9        : gnd    :                   :         :           :                
+VCCINT                       : N10       : power  :                   : 1.2V    :           :                
+GND                          : N11       : gnd    :                   :         :           :                
+VCCINT                       : N12       : power  :                   : 1.2V    :           :                
+GND                          : N13       : gnd    :                   :         :           :                
+VCCINT                       : N14       : power  :                   : 1.2V    :           :                
+GND                          : N15       : gnd    :                   :         :           :                
+VCCINT                       : N16       : power  :                   : 1.2V    :           :                
+GND                          : N17       : gnd    :                   :         :           :                
+VCCINT                       : N18       : power  :                   : 1.2V    :           :                
+GND                          : N19       : gnd    :                   :         :           :                
+VCCINT                       : N20       : power  :                   : 1.2V    :           :                
+Celda5[18]                   : N21       : input  : 2.5 V             :         : 6         : N              
+VCCIO6                       : N22       : power  :                   : 2.5V    : 6         :                
+VCCIO6                       : N23       : power  :                   : 2.5V    : 6         :                
+CeldaA[3]                    : N24       : input  : 2.5 V             :         : 6         : N              
+Celda10[9]                   : N25       : input  : 2.5 V             :         : 6         : N              
+Celda11[19]                  : N26       : input  : 2.5 V             :         : 6         : N              
+CeldaB[0]                    : N27       : input  : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : N28       :        :                   :         : 6         :                
+Celda13[18]                  : N29       : input  : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : N30       :        :                   :         : 6         :                
+GND                          : P1        : gnd    :                   :         :           :                
+GND                          : P2        : gnd    :                   :         :           :                
+GXB_NC                       : P3        :        :                   :         : QL1       :                
+GXB_NC                       : P4        :        :                   :         : QL1       :                
+GND                          : P5        : gnd    :                   :         :           :                
+VCCL_GXB                     : P6        : power  :                   : 1.2V    :           :                
+VCCD_PLL                     : P7        : power  :                   : 1.2V    :           :                
+GND                          : P8        : gnd    :                   :         :           :                
+VCCINT                       : P9        : power  :                   : 1.2V    :           :                
+GND                          : P10       : gnd    :                   :         :           :                
+VCCINT                       : P11       : power  :                   : 1.2V    :           :                
+GND                          : P12       : gnd    :                   :         :           :                
+VCCINT                       : P13       : power  :                   : 1.2V    :           :                
+GND                          : P14       : gnd    :                   :         :           :                
+VCCINT                       : P15       : power  :                   : 1.2V    :           :                
+GND                          : P16       : gnd    :                   :         :           :                
+VCCINT                       : P17       : power  :                   : 1.2V    :           :                
+GND                          : P18       : gnd    :                   :         :           :                
+VCCINT                       : P19       : power  :                   : 1.2V    :           :                
+GND                          : P20       : gnd    :                   :         :           :                
+Celda7[0]                    : P21       : input  : 2.5 V             :         : 6         : N              
+VCCIO6                       : P22       : power  :                   : 2.5V    : 6         :                
+GND                          : P23       : gnd    :                   :         :           :                
+VCCIO6                       : P24       : power  :                   : 2.5V    : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : P25       :        :                   :         : 6         :                
+GND                          : P26       : gnd    :                   :         :           :                
+Celda14[11]                  : P27       : input  : 2.5 V             :         : 6         : N              
+Celda8[13]                   : P28       : input  : 2.5 V             :         : 6         : N              
+GND                          : P29       : gnd    :                   :         :           :                
+Celda5[17]                   : P30       : input  : 2.5 V             :         : 6         : N              
+GXB_GND*                     : R1        :        :                   :         : QL1       :                
+GXB_GND*                     : R2        :        :                   :         : QL1       :                
+GND                          : R3        : gnd    :                   :         :           :                
+GND                          : R4        : gnd    :                   :         :           :                
+GND                          : R5        : gnd    :                   :         :           :                
+VCCA_GXB                     : R6        : power  :                   : 2.5V    :           :                
+GND                          : R7        : gnd    :                   :         :           :                
+VCCA                         : R8        : power  :                   : 2.5V    :           :                
+GND                          : R9        : gnd    :                   :         :           :                
+VCCINT                       : R10       : power  :                   : 1.2V    :           :                
+GND                          : R11       : gnd    :                   :         :           :                
+VCCINT                       : R12       : power  :                   : 1.2V    :           :                
+GND                          : R13       : gnd    :                   :         :           :                
+VCCINT                       : R14       : power  :                   : 1.2V    :           :                
+GND                          : R15       : gnd    :                   :         :           :                
+VCCINT                       : R16       : power  :                   : 1.2V    :           :                
+GND                          : R17       : gnd    :                   :         :           :                
+VCCINT                       : R18       : power  :                   : 1.2V    :           :                
+GND                          : R19       : gnd    :                   :         :           :                
+VCCINT                       : R20       : power  :                   : 1.2V    :           :                
+GND                          : R21       : gnd    :                   :         :           :                
+VCCIO6                       : R22       : power  :                   : 2.5V    : 6         :                
+VCCIO6                       : R23       : power  :                   : 2.5V    : 6         :                
+Celda6[18]                   : R24       : input  : 2.5 V             :         : 6         : N              
+Celda9[11]                   : R25       : input  : 2.5 V             :         : 6         : N              
+Celda9[18]                   : R26       : input  : 2.5 V             :         : 6         : N              
+CeldaA[20]                   : R27       : input  : 2.5 V             :         : 6         : N              
+CeldaC[14]                   : R28       : input  : 2.5 V             :         : 6         : N              
+Celda7[14]                   : R29       : input  : 2.5 V             :         : 6         : N              
+Celda11[16]                  : R30       : input  : 2.5 V             :         : 6         : N              
+GND                          : T1        : gnd    :                   :         :           :                
+GND                          : T2        : gnd    :                   :         :           :                
+GXB_NC                       : T3        :        :                   :         : QL0       :                
+GXB_NC                       : T4        :        :                   :         : QL0       :                
+GND                          : T5        : gnd    :                   :         :           :                
+VCCL_GXB                     : T6        : power  :                   : 1.2V    :           :                
+GND                          : T7        : gnd    :                   :         :           :                
+VCCA                         : T8        : power  :                   : 2.5V    :           :                
+VCCINT                       : T9        : power  :                   : 1.2V    :           :                
+GND                          : T10       : gnd    :                   :         :           :                
+VCCINT                       : T11       : power  :                   : 1.2V    :           :                
+GND                          : T12       : gnd    :                   :         :           :                
+VCCINT                       : T13       : power  :                   : 1.2V    :           :                
+GND                          : T14       : gnd    :                   :         :           :                
+VCCINT                       : T15       : power  :                   : 1.2V    :           :                
+GND                          : T16       : gnd    :                   :         :           :                
+VCCINT                       : T17       : power  :                   : 1.2V    :           :                
+GND                          : T18       : gnd    :                   :         :           :                
+VCCINT                       : T19       : power  :                   : 1.2V    :           :                
+GND                          : T20       : gnd    :                   :         :           :                
+Celda15[12]                  : T21       : input  : 2.5 V             :         : 5         : N              
+GND                          : T22       : gnd    :                   :         :           :                
+Celda6[9]                    : T23       : input  : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : T24       :        :                   :         : 5         :                
+Celda13[20]                  : T25       : input  : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : T26       :        :                   :         : 5         :                
+CeldaB[18]                   : T27       : input  : 2.5 V             :         : 5         : N              
+Celda8[23]                   : T28       : input  : 2.5 V             :         : 6         : N              
+GND+                         : T29       :        :                   :         : 6         :                
+GND+                         : T30       :        :                   :         : 6         :                
+GXB_GND*                     : U1        :        :                   :         : QL0       :                
+GXB_GND*                     : U2        :        :                   :         : QL0       :                
+GND                          : U3        : gnd    :                   :         :           :                
+GND                          : U4        : gnd    :                   :         :           :                
+GND                          : U5        : gnd    :                   :         :           :                
+VCCH_GXB                     : U6        : power  :                   : 2.5V    :           :                
+VCCD_PLL                     : U7        : power  :                   : 1.2V    :           :                
+VCCINT                       : U8        : power  :                   : 1.2V    :           :                
+GND                          : U9        : gnd    :                   :         :           :                
+VCCINT                       : U10       : power  :                   : 1.2V    :           :                
+GND                          : U11       : gnd    :                   :         :           :                
+VCCINT                       : U12       : power  :                   : 1.2V    :           :                
+GND                          : U13       : gnd    :                   :         :           :                
+VCCINT                       : U14       : power  :                   : 1.2V    :           :                
+GND                          : U15       : gnd    :                   :         :           :                
+VCCINT                       : U16       : power  :                   : 1.2V    :           :                
+GND                          : U17       : gnd    :                   :         :           :                
+VCCINT                       : U18       : power  :                   : 1.2V    :           :                
+GND                          : U19       : gnd    :                   :         :           :                
+VCCINT                       : U20       : power  :                   : 1.2V    :           :                
+Celda9[14]                   : U21       : input  : 2.5 V             :         : 5         : N              
+VCCIO5                       : U22       : power  :                   : 2.5V    : 5         :                
+GND                          : U23       : gnd    :                   :         :           :                
+VCCIO5                       : U24       : power  :                   : 2.5V    : 5         :                
+CeldaA[1]                    : U25       : input  : 2.5 V             :         : 5         : N              
+GND                          : U26       : gnd    :                   :         :           :                
+Celda16[13]                  : U27       : input  : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : U28       :        :                   :         : 5         :                
+GND                          : U29       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : U30       :        :                   :         : 5         :                
+GND                          : V1        : gnd    :                   :         :           :                
+GND                          : V2        : gnd    :                   :         :           :                
+GXB_NC                       : V3        :        :                   :         : QL0       :                
+GXB_NC                       : V4        :        :                   :         : QL0       :                
+VCCL_GXB                     : V5        : power  :                   : 1.2V    :           :                
+GND                          : V6        : gnd    :                   :         :           :                
+VCCA_GXB                     : V7        : power  :                   : 2.5V    :           :                
+GND                          : V8        : gnd    :                   :         :           :                
+VCCINT                       : V9        : power  :                   : 1.2V    :           :                
+GND                          : V10       : gnd    :                   :         :           :                
+GXB_GND*                     : V11       :        :                   :         : 3B        :                
+ClkMain                      : V12       : input  : 2.5 V             :         : 3B        : N              
+VCCINT                       : V13       : power  :                   : 1.2V    :           :                
+GND                          : V14       : gnd    :                   :         :           :                
+GXB_GND*                     : V15       :        :                   :         : 3A        :                
+GND                          : V16       : gnd    :                   :         :           :                
+VCCINT                       : V17       : power  :                   : 1.2V    :           :                
+GND                          : V18       : gnd    :                   :         :           :                
+VCCINT                       : V19       : power  :                   : 1.2V    :           :                
+GND                          : V20       : gnd    :                   :         :           :                
+Celda7[19]                   : V21       : input  : 2.5 V             :         : 5         : N              
+VCCIO5                       : V22       : power  :                   : 2.5V    : 5         :                
+VCCIO5                       : V23       : power  :                   : 2.5V    : 5         :                
+GND                          : V24       : gnd    :                   :         :           :                
+Celda7[2]                    : V25       : input  : 2.5 V             :         : 5         : N              
+CeldaD[22]                   : V26       : input  : 2.5 V             :         : 5         : N              
+Celda14[3]                   : V27       : input  : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : V28       :        :                   :         : 5         :                
+Celda12[10]                  : V29       : input  : 2.5 V             :         : 5         : N              
+Celda12[11]                  : V30       : input  : 2.5 V             :         : 5         : N              
+GXB_GND*                     : W1        :        :                   :         : QL0       :                
+GXB_GND*                     : W2        :        :                   :         : QL0       :                
+GND                          : W3        : gnd    :                   :         :           :                
+GND                          : W4        : gnd    :                   :         :           :                
+GND                          : W5        : gnd    :                   :         :           :                
+GND                          : W6        : gnd    :                   :         :           :                
+VCCH_GXB                     : W7        : power  :                   : 2.5V    :           :                
+VCCINT                       : W8        : power  :                   : 1.2V    :           :                
+GND                          : W9        : gnd    :                   :         :           :                
+VCCINT                       : W10       : power  :                   : 1.2V    :           :                
+GXB_GND*                     : W11       :        :                   :         : 3B        :                
+GXB_GND*                     : W12       :        :                   :         : 3B        :                
+GND                          : W13       : gnd    :                   :         :           :                
+VCCINT                       : W14       : power  :                   : 1.2V    :           :                
+NuevoInput                   : W15       : input  : 2.5 V             :         : 3A        : N              
+VCC_CLKIN3A                  : W16       : power  :                   : 2.5V    : 3A        :                
+GND                          : W17       : gnd    :                   :         :           :                
+VCCINT                       : W18       : power  :                   : 1.2V    :           :                
+GND                          : W19       : gnd    :                   :         :           :                
+VCCINT                       : W20       : power  :                   : 1.2V    :           :                
+GND                          : W21       : gnd    :                   :         :           :                
+VCCIO5                       : W22       : power  :                   : 2.5V    : 5         :                
+VCCIO5                       : W23       : power  :                   : 2.5V    : 5         :                
+VCCIO5                       : W24       : power  :                   : 2.5V    : 5         :                
+Celda8[20]                   : W25       : input  : 2.5 V             :         : 5         : N              
+Celda12[12]                  : W26       : input  : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : W27       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : W28       :        :                   :         : 5         :                
+Celda12[3]                   : W29       : input  : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : W30       :        :                   :         : 5         :                
+GND                          : Y1        : gnd    :                   :         :           :                
+GND                          : Y2        : gnd    :                   :         :           :                
+GXB_NC                       : Y3        :        :                   :         : QL0       :                
+GXB_NC                       : Y4        :        :                   :         : QL0       :                
+VCCL_GXB                     : Y5        : power  :                   : 1.2V    :           :                
+VCCA_GXB                     : Y6        : power  :                   : 2.5V    :           :                
+VCCD_PLL                     : Y7        : power  :                   : 1.2V    :           :                
+VCCD_PLL                     : Y8        : power  :                   : 1.2V    :           :                
+GND                          : Y9        : gnd    :                   :         :           :                
+GND                          : Y10       : gnd    :                   :         :           :                
+VCCINT                       : Y11       : power  :                   : 1.2V    :           :                
+VCC_CLKIN3B                  : Y12       : power  :                   : 2.5V    : 3B        :                
+VCCINT                       : Y13       : power  :                   : 1.2V    :           :                
+GND                          : Y14       : gnd    :                   :         :           :                
+VCCINT                       : Y15       : power  :                   : 1.2V    :           :                
+GND                          : Y16       : gnd    :                   :         :           :                
+Celda16[7]                   : Y17       : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y18       :        :                   :         : 4         :                
+Celda10[20]                  : Y19       : input  : 2.5 V             :         : 4         : N              
+Celda15[5]                   : Y20       : input  : 2.5 V             :         : 4         : N              
+CeldaC[10]                   : Y21       : input  : 2.5 V             :         : 4         : N              
+Celda11[7]                   : Y22       : input  : 2.5 V             :         : 5         : N              
+GND                          : Y23       : gnd    :                   :         :           :                
+VCCIO5                       : Y24       : power  :                   : 2.5V    : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y25       :        :                   :         : 5         :                
+GND                          : Y26       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y27       :        :                   :         : 5         :                
+CeldaA[11]                   : Y28       : input  : 2.5 V             :         : 5         : N              
+GND                          : Y29       : gnd    :                   :         :           :                
+Celda8[11]                   : Y30       : input  : 2.5 V             :         : 5         : N              
