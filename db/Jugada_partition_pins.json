@@ -1,0 +1,53 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "final_win",
+					"strict" : false
+				},
+				{
+					"name" : "Cambio",
+					"strict" : false
+				},
+				{
+					"name" : "err",
+					"strict" : false
+				},
+				{
+					"name" : "Verificacion",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "Win",
+					"strict" : false
+				},
+				{
+					"name" : "win3",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "POSenable",
+					"strict" : false
+				},
+				{
+					"name" : "Habilitada",
+					"strict" : false
+				},
+				{
+					"name" : "Boton",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

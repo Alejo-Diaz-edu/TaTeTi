@@ -1,0 +1,10 @@
+
+State Machine - |Jugada1|JugacionMachine:inst|fstate
+Name fstate.CambioJ fstate.Verificar fstate.Ganar fstate.Punto fstate.Marcar fstate.Error fstate.Idle 
+fstate.Idle 0 0 0 0 0 0 0 
+fstate.Error 0 0 0 0 0 1 1 
+fstate.Marcar 0 0 0 0 1 0 1 
+fstate.Punto 0 0 0 1 0 0 1 
+fstate.Ganar 0 0 1 0 0 0 1 
+fstate.Verificar 0 1 0 0 0 0 1 
+fstate.CambioJ 1 0 0 0 0 0 1 

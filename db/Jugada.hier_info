@@ -1,0 +1,43 @@
+|Jugada1
+final_win <= JugacionMachine:inst.final_win
+reset => JugacionMachine:inst.reset
+clock => JugacionMachine:inst.clock
+Boton => JugacionMachine:inst.Boton
+Win => JugacionMachine:inst.Win
+Habilitada => JugacionMachine:inst.Habilitada
+POSenable => JugacionMachine:inst.POSenable
+win3 => JugacionMachine:inst.win3
+Cambio <= JugacionMachine:inst.Cambio
+err <= JugacionMachine:inst.err
+Verificacion <= JugacionMachine:inst.Verificacion
+
+
+|Jugada1|JugacionMachine:inst
+reset => reg_fstate.Verificar.OUTPUTSELECT
+reset => reg_fstate.Error.OUTPUTSELECT
+reset => reg_fstate.Marcar.OUTPUTSELECT
+reset => reg_fstate.Punto.OUTPUTSELECT
+reset => reg_fstate.Ganar.OUTPUTSELECT
+reset => reg_fstate.Idle.OUTPUTSELECT
+reset => reg_fstate.CambioJ.OUTPUTSELECT
+reset => final_win.OUTPUTSELECT
+reset => Cambio.OUTPUTSELECT
+reset => err.OUTPUTSELECT
+reset => Verificacion.OUTPUTSELECT
+clock => fstate~1.DATAIN
+Boton => Selector0.IN3
+Boton => Selector1.IN2
+Win => process_1.IN0
+Win => reg_fstate.DATAB
+Win => Selector2.IN2
+Habilitada => process_1.IN0
+Habilitada => process_1.IN0
+POSenable => process_1.IN1
+POSenable => process_1.IN1
+win3 => process_1.IN1
+final_win <= final_win.DB_MAX_OUTPUT_PORT_TYPE
+Cambio <= Cambio.DB_MAX_OUTPUT_PORT_TYPE
+err <= err.DB_MAX_OUTPUT_PORT_TYPE
+Verificacion <= Verificacion.DB_MAX_OUTPUT_PORT_TYPE
+
+
