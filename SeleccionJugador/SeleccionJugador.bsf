@@ -20,9 +20,9 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 176 128)
+	(rect 16 16 200 160)
 	(text "SeleccionJugador" (rect 5 0 73 12)(font "Arial" ))
-	(text "inst" (rect 8 96 20 108)(font "Arial" ))
+	(text "inst" (rect 8 128 20 140)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -52,20 +52,27 @@ applicable agreement for further details.
 		(line (pt 0 80)(pt 16 80)(line_width 1))
 	)
 	(port
-		(pt 160 32)
-		(output)
-		(text "Jugador" (rect 0 0 31 12)(font "Arial" ))
-		(text "Jugador" (rect 108 27 139 39)(font "Arial" ))
-		(line (pt 160 32)(pt 144 32)(line_width 1))
+		(pt 0 96)
+		(input)
+		(text "JugadaValida" (rect 0 0 53 12)(font "Arial" ))
+		(text "JugadaValida" (rect 21 91 74 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 1))
 	)
 	(port
-		(pt 160 48)
+		(pt 184 32)
+		(output)
+		(text "Jugador" (rect 0 0 31 12)(font "Arial" ))
+		(text "Jugador" (rect 132 27 163 39)(font "Arial" ))
+		(line (pt 184 32)(pt 168 32)(line_width 1))
+	)
+	(port
+		(pt 184 48)
 		(output)
 		(text "Hab" (rect 0 0 16 12)(font "Arial" ))
-		(text "Hab" (rect 123 43 139 55)(font "Arial" ))
-		(line (pt 160 48)(pt 144 48)(line_width 1))
+		(text "Hab" (rect 147 43 163 55)(font "Arial" ))
+		(line (pt 184 48)(pt 168 48)(line_width 1))
 	)
 	(drawing
-		(rectangle (rect 16 16 144 96)(line_width 1))
+		(rectangle (rect 16 16 168 128)(line_width 1))
 	)
 )

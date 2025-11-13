@@ -1,5 +1,5 @@
 Analysis & Synthesis report for SeleccionJugador
-Thu Nov 13 15:15:39 2025
+Thu Nov 13 17:14:18 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -13,10 +13,11 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. State Machine - |PruebaSeleccion|ModuloSeleccionJugador:inst|SeleccionJugador:inst|fstate
+  8. State Machine - |SeleccionJugador|fstate
   9. General Register Statistics
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -42,16 +43,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Nov 13 15:15:39 2025           ;
+; Analysis & Synthesis Status        ; Successful - Thu Nov 13 17:14:18 2025           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; SeleccionJugador                                ;
-; Top-level Entity Name              ; PruebaSeleccion                                 ;
+; Top-level Entity Name              ; SeleccionJugador                                ;
 ; Family                             ; Cyclone IV E                                    ;
 ; Total logic elements               ; 11                                              ;
 ;     Total combinational functions  ; 11                                              ;
 ;     Dedicated logic registers      ; 4                                               ;
 ; Total registers                    ; 4                                               ;
-; Total pins                         ; 9                                               ;
+; Total pins                         ; 7                                               ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -65,7 +66,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP4CE22F17C6       ;                    ;
-; Top-level entity name                                                      ; PruebaSeleccion    ; SeleccionJugador   ;
+; Top-level entity name                                                      ; SeleccionJugador   ; SeleccionJugador   ;
 ; Family name                                                                ; Cyclone IV E       ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -157,15 +158,13 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                      ; Library ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------+---------+
-; SeleccionJugador.vhd             ; yes             ; User VHDL File                     ; C:/Users/Administrador/Desktop/TaTeTi/SeleccionJugador/SeleccionJugador.vhd       ;         ;
-; ModuloSeleccionJugador.bdf       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Administrador/Desktop/TaTeTi/SeleccionJugador/ModuloSeleccionJugador.bdf ;         ;
-; PruebaSeleccion.bdf              ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Administrador/Desktop/TaTeTi/SeleccionJugador/PruebaSeleccion.bdf        ;         ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                       ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                ; Library ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------+---------+
+; SeleccionJugador.vhd             ; yes             ; User VHDL File  ; C:/Users/Administrador/Desktop/TaTeTi/SeleccionJugador/SeleccionJugador.vhd ;         ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -177,9 +176,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;                                             ;             ;
 ; Total combinational functions               ; 11          ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 5           ;
-;     -- 3 input functions                    ; 5           ;
-;     -- <=2 input functions                  ; 1           ;
+;     -- 4 input functions                    ; 6           ;
+;     -- 3 input functions                    ; 3           ;
+;     -- <=2 input functions                  ; 2           ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
 ;     -- normal mode                          ; 11          ;
@@ -189,38 +188,36 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;     -- Dedicated logic registers            ; 4           ;
 ;     -- I/O registers                        ; 0           ;
 ;                                             ;             ;
-; I/O pins                                    ; 9           ;
+; I/O pins                                    ; 7           ;
 ; Embedded Multiplier 9-bit elements          ; 0           ;
 ; Maximum fan-out node                        ; reset~input ;
 ; Maximum fan-out                             ; 6           ;
-; Total fan-out                               ; 56          ;
-; Average fan-out                             ; 1.70        ;
+; Total fan-out                               ; 54          ;
+; Average fan-out                             ; 1.86        ;
 +---------------------------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                              ;
-+----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node       ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                ; Library Name ;
-+----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------+--------------+
-; |PruebaSeleccion                 ; 11 (0)            ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 9    ; 0            ; |PruebaSeleccion                                                   ; work         ;
-;    |ModuloSeleccionJugador:inst| ; 11 (0)            ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PruebaSeleccion|ModuloSeleccionJugador:inst                       ; work         ;
-;       |SeleccionJugador:inst|    ; 11 (11)           ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PruebaSeleccion|ModuloSeleccionJugador:inst|SeleccionJugador:inst ; work         ;
-+----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+; |SeleccionJugador          ; 11 (11)           ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 7    ; 0            ; |SeleccionJugador   ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
 Encoding Type:  One-Hot
-+-------------------------------------------------------------------------------------------+
-; State Machine - |PruebaSeleccion|ModuloSeleccionJugador:inst|SeleccionJugador:inst|fstate ;
-+-----------------+-----------------+-----------------+----------------+--------------------+
-; Name            ; fstate.Oscioso1 ; fstate.Oscioso2 ; fstate.JuegaP2 ; fstate.JuegaP1     ;
-+-----------------+-----------------+-----------------+----------------+--------------------+
-; fstate.JuegaP1  ; 0               ; 0               ; 0              ; 0                  ;
-; fstate.JuegaP2  ; 0               ; 0               ; 1              ; 1                  ;
-; fstate.Oscioso2 ; 0               ; 1               ; 0              ; 1                  ;
-; fstate.Oscioso1 ; 1               ; 0               ; 0              ; 1                  ;
-+-----------------+-----------------+-----------------+----------------+--------------------+
++---------------------------------------------------------------------------------------+
+; State Machine - |SeleccionJugador|fstate                                              ;
++-----------------+-----------------+-----------------+----------------+----------------+
+; Name            ; fstate.Oscioso1 ; fstate.Oscioso2 ; fstate.JuegaP2 ; fstate.JuegaP1 ;
++-----------------+-----------------+-----------------+----------------+----------------+
+; fstate.JuegaP1  ; 0               ; 0               ; 0              ; 0              ;
+; fstate.JuegaP2  ; 0               ; 0               ; 1              ; 1              ;
+; fstate.Oscioso2 ; 0               ; 1               ; 0              ; 1              ;
+; fstate.Oscioso1 ; 1               ; 0               ; 0              ; 1              ;
++-----------------+-----------------+-----------------+----------------+----------------+
 
 
 +------------------------------------------------------+
@@ -238,6 +235,15 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 
 
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |SeleccionJugador|reg_fstate ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
+
+
 +-------------------------------+
 ; Elapsed Time Per Partition    ;
 +----------------+--------------+
@@ -253,7 +259,7 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Nov 13 15:15:36 2025
+    Info: Processing started: Thu Nov 13 17:14:16 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SeleccionJugador -c SeleccionJugador
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file seleccionjugador.vhd
@@ -266,20 +272,18 @@ Info (12021): Found 2 design units, including 1 entities, in source file selecci
     Info (12023): Found entity 1: SeleccionadorJugador
 Info (12021): Found 1 design units, including 1 entities, in source file pruebaseleccion.bdf
     Info (12023): Found entity 1: PruebaSeleccion
-Info (12127): Elaborating entity "PruebaSeleccion" for the top level hierarchy
-Info (12128): Elaborating entity "ModuloSeleccionJugador" for hierarchy "ModuloSeleccionJugador:inst"
-Info (12128): Elaborating entity "SeleccionJugador" for hierarchy "ModuloSeleccionJugador:inst|SeleccionJugador:inst"
+Info (12127): Elaborating entity "SeleccionJugador" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 20 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 7 input pins
+Info (21057): Implemented 18 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 5 input pins
     Info (21059): Implemented 2 output pins
     Info (21061): Implemented 11 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4623 megabytes
-    Info: Processing ended: Thu Nov 13 15:15:39 2025
-    Info: Elapsed time: 00:00:03
+    Info: Processing ended: Thu Nov 13 17:14:18 2025
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
 

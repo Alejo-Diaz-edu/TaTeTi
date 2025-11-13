@@ -71,7 +71,7 @@ applicable agreement for further details.
 	(input)
 	(rect 48 208 216 224)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "in3" (rect 5 0 20 12)(font "Arial" ))
+	(text "in3" (rect 5 0 19 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -87,7 +87,7 @@ applicable agreement for further details.
 	(input)
 	(rect 48 240 216 256)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "in2" (rect 5 0 20 12)(font "Arial" ))
+	(text "in2" (rect 5 0 19 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -103,7 +103,7 @@ applicable agreement for further details.
 	(input)
 	(rect 48 272 216 288)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "in1" (rect 5 0 20 12)(font "Arial" ))
+	(text "in1" (rect 5 0 19 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -119,7 +119,23 @@ applicable agreement for further details.
 	(input)
 	(rect 48 304 216 320)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "in0" (rect 5 0 20 12)(font "Arial" ))
+	(text "in0" (rect 5 0 19 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 48 168 216 184)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "JugadaValida" (rect 5 0 69 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -133,7 +149,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 704 120 880 136)
+	(rect 728 120 904 136)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "Jugador" (rect 90 0 128 12)(font "Arial" ))
 	(pt 0 8)
@@ -149,7 +165,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 704 136 880 152)
+	(rect 728 136 904 152)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "Hab" (rect 90 0 110 12)(font "Arial" ))
 	(pt 0 8)
@@ -312,9 +328,9 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 520 96 680 208)
+	(rect 520 96 704 240)
 	(text "SeleccionJugador" (rect 5 0 91 12)(font "Arial" ))
-	(text "inst" (rect 8 96 25 108)(font "Arial" ))
+	(text "inst" (rect 8 128 25 140)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -344,21 +360,28 @@ applicable agreement for further details.
 		(line (pt 0 80)(pt 16 80))
 	)
 	(port
-		(pt 160 32)
-		(output)
-		(text "Jugador" (rect 0 0 38 12)(font "Arial" ))
-		(text "Jugador" (rect 107 27 145 39)(font "Arial" ))
-		(line (pt 160 32)(pt 144 32))
+		(pt 0 96)
+		(input)
+		(text "JugadaValida" (rect 0 0 64 12)(font "Arial" ))
+		(text "JugadaValida" (rect 21 91 85 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96))
 	)
 	(port
-		(pt 160 48)
+		(pt 184 32)
+		(output)
+		(text "Jugador" (rect 0 0 38 12)(font "Arial" ))
+		(text "Jugador" (rect 131 27 163 39)(font "Arial" ))
+		(line (pt 184 32)(pt 168 32))
+	)
+	(port
+		(pt 184 48)
 		(output)
 		(text "Hab" (rect 0 0 20 12)(font "Arial" ))
-		(text "Hab" (rect 123 43 143 55)(font "Arial" ))
-		(line (pt 160 48)(pt 144 48))
+		(text "Hab" (rect 147 43 163 55)(font "Arial" ))
+		(line (pt 184 48)(pt 168 48))
 	)
 	(drawing
-		(rectangle (rect 16 16 144 96))
+		(rectangle (rect 16 16 168 128))
 	)
 )
 (connector
@@ -450,14 +473,6 @@ applicable agreement for further details.
 	(pt 456 264)
 )
 (connector
-	(pt 704 128)
-	(pt 680 128)
-)
-(connector
-	(pt 680 144)
-	(pt 704 144)
-)
-(connector
 	(pt 216 160)
 	(pt 520 160)
 )
@@ -472,4 +487,24 @@ applicable agreement for further details.
 (connector
 	(pt 216 216)
 	(pt 240 216)
+)
+(connector
+	(pt 704 144)
+	(pt 728 144)
+)
+(connector
+	(pt 704 128)
+	(pt 728 128)
+)
+(connector
+	(pt 216 176)
+	(pt 432 176)
+)
+(connector
+	(pt 432 176)
+	(pt 432 192)
+)
+(connector
+	(pt 520 192)
+	(pt 432 192)
 )
