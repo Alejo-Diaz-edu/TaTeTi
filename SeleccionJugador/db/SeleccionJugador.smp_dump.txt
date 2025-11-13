@@ -1,0 +1,7 @@
+
+State Machine - |ModuloSeleccionJugador|SeleccionJugador:inst|fstate
+Name fstate.Oscioso1 fstate.Oscioso2 fstate.JuegaP2 fstate.JuegaP1 
+fstate.JuegaP1 0 0 0 0 
+fstate.JuegaP2 0 0 1 1 
+fstate.Oscioso2 0 1 0 1 
+fstate.Oscioso1 1 0 0 1 
