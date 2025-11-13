@@ -2,64 +2,220 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'CLK'
-Slack : 0.296
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Hold 'CLK'
-Slack : 0.358
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Recovery 'CLK'
-Slack : -0.609
-TNS   : -1.175
-
-Type  : Slow 1200mV 85C Model Removal 'CLK'
-Slack : 1.148
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Jugador1_led1'
 Slack : -3.000
-TNS   : -5.000
+TNS   : -4.000
 
-Type  : Slow 1200mV 0C Model Setup 'CLK'
-Slack : 0.378
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold 'CLK'
-Slack : 0.312
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Recovery 'CLK'
-Slack : -0.443
-TNS   : -0.847
-
-Type  : Slow 1200mV 0C Model Removal 'CLK'
-Slack : 1.031
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Jugador1_led2'
 Slack : -3.000
-TNS   : -5.000
+TNS   : -4.000
 
-Type  : Fast 1200mV 0C Model Setup 'CLK'
-Slack : 0.600
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'CLK'
-Slack : 0.186
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Recovery 'CLK'
-Slack : 0.092
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Removal 'CLK'
-Slack : 0.631
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Jugador1_led3'
 Slack : -3.000
-TNS   : -5.112
+TNS   : -4.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Jugador1_led4'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Jugador1_led5'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Jugador1_led6'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Jugador1_led7'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Jugador1_led8'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Jugador1_led9'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ocupado1'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ocupado2'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ocupado3'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ocupado4'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ocupado5'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ocupado6'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ocupado7'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ocupado8'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ocupado9'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Jugador1_led1'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Jugador1_led2'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Jugador1_led3'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Jugador1_led4'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Jugador1_led5'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Jugador1_led6'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Jugador1_led7'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Jugador1_led8'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Jugador1_led9'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ocupado1'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ocupado2'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ocupado3'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ocupado4'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ocupado5'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ocupado6'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ocupado7'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ocupado8'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ocupado9'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Jugador1_led3'
+Slack : -3.000
+TNS   : -4.110
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Jugador1_led6'
+Slack : -3.000
+TNS   : -4.109
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ocupado3'
+Slack : -3.000
+TNS   : -4.105
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Jugador1_led7'
+Slack : -3.000
+TNS   : -4.099
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Jugador1_led8'
+Slack : -3.000
+TNS   : -4.099
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Jugador1_led9'
+Slack : -3.000
+TNS   : -4.099
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ocupado6'
+Slack : -3.000
+TNS   : -4.099
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ocupado9'
+Slack : -3.000
+TNS   : -4.095
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Jugador1_led5'
+Slack : -3.000
+TNS   : -4.094
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ocupado2'
+Slack : -3.000
+TNS   : -4.087
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ocupado4'
+Slack : -3.000
+TNS   : -4.087
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Jugador1_led4'
+Slack : -3.000
+TNS   : -4.086
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ocupado5'
+Slack : -3.000
+TNS   : -4.083
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ocupado8'
+Slack : -3.000
+TNS   : -4.083
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ocupado1'
+Slack : -3.000
+TNS   : -4.075
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ocupado7'
+Slack : -3.000
+TNS   : -4.072
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Jugador1_led2'
+Slack : -3.000
+TNS   : -4.068
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Jugador1_led1'
+Slack : -3.000
+TNS   : -4.038
 
 ------------------------------------------------------------

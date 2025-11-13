@@ -4,11 +4,11 @@ K3
 cModel Technology
 Z0 dC:\Users\toni\Desktop\Laboratorio\almacenamiento de jugada\simulation\qsim
 vAlmace1
-Z1 !s100 ;I3mRFYYB];C>BY^fFW`_1
-Z2 Ini7`<_D;z:U4k9M274<L12
-Z3 V?0>^=PEB]T12AVFBa1CF92
-Z4 dC:\Users\toni\Desktop\TATETI\Sub-sistema_3\almacenamiento de jugada\simulation\qsim
-Z5 w1762715961
+Z1 !s100 b__g;P_LNh45OY5[[Ei3U2
+Z2 ILSLDg>RVm>CmhemldOFFg1
+Z3 VnS:<>88D5ahVicJK`IK_A1
+Z4 dC:\Users\toni\Desktop\Proyecto_tateti\TaTeTi\almacenamiento de jugada\simulation\qsim
+Z5 w1762958233
 Z6 8jugadas.vo
 Z7 Fjugadas.vo
 L0 31
@@ -18,36 +18,35 @@ r1
 Z9 !s90 -work|work|jugadas.vo|
 Z10 o-work work -O0
 Z11 n@almace1
+Z12 !s108 1762958234.581000
+Z13 !s107 jugadas.vo|
 !i10b 1
 !s85 0
-Z12 !s108 1762715962.286000
-Z13 !s107 jugadas.vo|
 !s101 -O0
 vAlmace1_vlg_check_tst
-!i10b 1
-Z14 !s100 b2CJ2hNBEzX5m<k80=ZCK0
-Z15 I^nX?fY01JmeD5J`@Z8mi>3
+Z14 !s100 `P`jJ]f:eBQdg^elF6Pe;2
+Z15 IfBS:zKzZG7OAz=H;7h=1h0
 Z16 VZK40NP8Qj4D:<aAai]5b22
 R4
-Z17 w1762715959
+Z17 w1762958231
 Z18 8jugadas.vt
 Z19 Fjugadas.vt
-L0 65
+L0 63
 R8
 r1
-!s85 0
 31
-Z20 !s108 1762715962.438000
+Z20 !s108 1762958234.786000
 Z21 !s107 jugadas.vt|
 Z22 !s90 -work|work|jugadas.vt|
-!s101 -O0
 R10
 Z23 n@almace1_vlg_check_tst
-vAlmace1_vlg_sample_tst
 !i10b 1
-Z24 !s100 [ZieiYSaM_^ca=eH<cB9N0
-Z25 I^4mP0I?]i=L2jVzi@HW800
-Z26 V=Njd3DP_4P[Reo?WiKBPL0
+!s85 0
+!s101 -O0
+vAlmace1_vlg_sample_tst
+Z24 !s100 H208Wb?Qa`[8mWU6g`E2H1
+Z25 Ij:iDo>L`^Poe92PZATZjH3
+Z26 VnKVfnQ=^=>dJU>hg1nakF2
 R4
 R17
 R18
@@ -55,39 +54,41 @@ R19
 L0 29
 R8
 r1
-!s85 0
 31
 R20
 R21
 R22
-!s101 -O0
 R10
 Z27 n@almace1_vlg_sample_tst
-vAlmace1_vlg_vec_tst
 !i10b 1
-!s100 KfK00R5O_chRh5Q6lj]2D3
-I8C@<8O7L03LaNH`mmnAN70
-Z28 V89i@InSez4L=j0@MDdC:E0
+!s85 0
+!s101 -O0
+vAlmace1_vlg_vec_tst
+Z28 IE^d]_oGEZ5CzD2:3d^GoW1
+Z29 V89i@InSez4L=j0@MDdC:E0
 R4
 R17
 R18
 R19
-Z29 L0 214
+Z30 L0 212
 R8
 r1
-!s85 0
 31
 R20
 R21
 R22
-!s101 -O0
 R10
-Z30 n@almace1_vlg_vec_tst
-vdemux1a2
-Z31 IO_LUI2]V;TmDWH0II>fEV1
-Z32 VBECPTZ4mDNdPX_F;zQfLT2
+Z31 n@almace1_vlg_vec_tst
+Z32 !s100 ^@j9AXYM9JAB@ze7GU;Ri3
+!i10b 1
+!s85 0
+!s101 -O0
+vAlmace2
+Z33 !s100 5iT9DYhC6gRYM8ICk9ZQ:0
+Z34 Ih_jOZgYdWaU2F<T^P46B`3
+Z35 VUiifaKSQJ8U5cmChEkh850
 R4
-Z33 w1762711410
+Z36 w1762961390
 R6
 R7
 L0 31
@@ -96,74 +97,153 @@ r1
 31
 R9
 R10
-Z34 !s100 NKiROQk@@9=_MhdZ<>^je0
-Z35 !s108 1762711411.759000
+Z37 n@almace2
+Z38 !s108 1762961391.727000
+R13
+!i10b 1
+!s85 0
+!s101 -O0
+vAlmace2_vlg_check_tst
+Z39 !s100 YDSKIkP;lQI?hI@B1:=UJ1
+Z40 IC`QI71>_1MQU`SN4zS@:W1
+Z41 V<7OOgaIgMXi3aR0C2gOER3
+R4
+Z42 w1762961388
+R18
+R19
+L0 65
+R8
+r1
+31
+Z43 !s108 1762961391.945000
+R21
+R22
+R10
+Z44 n@almace2_vlg_check_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vAlmace2_vlg_sample_tst
+Z45 !s100 IjPz4aTY>[8`PDFlzmiM[2
+Z46 IaD88g42CSm@5`9mlWWi[A1
+Z47 VFc7iQ:>kdhmYRO0:gOeoi3
+R4
+R42
+R18
+R19
+L0 29
+R8
+r1
+31
+R43
+R21
+R22
+R10
+Z48 n@almace2_vlg_sample_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vAlmace2_vlg_vec_tst
+Z49 IS[3OJ;658MiRoo1USD2K32
+Z50 VT9gS1DcfOUXZk^4UNT1323
+R4
+R42
+R18
+R19
+Z51 L0 214
+R8
+r1
+31
+R43
+R21
+R22
+R10
+Z52 n@almace2_vlg_vec_tst
+Z53 !s100 UeK0zHOR^HhbPjA<F9Y]22
+!i10b 1
+!s85 0
+!s101 -O0
+vdemux1a2
+Z54 IO_LUI2]V;TmDWH0II>fEV1
+Z55 VBECPTZ4mDNdPX_F;zQfLT2
+Z56 dC:\Users\toni\Desktop\TATETI\Sub-sistema_3\almacenamiento de jugada\simulation\qsim
+Z57 w1762711410
+R6
+R7
+L0 31
+R8
+r1
+31
+R9
+R10
+Z58 !s100 NKiROQk@@9=_MhdZ<>^je0
+Z59 !s108 1762711411.759000
 R13
 !i10b 1
 !s85 0
 !s101 -O0
 vdemux1a2_vlg_check_tst
-Z36 IKf@RIkKQjN>1z=h6alml]1
-Z37 VW[e`GFB5jdn9Tbb<2]zD31
-R4
-Z38 w1762711409
+Z60 IKf@RIkKQjN>1z=h6alml]1
+Z61 VW[e`GFB5jdn9Tbb<2]zD31
+R56
+Z62 w1762711409
 R18
 R19
 L0 59
 R8
 r1
 31
-Z39 !s108 1762711411.932000
-Z40 !s107 jugadas.vt|
+Z63 !s108 1762711411.932000
+R21
 R22
 R10
-Z41 !s100 L2cf5@ASh`ZnNa9B3Gz1L2
+Z64 !s100 L2cf5@ASh`ZnNa9B3Gz1L2
 !i10b 1
 !s85 0
 !s101 -O0
 vdemux1a2_vlg_sample_tst
-Z42 I29G>H2dGGL]:OR@R2M66J1
-Z43 VFBo0[^d>9bSeM16knH@jm2
-R4
-R38
+Z65 I29G>H2dGGL]:OR@R2M66J1
+Z66 VFBo0[^d>9bSeM16knH@jm2
+R56
+R62
 R18
 R19
 L0 29
 R8
 r1
 31
-R39
-R40
+R63
+R21
 R22
 R10
-Z44 !s100 X;C?;@0YUoJo9:1FQ;gj[2
+Z67 !s100 X;C?;@0YUoJo9:1FQ;gj[2
 !i10b 1
 !s85 0
 !s101 -O0
 vdemux1a2_vlg_vec_tst
-Z45 IZQSg4bUM1=i1o9_gaeX7L2
-Z46 V:A1SE=4<V]dCAedeznkFj2
-R4
-R38
+Z68 IZQSg4bUM1=i1o9_gaeX7L2
+Z69 V:A1SE=4<V]dCAedeznkFj2
+R56
+R62
 R18
 R19
-Z47 L0 181
+Z70 L0 181
 R8
 r1
 31
-R39
-R40
+R63
+R21
 R22
 R10
-Z48 !s100 UXnzV=l@4hQ_ocbozF2T91
+Z71 !s100 UXnzV=l@4hQ_ocbozF2T91
 !i10b 1
 !s85 0
 !s101 -O0
 vjugadas_full
-Z49 If??iP>eT4J7kzI@c`2_6a2
-Z50 VTIJC6D58]a_i<SCI?BBQU2
-R4
-Z51 w1762700167
+Z72 If??iP>eT4J7kzI@c`2_6a2
+Z73 VTIJC6D58]a_i<SCI?BBQU2
+R56
+Z74 w1762700167
 R6
 R7
 L0 31
@@ -172,66 +252,142 @@ r1
 31
 R9
 R10
-Z52 !s100 M0mmYZHAH4n<kPPaNR?Oa1
-Z53 !s108 1762700168.731000
+Z75 !s100 M0mmYZHAH4n<kPPaNR?Oa1
+Z76 !s108 1762700168.731000
 R13
 !i10b 1
 !s85 0
 !s101 -O0
 vjugadas_full_vlg_check_tst
-Z54 ILbRE9A:Qe1SR2PfZ[mh7l3
-Z55 V9bjO;^`FVh2H1@L6V6R]m3
-R4
-Z56 w1762700166
+Z77 ILbRE9A:Qe1SR2PfZ[mh7l3
+Z78 V9bjO;^`FVh2H1@L6V6R]m3
+R56
+Z79 w1762700166
 R18
 R19
 L0 65
 R8
 r1
 31
-Z57 !s108 1762700168.887000
-R40
+Z80 !s108 1762700168.887000
+R21
 R22
 R10
-Z58 !s100 JYB8X8TGCT]bk>9b;?5^P2
+Z81 !s100 JYB8X8TGCT]bk>9b;?5^P2
 !i10b 1
 !s85 0
 !s101 -O0
 vjugadas_full_vlg_sample_tst
-Z59 Ib7LnnSWIzYM?FH8lPZ82b0
-Z60 VZn591728N@PJEM0EZ39I73
-R4
+Z82 Ib7LnnSWIzYM?FH8lPZ82b0
+Z83 VZn591728N@PJEM0EZ39I73
 R56
+R79
 R18
 R19
 L0 29
 R8
 r1
 31
-R57
-R40
+R80
+R21
 R22
 R10
-Z61 !s100 h07m7Qz7cZd2Ob0d<mla=0
+Z84 !s100 h07m7Qz7cZd2Ob0d<mla=0
 !i10b 1
 !s85 0
 !s101 -O0
 vjugadas_full_vlg_vec_tst
-Z62 Izo=Mi_hXhJo1G@lS:F1X@0
-Z63 VoPozbW9C[G0k7R0W3NPQe3
-R4
+Z85 Izo=Mi_hXhJo1G@lS:F1X@0
+Z86 VoPozbW9C[G0k7R0W3NPQe3
 R56
+R79
 R18
 R19
-Z64 L0 187
+Z87 L0 187
 R8
 r1
 31
-R57
-R40
+R80
+R21
 R22
 R10
-Z65 !s100 2Ci<=O0kb_?iEE;4:k@D60
+Z88 !s100 2Ci<=O0kb_?iEE;4:k@D60
 !i10b 1
 !s85 0
 !s101 -O0
+vleds
+Z89 !s100 Vd;lYcJ0eS0S;@o7:zgGP1
+Z90 IIdc?gC;cgUOAgF@BhL=ia3
+Z91 VzG_UTYH015b1OQR1YWmaR1
+R4
+Z92 w1762999916
+R6
+R7
+L0 31
+R8
+r1
+31
+R9
+R10
+!i10b 1
+!s85 0
+Z93 !s108 1762999917.344000
+R13
+!s101 -O0
+vleds_vlg_check_tst
+!i10b 1
+Z94 !s100 DfLJ76JABAUW]g5_Ga>YK1
+Z95 Ice:2f_N1><MzP9P^UDc::1
+Z96 VFgB_jS99QGDYFg:?QF7n@2
+R4
+Z97 w1762999914
+R18
+R19
+Z98 L0 113
+R8
+r1
+!s85 0
+31
+Z99 !s108 1762999917.531000
+Z100 !s107 jugadas.vt|
+R22
+!s101 -O0
+R10
+vleds_vlg_sample_tst
+!i10b 1
+Z101 !s100 =]PfM2XW5]ZmGBV2[]=7G0
+Z102 IzZFolaQSn1L6j3M>GXMcW1
+Z103 VTgm5U9[3:O2d4e>D6l]LL0
+R4
+R97
+R18
+R19
+L0 29
+R8
+r1
+!s85 0
+31
+R99
+R100
+R22
+!s101 -O0
+R10
+vleds_vlg_vec_tst
+!i10b 1
+!s100 A[9b_f^A4T]8LM8Q;eITz3
+I@d?:Y:[FGH_Cfj=^JO<0U0
+Z104 VU5LAQgT1NS9?b11K74_OL2
+R4
+R97
+R18
+R19
+Z105 L0 478
+R8
+r1
+!s85 0
+31
+R99
+R100
+R22
+!s101 -O0
+R10

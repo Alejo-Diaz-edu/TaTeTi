@@ -18,32 +18,80 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "11/09/2025 16:19:19"
+// Generated on "11/12/2025 23:11:54"
                                                                         
-// Verilog Self-Checking Test Bench (with test vectors) for design :    Almace1
+// Verilog Self-Checking Test Bench (with test vectors) for design :    leds
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module Almace1_vlg_sample_tst(
-	CLK,
-	IN_1,
-	IN_2,
-	RESET_1,
-	RESET_2,
+module leds_vlg_sample_tst(
+	Jugador1_led1,
+	Jugador1_led2,
+	Jugador1_led3,
+	Jugador1_led4,
+	Jugador1_led5,
+	Jugador1_led6,
+	Jugador1_led7,
+	Jugador1_led8,
+	Jugador1_led9,
+	Jugador2_led1,
+	Jugador2_led2,
+	Jugador2_led3,
+	Jugador2_led4,
+	Jugador2_led5,
+	Jugador2_led6,
+	Jugador2_led7,
+	Jugador2_led8,
+	Jugador2_led9,
+	ocupado1,
+	ocupado2,
+	ocupado3,
+	ocupado4,
+	ocupado5,
+	ocupado6,
+	ocupado7,
+	ocupado8,
+	ocupado9,
+	reset_jugador,
+	reset_sig_jugador,
 	sampler_tx
 );
-input  CLK;
-input  IN_1;
-input  IN_2;
-input  RESET_1;
-input  RESET_2;
+input  Jugador1_led1;
+input  Jugador1_led2;
+input  Jugador1_led3;
+input  Jugador1_led4;
+input  Jugador1_led5;
+input  Jugador1_led6;
+input  Jugador1_led7;
+input  Jugador1_led8;
+input  Jugador1_led9;
+input  Jugador2_led1;
+input  Jugador2_led2;
+input  Jugador2_led3;
+input  Jugador2_led4;
+input  Jugador2_led5;
+input  Jugador2_led6;
+input  Jugador2_led7;
+input  Jugador2_led8;
+input  Jugador2_led9;
+input  ocupado1;
+input  ocupado2;
+input  ocupado3;
+input  ocupado4;
+input  ocupado5;
+input  ocupado6;
+input  ocupado7;
+input  ocupado8;
+input  ocupado9;
+input  reset_jugador;
+input  reset_sig_jugador;
 output sampler_tx;
 
 reg sample;
 time current_time;
-always @(CLK or IN_1 or IN_2 or RESET_1 or RESET_2)
+always @(Jugador1_led1 or Jugador1_led2 or Jugador1_led3 or Jugador1_led4 or Jugador1_led5 or Jugador1_led6 or Jugador1_led7 or Jugador1_led8 or Jugador1_led9 or Jugador2_led1 or Jugador2_led2 or Jugador2_led3 or Jugador2_led4 or Jugador2_led5 or Jugador2_led6 or Jugador2_led7 or Jugador2_led8 or Jugador2_led9 or ocupado1 or ocupado2 or ocupado3 or ocupado4 or ocupado5 or ocupado6 or ocupado7 or ocupado8 or ocupado9 or reset_jugador or reset_sig_jugador)
                                                                                 
 begin                                                 
  if ($realtime > 0)                                   
@@ -62,39 +110,87 @@ end
 assign sampler_tx = sample;
 endmodule
 
-module Almace1_vlg_check_tst (
-	JUGADOR_1,
-	JUGADOR_2_IA,
-	ocupado,
+module leds_vlg_check_tst (
+	Jugada_valida,
+	Led1,
+	Led2,
+	Led3,
+	Led4,
+	Led5,
+	Led6,
+	Led7,
+	Led8,
+	Led9,
+	Reset_de_ocupado,
 	sampler_rx
 );
-input  JUGADOR_1;
-input  JUGADOR_2_IA;
-input  ocupado;
+input  Jugada_valida;
+input  Led1;
+input  Led2;
+input  Led3;
+input  Led4;
+input  Led5;
+input  Led6;
+input  Led7;
+input  Led8;
+input  Led9;
+input  Reset_de_ocupado;
 input sampler_rx;
 
-reg  JUGADOR_1_expected;
-reg  JUGADOR_2_IA_expected;
-reg  ocupado_expected;
+reg  Jugada_valida_expected;
+reg  Led1_expected;
+reg  Led2_expected;
+reg  Led3_expected;
+reg  Led4_expected;
+reg  Led5_expected;
+reg  Led6_expected;
+reg  Led7_expected;
+reg  Led8_expected;
+reg  Led9_expected;
+reg  Reset_de_ocupado_expected;
 
-reg  JUGADOR_1_prev;
-reg  JUGADOR_2_IA_prev;
-reg  ocupado_prev;
+reg  Jugada_valida_prev;
+reg  Led1_prev;
+reg  Led2_prev;
+reg  Led3_prev;
+reg  Led4_prev;
+reg  Led5_prev;
+reg  Led6_prev;
+reg  Led7_prev;
+reg  Led8_prev;
+reg  Led9_prev;
+reg  Reset_de_ocupado_prev;
 
-reg  JUGADOR_1_expected_prev;
-reg  JUGADOR_2_IA_expected_prev;
-reg  ocupado_expected_prev;
+reg  Jugada_valida_expected_prev;
+reg  Led1_expected_prev;
+reg  Led2_expected_prev;
+reg  Led3_expected_prev;
+reg  Led4_expected_prev;
+reg  Led5_expected_prev;
+reg  Led6_expected_prev;
+reg  Led7_expected_prev;
+reg  Led8_expected_prev;
+reg  Led9_expected_prev;
+reg  Reset_de_ocupado_expected_prev;
 
-reg  last_JUGADOR_1_exp;
-reg  last_JUGADOR_2_IA_exp;
-reg  last_ocupado_exp;
+reg  last_Jugada_valida_exp;
+reg  last_Led1_exp;
+reg  last_Led2_exp;
+reg  last_Led3_exp;
+reg  last_Led4_exp;
+reg  last_Led5_exp;
+reg  last_Led6_exp;
+reg  last_Led7_exp;
+reg  last_Led8_exp;
+reg  last_Led9_exp;
+reg  last_Reset_de_ocupado_exp;
 
 reg trigger;
 
 integer i;
 integer nummismatches;
 
-reg [1:3] on_first_change ;
+reg [1:11] on_first_change ;
 
 
 initial
@@ -102,48 +198,112 @@ begin
 trigger = 0;
 i = 0;
 nummismatches = 0;
-on_first_change = 3'b1;
+on_first_change = 11'b1;
 end
 
 // update real /o prevs
 
 always @(trigger)
 begin
-	JUGADOR_1_prev = JUGADOR_1;
-	JUGADOR_2_IA_prev = JUGADOR_2_IA;
-	ocupado_prev = ocupado;
+	Jugada_valida_prev = Jugada_valida;
+	Led1_prev = Led1;
+	Led2_prev = Led2;
+	Led3_prev = Led3;
+	Led4_prev = Led4;
+	Led5_prev = Led5;
+	Led6_prev = Led6;
+	Led7_prev = Led7;
+	Led8_prev = Led8;
+	Led9_prev = Led9;
+	Reset_de_ocupado_prev = Reset_de_ocupado;
 end
 
 // update expected /o prevs
 
 always @(trigger)
 begin
-	JUGADOR_1_expected_prev = JUGADOR_1_expected;
-	JUGADOR_2_IA_expected_prev = JUGADOR_2_IA_expected;
-	ocupado_expected_prev = ocupado_expected;
+	Jugada_valida_expected_prev = Jugada_valida_expected;
+	Led1_expected_prev = Led1_expected;
+	Led2_expected_prev = Led2_expected;
+	Led3_expected_prev = Led3_expected;
+	Led4_expected_prev = Led4_expected;
+	Led5_expected_prev = Led5_expected;
+	Led6_expected_prev = Led6_expected;
+	Led7_expected_prev = Led7_expected;
+	Led8_expected_prev = Led8_expected;
+	Led9_expected_prev = Led9_expected;
+	Reset_de_ocupado_expected_prev = Reset_de_ocupado_expected;
 end
 
 
 
-// expected JUGADOR_1
+// expected Jugada_valida
 initial
 begin
-	JUGADOR_1_expected = 1'bX;
+	Jugada_valida_expected = 1'bX;
 end 
 
-// expected JUGADOR_2_IA
+// expected Led1
 initial
 begin
-	JUGADOR_2_IA_expected = 1'bX;
+	Led1_expected = 1'bX;
 end 
 
-// expected ocupado
+// expected Led2
 initial
 begin
-	ocupado_expected = 1'bX;
+	Led2_expected = 1'bX;
+end 
+
+// expected Led3
+initial
+begin
+	Led3_expected = 1'bX;
+end 
+
+// expected Led4
+initial
+begin
+	Led4_expected = 1'bX;
+end 
+
+// expected Led5
+initial
+begin
+	Led5_expected = 1'bX;
+end 
+
+// expected Led6
+initial
+begin
+	Led6_expected = 1'bX;
+end 
+
+// expected Led7
+initial
+begin
+	Led7_expected = 1'bX;
+end 
+
+// expected Led8
+initial
+begin
+	Led8_expected = 1'bX;
+end 
+
+// expected Led9
+initial
+begin
+	Led9_expected = 1'bX;
+end 
+
+// expected Reset_de_ocupado
+initial
+begin
+	Reset_de_ocupado_expected = 1'bX;
 end 
 // generate trigger
-always @(JUGADOR_1_expected or JUGADOR_1 or JUGADOR_2_IA_expected or JUGADOR_2_IA or ocupado_expected or ocupado)
+always @(Jugada_valida_expected or Jugada_valida or Led1_expected or Led1 or Led2_expected or Led2 or Led3_expected or Led3 or Led4_expected or Led4 or Led5_expected or Led5 or Led6_expected or Led6 or Led7_expected or Led7 or Led8_expected or Led8 or Led9_expected or Led9 or Reset_de_ocupado_expected or Reset_de_ocupado)
 begin
 	trigger <= ~trigger;
 end
@@ -153,47 +313,151 @@ begin
 `ifdef debug_tbench
 	$display("Scanning pattern %d @time = %t",i,$realtime );
 	i = i + 1;
-	$display("| expected JUGADOR_1 = %b | expected JUGADOR_2_IA = %b | expected ocupado = %b | ",JUGADOR_1_expected_prev,JUGADOR_2_IA_expected_prev,ocupado_expected_prev);
-	$display("| real JUGADOR_1 = %b | real JUGADOR_2_IA = %b | real ocupado = %b | ",JUGADOR_1_prev,JUGADOR_2_IA_prev,ocupado_prev);
+	$display("| expected Jugada_valida = %b | expected Led1 = %b | expected Led2 = %b | expected Led3 = %b | expected Led4 = %b | expected Led5 = %b | expected Led6 = %b | expected Led7 = %b | expected Led8 = %b | expected Led9 = %b | expected Reset_de_ocupado = %b | ",Jugada_valida_expected_prev,Led1_expected_prev,Led2_expected_prev,Led3_expected_prev,Led4_expected_prev,Led5_expected_prev,Led6_expected_prev,Led7_expected_prev,Led8_expected_prev,Led9_expected_prev,Reset_de_ocupado_expected_prev);
+	$display("| real Jugada_valida = %b | real Led1 = %b | real Led2 = %b | real Led3 = %b | real Led4 = %b | real Led5 = %b | real Led6 = %b | real Led7 = %b | real Led8 = %b | real Led9 = %b | real Reset_de_ocupado = %b | ",Jugada_valida_prev,Led1_prev,Led2_prev,Led3_prev,Led4_prev,Led5_prev,Led6_prev,Led7_prev,Led8_prev,Led9_prev,Reset_de_ocupado_prev);
 `endif
 	if (
-		( JUGADOR_1_expected_prev !== 1'bx ) && ( JUGADOR_1_prev !== JUGADOR_1_expected_prev )
-		&& ((JUGADOR_1_expected_prev !== last_JUGADOR_1_exp) ||
+		( Jugada_valida_expected_prev !== 1'bx ) && ( Jugada_valida_prev !== Jugada_valida_expected_prev )
+		&& ((Jugada_valida_expected_prev !== last_Jugada_valida_exp) ||
 			on_first_change[1])
 	)
 	begin
-		$display ("ERROR! Vector Mismatch for output port JUGADOR_1 :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", JUGADOR_1_expected_prev);
-		$display ("     Real value = %b", JUGADOR_1_prev);
+		$display ("ERROR! Vector Mismatch for output port Jugada_valida :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Jugada_valida_expected_prev);
+		$display ("     Real value = %b", Jugada_valida_prev);
 		nummismatches = nummismatches + 1;
 		on_first_change[1] = 1'b0;
-		last_JUGADOR_1_exp = JUGADOR_1_expected_prev;
+		last_Jugada_valida_exp = Jugada_valida_expected_prev;
 	end
 	if (
-		( JUGADOR_2_IA_expected_prev !== 1'bx ) && ( JUGADOR_2_IA_prev !== JUGADOR_2_IA_expected_prev )
-		&& ((JUGADOR_2_IA_expected_prev !== last_JUGADOR_2_IA_exp) ||
+		( Led1_expected_prev !== 1'bx ) && ( Led1_prev !== Led1_expected_prev )
+		&& ((Led1_expected_prev !== last_Led1_exp) ||
 			on_first_change[2])
 	)
 	begin
-		$display ("ERROR! Vector Mismatch for output port JUGADOR_2_IA :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", JUGADOR_2_IA_expected_prev);
-		$display ("     Real value = %b", JUGADOR_2_IA_prev);
+		$display ("ERROR! Vector Mismatch for output port Led1 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Led1_expected_prev);
+		$display ("     Real value = %b", Led1_prev);
 		nummismatches = nummismatches + 1;
 		on_first_change[2] = 1'b0;
-		last_JUGADOR_2_IA_exp = JUGADOR_2_IA_expected_prev;
+		last_Led1_exp = Led1_expected_prev;
 	end
 	if (
-		( ocupado_expected_prev !== 1'bx ) && ( ocupado_prev !== ocupado_expected_prev )
-		&& ((ocupado_expected_prev !== last_ocupado_exp) ||
+		( Led2_expected_prev !== 1'bx ) && ( Led2_prev !== Led2_expected_prev )
+		&& ((Led2_expected_prev !== last_Led2_exp) ||
 			on_first_change[3])
 	)
 	begin
-		$display ("ERROR! Vector Mismatch for output port ocupado :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", ocupado_expected_prev);
-		$display ("     Real value = %b", ocupado_prev);
+		$display ("ERROR! Vector Mismatch for output port Led2 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Led2_expected_prev);
+		$display ("     Real value = %b", Led2_prev);
 		nummismatches = nummismatches + 1;
 		on_first_change[3] = 1'b0;
-		last_ocupado_exp = ocupado_expected_prev;
+		last_Led2_exp = Led2_expected_prev;
+	end
+	if (
+		( Led3_expected_prev !== 1'bx ) && ( Led3_prev !== Led3_expected_prev )
+		&& ((Led3_expected_prev !== last_Led3_exp) ||
+			on_first_change[4])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Led3 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Led3_expected_prev);
+		$display ("     Real value = %b", Led3_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[4] = 1'b0;
+		last_Led3_exp = Led3_expected_prev;
+	end
+	if (
+		( Led4_expected_prev !== 1'bx ) && ( Led4_prev !== Led4_expected_prev )
+		&& ((Led4_expected_prev !== last_Led4_exp) ||
+			on_first_change[5])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Led4 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Led4_expected_prev);
+		$display ("     Real value = %b", Led4_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[5] = 1'b0;
+		last_Led4_exp = Led4_expected_prev;
+	end
+	if (
+		( Led5_expected_prev !== 1'bx ) && ( Led5_prev !== Led5_expected_prev )
+		&& ((Led5_expected_prev !== last_Led5_exp) ||
+			on_first_change[6])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Led5 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Led5_expected_prev);
+		$display ("     Real value = %b", Led5_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[6] = 1'b0;
+		last_Led5_exp = Led5_expected_prev;
+	end
+	if (
+		( Led6_expected_prev !== 1'bx ) && ( Led6_prev !== Led6_expected_prev )
+		&& ((Led6_expected_prev !== last_Led6_exp) ||
+			on_first_change[7])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Led6 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Led6_expected_prev);
+		$display ("     Real value = %b", Led6_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[7] = 1'b0;
+		last_Led6_exp = Led6_expected_prev;
+	end
+	if (
+		( Led7_expected_prev !== 1'bx ) && ( Led7_prev !== Led7_expected_prev )
+		&& ((Led7_expected_prev !== last_Led7_exp) ||
+			on_first_change[8])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Led7 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Led7_expected_prev);
+		$display ("     Real value = %b", Led7_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[8] = 1'b0;
+		last_Led7_exp = Led7_expected_prev;
+	end
+	if (
+		( Led8_expected_prev !== 1'bx ) && ( Led8_prev !== Led8_expected_prev )
+		&& ((Led8_expected_prev !== last_Led8_exp) ||
+			on_first_change[9])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Led8 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Led8_expected_prev);
+		$display ("     Real value = %b", Led8_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[9] = 1'b0;
+		last_Led8_exp = Led8_expected_prev;
+	end
+	if (
+		( Led9_expected_prev !== 1'bx ) && ( Led9_prev !== Led9_expected_prev )
+		&& ((Led9_expected_prev !== last_Led9_exp) ||
+			on_first_change[10])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Led9 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Led9_expected_prev);
+		$display ("     Real value = %b", Led9_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[10] = 1'b0;
+		last_Led9_exp = Led9_expected_prev;
+	end
+	if (
+		( Reset_de_ocupado_expected_prev !== 1'bx ) && ( Reset_de_ocupado_prev !== Reset_de_ocupado_expected_prev )
+		&& ((Reset_de_ocupado_expected_prev !== last_Reset_de_ocupado_exp) ||
+			on_first_change[11])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Reset_de_ocupado :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Reset_de_ocupado_expected_prev);
+		$display ("     Real value = %b", Reset_de_ocupado_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[11] = 1'b0;
+		last_Reset_de_ocupado_exp = Reset_de_ocupado_expected_prev;
 	end
 
 	trigger <= ~trigger;
@@ -211,84 +475,327 @@ $finish;
 end 
 endmodule
 
-module Almace1_vlg_vec_tst();
+module leds_vlg_vec_tst();
 // constants                                           
 // general purpose registers
-reg CLK;
-reg IN_1;
-reg IN_2;
-reg RESET_1;
-reg RESET_2;
+reg Jugador1_led1;
+reg Jugador1_led2;
+reg Jugador1_led3;
+reg Jugador1_led4;
+reg Jugador1_led5;
+reg Jugador1_led6;
+reg Jugador1_led7;
+reg Jugador1_led8;
+reg Jugador1_led9;
+reg Jugador2_led1;
+reg Jugador2_led2;
+reg Jugador2_led3;
+reg Jugador2_led4;
+reg Jugador2_led5;
+reg Jugador2_led6;
+reg Jugador2_led7;
+reg Jugador2_led8;
+reg Jugador2_led9;
+reg ocupado1;
+reg ocupado2;
+reg ocupado3;
+reg ocupado4;
+reg ocupado5;
+reg ocupado6;
+reg ocupado7;
+reg ocupado8;
+reg ocupado9;
+reg reset_jugador;
+reg reset_sig_jugador;
 // wires                                               
-wire JUGADOR_1;
-wire JUGADOR_2_IA;
-wire ocupado;
+wire Jugada_valida;
+wire Led1;
+wire Led2;
+wire Led3;
+wire Led4;
+wire Led5;
+wire Led6;
+wire Led7;
+wire Led8;
+wire Led9;
+wire Reset_de_ocupado;
 
 wire sampler;                             
 
 // assign statements (if any)                          
-Almace1 i1 (
+leds i1 (
 // port map - connection between master ports and signals/registers   
-	.CLK(CLK),
-	.IN_1(IN_1),
-	.IN_2(IN_2),
-	.JUGADOR_1(JUGADOR_1),
-	.JUGADOR_2_IA(JUGADOR_2_IA),
-	.ocupado(ocupado),
-	.RESET_1(RESET_1),
-	.RESET_2(RESET_2)
+	.Jugada_valida(Jugada_valida),
+	.Jugador1_led1(Jugador1_led1),
+	.Jugador1_led2(Jugador1_led2),
+	.Jugador1_led3(Jugador1_led3),
+	.Jugador1_led4(Jugador1_led4),
+	.Jugador1_led5(Jugador1_led5),
+	.Jugador1_led6(Jugador1_led6),
+	.Jugador1_led7(Jugador1_led7),
+	.Jugador1_led8(Jugador1_led8),
+	.Jugador1_led9(Jugador1_led9),
+	.Jugador2_led1(Jugador2_led1),
+	.Jugador2_led2(Jugador2_led2),
+	.Jugador2_led3(Jugador2_led3),
+	.Jugador2_led4(Jugador2_led4),
+	.Jugador2_led5(Jugador2_led5),
+	.Jugador2_led6(Jugador2_led6),
+	.Jugador2_led7(Jugador2_led7),
+	.Jugador2_led8(Jugador2_led8),
+	.Jugador2_led9(Jugador2_led9),
+	.Led1(Led1),
+	.Led2(Led2),
+	.Led3(Led3),
+	.Led4(Led4),
+	.Led5(Led5),
+	.Led6(Led6),
+	.Led7(Led7),
+	.Led8(Led8),
+	.Led9(Led9),
+	.ocupado1(ocupado1),
+	.ocupado2(ocupado2),
+	.ocupado3(ocupado3),
+	.ocupado4(ocupado4),
+	.ocupado5(ocupado5),
+	.ocupado6(ocupado6),
+	.ocupado7(ocupado7),
+	.ocupado8(ocupado8),
+	.ocupado9(ocupado9),
+	.Reset_de_ocupado(Reset_de_ocupado),
+	.reset_jugador(reset_jugador),
+	.reset_sig_jugador(reset_sig_jugador)
 );
 
-// CLK
-always
-begin
-	CLK = 1'b0;
-	CLK = #20000 1'b1;
-	#20000;
-end 
-
-// IN_1
+// Jugador1_led1
 initial
 begin
-	IN_1 = 1'b1;
-	IN_1 = #50000 1'b0;
-	IN_1 = #230000 1'b1;
-	IN_1 = #110000 1'b0;
+	Jugador1_led1 = 1'b0;
+	Jugador1_led1 = #370000 1'b1;
+	Jugador1_led1 = #250000 1'b0;
 end 
 
-// IN_2
+// Jugador1_led2
 initial
 begin
-	IN_2 = 1'b0;
-	IN_2 = #130000 1'b1;
-	IN_2 = #130000 1'b0;
+	Jugador1_led2 = 1'b0;
 end 
 
-// RESET_1
+// Jugador1_led3
 initial
 begin
-	RESET_1 = 1'b0;
+	Jugador1_led3 = 1'b0;
 end 
 
-// RESET_2
+// Jugador1_led4
 initial
 begin
-	RESET_2 = 1'b0;
+	Jugador1_led4 = 1'b0;
 end 
 
-Almace1_vlg_sample_tst tb_sample (
-	.CLK(CLK),
-	.IN_1(IN_1),
-	.IN_2(IN_2),
-	.RESET_1(RESET_1),
-	.RESET_2(RESET_2),
+// Jugador1_led5
+initial
+begin
+	Jugador1_led5 = 1'b0;
+end 
+
+// Jugador1_led6
+initial
+begin
+	Jugador1_led6 = 1'b0;
+end 
+
+// Jugador1_led7
+initial
+begin
+	Jugador1_led7 = 1'b0;
+end 
+
+// Jugador1_led8
+initial
+begin
+	Jugador1_led8 = 1'b0;
+end 
+
+// Jugador1_led9
+initial
+begin
+	Jugador1_led9 = 1'b0;
+end 
+
+// Jugador2_led1
+initial
+begin
+	Jugador2_led1 = 1'b0;
+end 
+
+// Jugador2_led2
+initial
+begin
+	Jugador2_led2 = 1'b0;
+end 
+
+// Jugador2_led3
+initial
+begin
+	Jugador2_led3 = 1'b0;
+end 
+
+// Jugador2_led4
+initial
+begin
+	Jugador2_led4 = 1'b0;
+end 
+
+// Jugador2_led5
+initial
+begin
+	Jugador2_led5 = 1'b0;
+end 
+
+// Jugador2_led6
+initial
+begin
+	Jugador2_led6 = 1'b0;
+end 
+
+// Jugador2_led7
+initial
+begin
+	Jugador2_led7 = 1'b0;
+end 
+
+// Jugador2_led8
+initial
+begin
+	Jugador2_led8 = 1'b0;
+end 
+
+// Jugador2_led9
+initial
+begin
+	Jugador2_led9 = 1'b0;
+end 
+
+// ocupado1
+initial
+begin
+	ocupado1 = 1'b0;
+	ocupado1 = #10000 1'b1;
+	ocupado1 = #40000 1'b0;
+end 
+
+// ocupado2
+initial
+begin
+	ocupado2 = 1'b0;
+end 
+
+// ocupado3
+initial
+begin
+	ocupado3 = 1'b0;
+end 
+
+// ocupado4
+initial
+begin
+	ocupado4 = 1'b0;
+end 
+
+// ocupado5
+initial
+begin
+	ocupado5 = 1'b0;
+end 
+
+// ocupado6
+initial
+begin
+	ocupado6 = 1'b0;
+end 
+
+// ocupado7
+initial
+begin
+	ocupado7 = 1'b0;
+end 
+
+// ocupado8
+initial
+begin
+	ocupado8 = 1'b0;
+end 
+
+// ocupado9
+initial
+begin
+	ocupado9 = 1'b0;
+end 
+
+// reset_jugador
+initial
+begin
+	reset_jugador = 1'b1;
+	reset_jugador = #290000 1'b0;
+	reset_jugador = #70000 1'b1;
+	reset_jugador = #250000 1'b0;
+end 
+
+// reset_sig_jugador
+initial
+begin
+	reset_sig_jugador = 1'b1;
+	reset_sig_jugador = #290000 1'b0;
+	reset_sig_jugador = #70000 1'b1;
+	reset_sig_jugador = #250000 1'b0;
+end 
+
+leds_vlg_sample_tst tb_sample (
+	.Jugador1_led1(Jugador1_led1),
+	.Jugador1_led2(Jugador1_led2),
+	.Jugador1_led3(Jugador1_led3),
+	.Jugador1_led4(Jugador1_led4),
+	.Jugador1_led5(Jugador1_led5),
+	.Jugador1_led6(Jugador1_led6),
+	.Jugador1_led7(Jugador1_led7),
+	.Jugador1_led8(Jugador1_led8),
+	.Jugador1_led9(Jugador1_led9),
+	.Jugador2_led1(Jugador2_led1),
+	.Jugador2_led2(Jugador2_led2),
+	.Jugador2_led3(Jugador2_led3),
+	.Jugador2_led4(Jugador2_led4),
+	.Jugador2_led5(Jugador2_led5),
+	.Jugador2_led6(Jugador2_led6),
+	.Jugador2_led7(Jugador2_led7),
+	.Jugador2_led8(Jugador2_led8),
+	.Jugador2_led9(Jugador2_led9),
+	.ocupado1(ocupado1),
+	.ocupado2(ocupado2),
+	.ocupado3(ocupado3),
+	.ocupado4(ocupado4),
+	.ocupado5(ocupado5),
+	.ocupado6(ocupado6),
+	.ocupado7(ocupado7),
+	.ocupado8(ocupado8),
+	.ocupado9(ocupado9),
+	.reset_jugador(reset_jugador),
+	.reset_sig_jugador(reset_sig_jugador),
 	.sampler_tx(sampler)
 );
 
-Almace1_vlg_check_tst tb_out(
-	.JUGADOR_1(JUGADOR_1),
-	.JUGADOR_2_IA(JUGADOR_2_IA),
-	.ocupado(ocupado),
+leds_vlg_check_tst tb_out(
+	.Jugada_valida(Jugada_valida),
+	.Led1(Led1),
+	.Led2(Led2),
+	.Led3(Led3),
+	.Led4(Led4),
+	.Led5(Led5),
+	.Led6(Led6),
+	.Led7(Led7),
+	.Led8(Led8),
+	.Led9(Led9),
+	.Reset_de_ocupado(Reset_de_ocupado),
 	.sampler_rx(sampler)
 );
 endmodule

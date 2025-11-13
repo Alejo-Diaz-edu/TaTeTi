@@ -1,64 +1,59 @@
-|Almace2
-JUGADOR_1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
-RESET => inst12.IN1
-RESET => inst9.IN1
-CLK => inst8.CLK
-CLK => inst.CLK
-IN_2 => lpm_mux0:inst4.data0
-IN_2 => inst15.IN0
-IN_1 => lpm_mux0:inst3.data0
-IN_1 => inst15.IN1
-JUGADOR_2_IA <= inst8.DB_MAX_OUTPUT_PORT_TYPE
-ocupado <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|Almace2|lpm_mux0:inst4
-data0 => LPM_MUX:LPM_MUX_component.DATA[0][0]
-data1 => LPM_MUX:LPM_MUX_component.DATA[1][0]
-sel => LPM_MUX:LPM_MUX_component.SEL[0]
-result <= LPM_MUX:LPM_MUX_component.RESULT[0]
-
-
-|Almace2|lpm_mux0:inst4|LPM_MUX:LPM_MUX_component
-data[0][0] => mux_i7e:auto_generated.data[0]
-data[1][0] => mux_i7e:auto_generated.data[1]
-sel[0] => mux_i7e:auto_generated.sel[0]
-clock => ~NO_FANOUT~
-aclr => ~NO_FANOUT~
-clken => ~NO_FANOUT~
-result[0] <= mux_i7e:auto_generated.result[0]
-
-
-|Almace2|lpm_mux0:inst4|LPM_MUX:LPM_MUX_component|mux_i7e:auto_generated
-data[0] => result_node[0].IN1
-data[1] => result_node[0].IN1
-result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
-sel[0] => result_node[0].IN0
-sel[0] => _.IN0
-
-
-|Almace2|lpm_mux0:inst3
-data0 => LPM_MUX:LPM_MUX_component.DATA[0][0]
-data1 => LPM_MUX:LPM_MUX_component.DATA[1][0]
-sel => LPM_MUX:LPM_MUX_component.SEL[0]
-result <= LPM_MUX:LPM_MUX_component.RESULT[0]
-
-
-|Almace2|lpm_mux0:inst3|LPM_MUX:LPM_MUX_component
-data[0][0] => mux_i7e:auto_generated.data[0]
-data[1][0] => mux_i7e:auto_generated.data[1]
-sel[0] => mux_i7e:auto_generated.sel[0]
-clock => ~NO_FANOUT~
-aclr => ~NO_FANOUT~
-clken => ~NO_FANOUT~
-result[0] <= mux_i7e:auto_generated.result[0]
-
-
-|Almace2|lpm_mux0:inst3|LPM_MUX:LPM_MUX_component|mux_i7e:auto_generated
-data[0] => result_node[0].IN1
-data[1] => result_node[0].IN1
-result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
-sel[0] => result_node[0].IN0
-sel[0] => _.IN0
+|leds
+Jugada_valida <= inst36.DB_MAX_OUTPUT_PORT_TYPE
+reset_sig_jugador => inst10.ACLR
+reset_sig_jugador => inst11.ACLR
+reset_sig_jugador => inst9.ACLR
+reset_sig_jugador => inst13.ACLR
+reset_sig_jugador => inst14.ACLR
+reset_sig_jugador => inst12.ACLR
+reset_sig_jugador => inst7.ACLR
+reset_sig_jugador => inst8.ACLR
+reset_sig_jugador => inst6.ACLR
+Jugador1_led5 => inst29.IN0
+Jugador2_led5 => inst29.IN1
+Jugador1_led4 => inst28.IN0
+Jugador2_led4 => inst28.IN1
+Jugador1_led6 => inst30.IN0
+Jugador2_led6 => inst30.IN1
+Jugador1_led2 => inst26.IN0
+Jugador2_led2 => inst26.IN1
+Jugador1_led1 => inst25.IN0
+Jugador2_led1 => inst25.IN1
+Jugador1_led3 => inst27.IN0
+Jugador2_led3 => inst27.IN1
+Jugador1_led8 => inst32.IN0
+Jugador2_led8 => inst32.IN1
+Jugador1_led7 => inst31.IN0
+Jugador2_led7 => inst31.IN1
+Jugador1_led9 => inst33.IN0
+Jugador2_led9 => inst33.IN1
+Led2 <= inst51.DB_MAX_OUTPUT_PORT_TYPE
+reset_ocupado_in => inst22.ACLR
+reset_ocupado_in => inst21.ACLR
+reset_ocupado_in => inst20.ACLR
+reset_ocupado_in => inst19.ACLR
+reset_ocupado_in => inst18.ACLR
+reset_ocupado_in => inst17.ACLR
+reset_ocupado_in => inst16.ACLR
+reset_ocupado_in => inst15.ACLR
+reset_ocupado_in => inst23.ACLR
+ocupado2 => inst22.CLK
+Led3 <= inst52.DB_MAX_OUTPUT_PORT_TYPE
+ocupado3 => inst21.CLK
+Led4 <= inst53.DB_MAX_OUTPUT_PORT_TYPE
+ocupado4 => inst20.CLK
+Led5 <= inst54.DB_MAX_OUTPUT_PORT_TYPE
+ocupado5 => inst19.CLK
+Led6 <= inst55.DB_MAX_OUTPUT_PORT_TYPE
+ocupado6 => inst18.CLK
+Led7 <= inst56.DB_MAX_OUTPUT_PORT_TYPE
+ocupado7 => inst17.CLK
+Led8 <= inst57.DB_MAX_OUTPUT_PORT_TYPE
+ocupado8 => inst16.CLK
+Led9 <= inst58.DB_MAX_OUTPUT_PORT_TYPE
+ocupado9 => inst15.CLK
+Led1 <= inst100.DB_MAX_OUTPUT_PORT_TYPE
+ocupado1 => inst23.CLK
+Reset_de_ocupado_out <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 

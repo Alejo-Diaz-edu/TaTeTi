@@ -3,7 +3,7 @@ $comment
 		vcd file jugadas.msim.vcd -direction
 $end
 $date
-	Sun Nov 09 16:19:23 2025
+	Wed Nov 12 23:11:58 2025
 $end
 $version
 	ModelSim Version 10.1d
@@ -11,357 +11,382 @@ $end
 $timescale
 	1ps
 $end
-$scope module Almace1_vlg_vec_tst $end
-$var reg 1 ! CLK $end
-$var reg 1 " IN_1 $end
-$var reg 1 # IN_2 $end
-$var reg 1 $ RESET_1 $end
-$var reg 1 % RESET_2 $end
-$var wire 1 & JUGADOR_1 $end
-$var wire 1 ' JUGADOR_2_IA $end
-$var wire 1 ( ocupado $end
-$var wire 1 ) sampler $end
+$scope module leds_vlg_vec_tst $end
+$var reg 1 ! Jugador1_led1 $end
+$var reg 1 " Jugador1_led2 $end
+$var reg 1 # Jugador1_led3 $end
+$var reg 1 $ Jugador1_led4 $end
+$var reg 1 % Jugador1_led5 $end
+$var reg 1 & Jugador1_led6 $end
+$var reg 1 ' Jugador1_led7 $end
+$var reg 1 ( Jugador1_led8 $end
+$var reg 1 ) Jugador1_led9 $end
+$var reg 1 * Jugador2_led1 $end
+$var reg 1 + Jugador2_led2 $end
+$var reg 1 , Jugador2_led3 $end
+$var reg 1 - Jugador2_led4 $end
+$var reg 1 . Jugador2_led5 $end
+$var reg 1 / Jugador2_led6 $end
+$var reg 1 0 Jugador2_led7 $end
+$var reg 1 1 Jugador2_led8 $end
+$var reg 1 2 Jugador2_led9 $end
+$var reg 1 3 ocupado1 $end
+$var reg 1 4 ocupado2 $end
+$var reg 1 5 ocupado3 $end
+$var reg 1 6 ocupado4 $end
+$var reg 1 7 ocupado5 $end
+$var reg 1 8 ocupado6 $end
+$var reg 1 9 ocupado7 $end
+$var reg 1 : ocupado8 $end
+$var reg 1 ; ocupado9 $end
+$var reg 1 < reset_jugador $end
+$var reg 1 = reset_sig_jugador $end
+$var wire 1 > Jugada_valida $end
+$var wire 1 ? Led1 $end
+$var wire 1 @ Led2 $end
+$var wire 1 A Led3 $end
+$var wire 1 B Led4 $end
+$var wire 1 C Led5 $end
+$var wire 1 D Led6 $end
+$var wire 1 E Led7 $end
+$var wire 1 F Led8 $end
+$var wire 1 G Led9 $end
+$var wire 1 H Reset_de_ocupado $end
+$var wire 1 I sampler $end
 $scope module i1 $end
-$var wire 1 * gnd $end
-$var wire 1 + vcc $end
-$var wire 1 , unknown $end
-$var tri1 1 - devclrn $end
-$var tri1 1 . devpor $end
-$var tri1 1 / devoe $end
-$var wire 1 0 RESET_2~input_o $end
-$var wire 1 1 JUGADOR_1~output_o $end
-$var wire 1 2 JUGADOR_2_IA~output_o $end
-$var wire 1 3 ocupado~output_o $end
-$var wire 1 4 CLK~input_o $end
-$var wire 1 5 CLK~inputclkctrl_outclk $end
-$var wire 1 6 IN_1~input_o $end
-$var wire 1 7 inst~0_combout $end
-$var wire 1 8 RESET_1~input_o $end
-$var wire 1 9 IN_2~input_o $end
-$var wire 1 : inst8~0_combout $end
-$var wire 1 ; inst12~combout $end
-$var wire 1 < inst8~q $end
-$var wire 1 = inst9~combout $end
-$var wire 1 > inst~q $end
-$var wire 1 ? inst15~combout $end
-$var wire 1 @ inst14~combout $end
-$var wire 1 A inst1|LPM_COMPARE_component|auto_generated|aeb_output_dffe0a [0] $end
+$var wire 1 J gnd $end
+$var wire 1 K vcc $end
+$var wire 1 L unknown $end
+$var tri1 1 M devclrn $end
+$var tri1 1 N devpor $end
+$var tri1 1 O devoe $end
+$var wire 1 P inst29~combout $end
+$var wire 1 Q inst28~combout $end
+$var wire 1 R inst30~combout $end
+$var wire 1 S inst26~combout $end
+$var wire 1 T inst33~combout $end
+$var wire 1 U inst25~combout $end
+$var wire 1 V inst27~combout $end
+$var wire 1 W inst32~combout $end
+$var wire 1 X inst31~combout $end
+$var wire 1 Y ocupado2~input_o $end
+$var wire 1 Z ocupado3~input_o $end
+$var wire 1 [ ocupado4~input_o $end
+$var wire 1 \ ocupado5~input_o $end
+$var wire 1 ] ocupado6~input_o $end
+$var wire 1 ^ ocupado7~input_o $end
+$var wire 1 _ ocupado8~input_o $end
+$var wire 1 ` ocupado9~input_o $end
+$var wire 1 a ocupado1~input_o $end
+$var wire 1 b Jugador1_led5~input_o $end
+$var wire 1 c Jugador2_led5~input_o $end
+$var wire 1 d Jugador1_led4~input_o $end
+$var wire 1 e Jugador2_led4~input_o $end
+$var wire 1 f Jugador1_led6~input_o $end
+$var wire 1 g Jugador2_led6~input_o $end
+$var wire 1 h Jugador1_led2~input_o $end
+$var wire 1 i Jugador2_led2~input_o $end
+$var wire 1 j Jugador1_led9~input_o $end
+$var wire 1 k Jugador2_led9~input_o $end
+$var wire 1 l Jugador1_led1~input_o $end
+$var wire 1 m Jugador2_led1~input_o $end
+$var wire 1 n Jugador1_led3~input_o $end
+$var wire 1 o Jugador2_led3~input_o $end
+$var wire 1 p Jugador1_led8~input_o $end
+$var wire 1 q Jugador2_led8~input_o $end
+$var wire 1 r Jugador1_led7~input_o $end
+$var wire 1 s Jugador2_led7~input_o $end
+$var wire 1 t Jugada_valida~output_o $end
+$var wire 1 u Led2~output_o $end
+$var wire 1 v Led3~output_o $end
+$var wire 1 w Led4~output_o $end
+$var wire 1 x Led5~output_o $end
+$var wire 1 y Led6~output_o $end
+$var wire 1 z Led7~output_o $end
+$var wire 1 { Led8~output_o $end
+$var wire 1 | Led9~output_o $end
+$var wire 1 } Reset_de_ocupado~output_o $end
+$var wire 1 ~ Led1~output_o $end
+$var wire 1 !! inst9~feeder_combout $end
+$var wire 1 "! reset_sig_jugador~input_o $end
+$var wire 1 #! reset_sig_jugador~inputclkctrl_outclk $end
+$var wire 1 $! inst9~q $end
+$var wire 1 %! inst11~feeder_combout $end
+$var wire 1 &! inst11~q $end
+$var wire 1 '! inst13~feeder_combout $end
+$var wire 1 (! inst13~q $end
+$var wire 1 )! inst36~0_combout $end
+$var wire 1 *! inst6~feeder_combout $end
+$var wire 1 +! inst6~q $end
+$var wire 1 ,! inst14~feeder_combout $end
+$var wire 1 -! inst14~q $end
+$var wire 1 .! inst8~feeder_combout $end
+$var wire 1 /! inst8~q $end
+$var wire 1 0! inst7~feeder_combout $end
+$var wire 1 1! inst7~q $end
+$var wire 1 2! inst36~1_combout $end
+$var wire 1 3! inst36~2_combout $end
+$var wire 1 4! inst22~feeder_combout $end
+$var wire 1 5! reset_jugador~input_o $end
+$var wire 1 6! reset_jugador~inputclkctrl_outclk $end
+$var wire 1 7! inst22~q $end
+$var wire 1 8! inst51~combout $end
+$var wire 1 9! inst21~feeder_combout $end
+$var wire 1 :! inst21~q $end
+$var wire 1 ;! inst12~feeder_combout $end
+$var wire 1 <! inst12~q $end
+$var wire 1 =! inst52~combout $end
+$var wire 1 >! inst20~feeder_combout $end
+$var wire 1 ?! inst20~q $end
+$var wire 1 @! inst53~combout $end
+$var wire 1 A! inst10~feeder_combout $end
+$var wire 1 B! inst10~q $end
+$var wire 1 C! inst19~feeder_combout $end
+$var wire 1 D! inst19~q $end
+$var wire 1 E! inst54~combout $end
+$var wire 1 F! inst18~feeder_combout $end
+$var wire 1 G! inst18~q $end
+$var wire 1 H! inst55~combout $end
+$var wire 1 I! inst17~feeder_combout $end
+$var wire 1 J! inst17~q $end
+$var wire 1 K! inst56~combout $end
+$var wire 1 L! inst16~feeder_combout $end
+$var wire 1 M! inst16~q $end
+$var wire 1 N! inst57~combout $end
+$var wire 1 O! inst15~feeder_combout $end
+$var wire 1 P! inst15~q $end
+$var wire 1 Q! inst58~combout $end
+$var wire 1 R! inst4~0_combout $end
+$var wire 1 S! inst4~1_combout $end
+$var wire 1 T! inst23~feeder_combout $end
+$var wire 1 U! inst23~q $end
+$var wire 1 V! inst4~2_combout $end
+$var wire 1 W! inst100~combout $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
 0!
-1"
+0"
 0#
 0$
 0%
 0&
 0'
 0(
-x)
+0)
 0*
-1+
-x,
-1-
-1.
-1/
+0+
+0,
+0-
+0.
+0/
 00
 01
 02
 03
 04
 05
-16
-17
+06
+07
 08
 09
 0:
 0;
-0<
-0=
+1<
+1=
 0>
-1?
+0?
 0@
 0A
+0B
+0C
+0D
+0E
+0F
+0G
+0H
+xI
+0J
+1K
+xL
+1M
+1N
+1O
+0P
+0Q
+0R
+0S
+0T
+0U
+0V
+0W
+0X
+0Y
+0Z
+0[
+0\
+0]
+0^
+0_
+0`
+0a
+0b
+0c
+0d
+0e
+0f
+0g
+0h
+0i
+0j
+0k
+0l
+0m
+0n
+0o
+0p
+0q
+0r
+0s
+0t
+0u
+0v
+0w
+0x
+0y
+0z
+0{
+0|
+0}
+0~
+1!!
+1"!
+1#!
+0$!
+1%!
+0&!
+1'!
+0(!
+0)!
+1*!
+0+!
+1,!
+0-!
+1.!
+0/!
+10!
+01!
+02!
+03!
+14!
+15!
+16!
+07!
+08!
+19!
+0:!
+1;!
+0<!
+0=!
+1>!
+0?!
+0@!
+1A!
+0B!
+1C!
+0D!
+0E!
+1F!
+0G!
+0H!
+1I!
+0J!
+0K!
+1L!
+0M!
+0N!
+1O!
+0P!
+0Q!
+0R!
+0S!
+1T!
+0U!
+0V!
+0W!
 $end
-#20000
-1!
-14
-15
-0)
-1>
-1@
-1;
-11
-1&
-#40000
-0!
-04
-05
-1)
-#50000
-0"
-06
-0)
-0?
-#60000
-1!
-14
-15
-1)
-#80000
-0!
-04
-05
-0)
-#100000
-1!
-14
-15
-1)
-#120000
-0!
-04
-05
-0)
-#130000
-1#
-19
-1)
-1?
-1:
-#140000
-1!
-14
-15
-0)
-1A
+#10000
 13
-1(
-#160000
-0!
-04
-05
-1)
-#180000
-1!
-14
-15
-0)
-#200000
-0!
-04
-05
-1)
-#220000
-1!
-14
-15
-0)
-#240000
-0!
-04
-05
-1)
-#260000
-0#
-1!
-09
-14
-15
-0)
-0?
-0:
-#280000
-1"
-0!
-16
-04
-05
-1)
+1a
+0I
+1U!
+1W!
+1V!
+1~
+1}
 1?
-#300000
-1!
-14
-15
-0)
-#320000
-0!
-04
-05
-1)
-#340000
-1!
-14
-15
-0)
-#360000
-0!
-04
-05
-1)
-#380000
-1!
-14
-15
-0)
-#390000
-0"
-06
-1)
-0?
-#400000
-0!
-04
-05
-0)
-#420000
-1!
-14
-15
-1)
-0A
+1H
+#50000
 03
-0(
-#440000
-0!
-04
-05
-0)
-#460000
+0a
+1I
+#290000
+0<
+0=
+05!
+0"!
+06!
+0#!
+0I
+0U!
+0W!
+0V!
+0~
+0}
+0?
+0H
+#360000
+1<
+1=
+15!
+1"!
+16!
+1#!
+1I
+#370000
 1!
-14
-15
-1)
-#480000
-0!
-04
-05
-0)
-#500000
-1!
-14
-15
-1)
-#520000
-0!
-04
-05
-0)
-#540000
-1!
-14
-15
-1)
-#560000
-0!
-04
-05
-0)
-#580000
-1!
-14
-15
-1)
-#600000
-0!
-04
-05
-0)
+1l
+0I
+1U
+1-!
+12!
+1W!
+1~
+1?
+13!
+1t
+1>
+#610000
+0<
+0=
+05!
+0"!
+06!
+0#!
+1I
+0-!
+02!
+0W!
+0~
+0?
+03!
+0t
+0>
 #620000
-1!
-14
-15
-1)
-#640000
 0!
-04
-05
-0)
-#660000
-1!
-14
-15
-1)
-#680000
-0!
-04
-05
-0)
-#700000
-1!
-14
-15
-1)
-#720000
-0!
-04
-05
-0)
-#740000
-1!
-14
-15
-1)
-#760000
-0!
-04
-05
-0)
-#780000
-1!
-14
-15
-1)
-#800000
-0!
-04
-05
-0)
-#820000
-1!
-14
-15
-1)
-#840000
-0!
-04
-05
-0)
-#860000
-1!
-14
-15
-1)
-#880000
-0!
-04
-05
-0)
-#900000
-1!
-14
-15
-1)
-#920000
-0!
-04
-05
-0)
-#940000
-1!
-14
-15
-1)
-#960000
-0!
-04
-05
-0)
-#980000
-1!
-14
-15
-1)
+0l
+0I
+0U
 #1000000

@@ -1,11 +1,14 @@
-LPM_PIPELINE=1
-LPM_REPRESENTATION=UNSIGNED
-LPM_TYPE=LPM_COMPARE
-LPM_WIDTH=1
+LPM_DECODES=16
+LPM_TYPE=LPM_DECODE
+LPM_WIDTH=4
 DEVICE_FAMILY="Cyclone IV E"
-aclr
-clken
-clock
-dataa
-datab
-aeb
+data
+eq
+eq
+eq
+eq
+eq
+eq
+eq
+eq
+eq

@@ -33,82 +33,77 @@
 //applicable agreement for further details.
 
 
-//lpm_decode DEVICE_FAMILY="Cyclone IV E" LPM_DECODES=16 LPM_WIDTH=4 data enable eq
+//lpm_decode DEVICE_FAMILY="Cyclone IV E" LPM_DECODES=16 LPM_WIDTH=4 data eq
 //VERSION_BEGIN 13.0 cbx_cycloneii 2013:06:12:18:03:43:SJ cbx_lpm_add_sub 2013:06:12:18:03:43:SJ cbx_lpm_compare 2013:06:12:18:03:43:SJ cbx_lpm_decode 2013:06:12:18:03:43:SJ cbx_mgl 2013:06:12:18:05:10:SJ cbx_stratix 2013:06:12:18:03:43:SJ cbx_stratixii 2013:06:12:18:03:43:SJ  VERSION_END
 // synthesis VERILOG_INPUT_VERSION VERILOG_2001
 // altera message_off 10463
 
 
-//synthesis_resources = lut 18 
+//synthesis_resources = lut 16 
 //synopsys translate_off
 `timescale 1 ps / 1 ps
 //synopsys translate_on
 module  lpm_decode0_decode
 	( 
 	data,
-	enable,
 	eq) /* synthesis synthesis_clearbox=1 */;
 	input   [3:0]  data;
-	input   enable;
 	output   [15:0]  eq;
 `ifndef ALTERA_RESERVED_QIS
 // synopsys translate_off
 `endif
 	tri0   [3:0]  data;
-	tri1   enable;
 `ifndef ALTERA_RESERVED_QIS
 // synopsys translate_on
 `endif
 
-	wire  [3:0]  data_wire;
-	wire  enable_wire;
+	wire  [2:0]  data_wire;
+	wire  enable_wire1;
+	wire  enable_wire2;
 	wire  [15:0]  eq_node;
-	wire  [15:0]  eq_wire;
-	wire  [1:0]  w_anode101w;
-	wire  [3:0]  w_anode108w;
-	wire  [3:0]  w_anode119w;
-	wire  [3:0]  w_anode129w;
-	wire  [3:0]  w_anode12w;
-	wire  [3:0]  w_anode139w;
-	wire  [3:0]  w_anode149w;
-	wire  [3:0]  w_anode159w;
-	wire  [3:0]  w_anode169w;
-	wire  [3:0]  w_anode179w;
-	wire  [3:0]  w_anode29w;
-	wire  [3:0]  w_anode39w;
-	wire  [1:0]  w_anode3w;
-	wire  [3:0]  w_anode49w;
-	wire  [3:0]  w_anode59w;
-	wire  [3:0]  w_anode69w;
-	wire  [3:0]  w_anode79w;
-	wire  [3:0]  w_anode89w;
-	wire  [2:0]  w_data1w;
+	wire  [7:0]  eq_wire1;
+	wire  [7:0]  eq_wire2;
+	wire  [3:0]  w_anode102w;
+	wire  [3:0]  w_anode112w;
+	wire  [3:0]  w_anode122w;
+	wire  [3:0]  w_anode132w;
+	wire  [3:0]  w_anode142w;
+	wire  [3:0]  w_anode152w;
+	wire  [3:0]  w_anode162w;
+	wire  [3:0]  w_anode21w;
+	wire  [3:0]  w_anode31w;
+	wire  [3:0]  w_anode41w;
+	wire  [3:0]  w_anode4w;
+	wire  [3:0]  w_anode51w;
+	wire  [3:0]  w_anode61w;
+	wire  [3:0]  w_anode71w;
+	wire  [3:0]  w_anode81w;
+	wire  [3:0]  w_anode91w;
 
 	assign
-		data_wire = data,
-		enable_wire = enable,
+		data_wire = data[2:0],
+		enable_wire1 = (~ data[3]),
+		enable_wire2 = data[3],
 		eq = eq_node,
-		eq_node = eq_wire[15:0],
-		eq_wire = {{w_anode179w[3], w_anode169w[3], w_anode159w[3], w_anode149w[3], w_anode139w[3], w_anode129w[3], w_anode119w[3], w_anode108w[3]}, {w_anode89w[3], w_anode79w[3], w_anode69w[3], w_anode59w[3], w_anode49w[3], w_anode39w[3], w_anode29w[3], w_anode12w[3]}},
-		w_anode101w = {(w_anode101w[0] & data_wire[3]), enable_wire},
-		w_anode108w = {(w_anode108w[2] & (~ w_data1w[2])), (w_anode108w[1] & (~ w_data1w[1])), (w_anode108w[0] & (~ w_data1w[0])), w_anode101w[1]},
-		w_anode119w = {(w_anode119w[2] & (~ w_data1w[2])), (w_anode119w[1] & (~ w_data1w[1])), (w_anode119w[0] & w_data1w[0]), w_anode101w[1]},
-		w_anode129w = {(w_anode129w[2] & (~ w_data1w[2])), (w_anode129w[1] & w_data1w[1]), (w_anode129w[0] & (~ w_data1w[0])), w_anode101w[1]},
-		w_anode12w = {(w_anode12w[2] & (~ w_data1w[2])), (w_anode12w[1] & (~ w_data1w[1])), (w_anode12w[0] & (~ w_data1w[0])), w_anode3w[1]},
-		w_anode139w = {(w_anode139w[2] & (~ w_data1w[2])), (w_anode139w[1] & w_data1w[1]), (w_anode139w[0] & w_data1w[0]), w_anode101w[1]},
-		w_anode149w = {(w_anode149w[2] & w_data1w[2]), (w_anode149w[1] & (~ w_data1w[1])), (w_anode149w[0] & (~ w_data1w[0])), w_anode101w[1]},
-		w_anode159w = {(w_anode159w[2] & w_data1w[2]), (w_anode159w[1] & (~ w_data1w[1])), (w_anode159w[0] & w_data1w[0]), w_anode101w[1]},
-		w_anode169w = {(w_anode169w[2] & w_data1w[2]), (w_anode169w[1] & w_data1w[1]), (w_anode169w[0] & (~ w_data1w[0])), w_anode101w[1]},
-		w_anode179w = {(w_anode179w[2] & w_data1w[2]), (w_anode179w[1] & w_data1w[1]), (w_anode179w[0] & w_data1w[0]), w_anode101w[1]},
-		w_anode29w = {(w_anode29w[2] & (~ w_data1w[2])), (w_anode29w[1] & (~ w_data1w[1])), (w_anode29w[0] & w_data1w[0]), w_anode3w[1]},
-		w_anode39w = {(w_anode39w[2] & (~ w_data1w[2])), (w_anode39w[1] & w_data1w[1]), (w_anode39w[0] & (~ w_data1w[0])), w_anode3w[1]},
-		w_anode3w = {(w_anode3w[0] & (~ data_wire[3])), enable_wire},
-		w_anode49w = {(w_anode49w[2] & (~ w_data1w[2])), (w_anode49w[1] & w_data1w[1]), (w_anode49w[0] & w_data1w[0]), w_anode3w[1]},
-		w_anode59w = {(w_anode59w[2] & w_data1w[2]), (w_anode59w[1] & (~ w_data1w[1])), (w_anode59w[0] & (~ w_data1w[0])), w_anode3w[1]},
-		w_anode69w = {(w_anode69w[2] & w_data1w[2]), (w_anode69w[1] & (~ w_data1w[1])), (w_anode69w[0] & w_data1w[0]), w_anode3w[1]},
-		w_anode79w = {(w_anode79w[2] & w_data1w[2]), (w_anode79w[1] & w_data1w[1]), (w_anode79w[0] & (~ w_data1w[0])), w_anode3w[1]},
-		w_anode89w = {(w_anode89w[2] & w_data1w[2]), (w_anode89w[1] & w_data1w[1]), (w_anode89w[0] & w_data1w[0]), w_anode3w[1]},
-		w_data1w = data_wire[2:0];
+		eq_node = {eq_wire2[7:0], eq_wire1},
+		eq_wire1 = {w_anode81w[3], w_anode71w[3], w_anode61w[3], w_anode51w[3], w_anode41w[3], w_anode31w[3], w_anode21w[3], w_anode4w[3]},
+		eq_wire2 = {w_anode162w[3], w_anode152w[3], w_anode142w[3], w_anode132w[3], w_anode122w[3], w_anode112w[3], w_anode102w[3], w_anode91w[3]},
+		w_anode102w = {(w_anode102w[2] & (~ data_wire[2])), (w_anode102w[1] & (~ data_wire[1])), (w_anode102w[0] & data_wire[0]), enable_wire2},
+		w_anode112w = {(w_anode112w[2] & (~ data_wire[2])), (w_anode112w[1] & data_wire[1]), (w_anode112w[0] & (~ data_wire[0])), enable_wire2},
+		w_anode122w = {(w_anode122w[2] & (~ data_wire[2])), (w_anode122w[1] & data_wire[1]), (w_anode122w[0] & data_wire[0]), enable_wire2},
+		w_anode132w = {(w_anode132w[2] & data_wire[2]), (w_anode132w[1] & (~ data_wire[1])), (w_anode132w[0] & (~ data_wire[0])), enable_wire2},
+		w_anode142w = {(w_anode142w[2] & data_wire[2]), (w_anode142w[1] & (~ data_wire[1])), (w_anode142w[0] & data_wire[0]), enable_wire2},
+		w_anode152w = {(w_anode152w[2] & data_wire[2]), (w_anode152w[1] & data_wire[1]), (w_anode152w[0] & (~ data_wire[0])), enable_wire2},
+		w_anode162w = {(w_anode162w[2] & data_wire[2]), (w_anode162w[1] & data_wire[1]), (w_anode162w[0] & data_wire[0]), enable_wire2},
+		w_anode21w = {(w_anode21w[2] & (~ data_wire[2])), (w_anode21w[1] & (~ data_wire[1])), (w_anode21w[0] & data_wire[0]), enable_wire1},
+		w_anode31w = {(w_anode31w[2] & (~ data_wire[2])), (w_anode31w[1] & data_wire[1]), (w_anode31w[0] & (~ data_wire[0])), enable_wire1},
+		w_anode41w = {(w_anode41w[2] & (~ data_wire[2])), (w_anode41w[1] & data_wire[1]), (w_anode41w[0] & data_wire[0]), enable_wire1},
+		w_anode4w = {(w_anode4w[2] & (~ data_wire[2])), (w_anode4w[1] & (~ data_wire[1])), (w_anode4w[0] & (~ data_wire[0])), enable_wire1},
+		w_anode51w = {(w_anode51w[2] & data_wire[2]), (w_anode51w[1] & (~ data_wire[1])), (w_anode51w[0] & (~ data_wire[0])), enable_wire1},
+		w_anode61w = {(w_anode61w[2] & data_wire[2]), (w_anode61w[1] & (~ data_wire[1])), (w_anode61w[0] & data_wire[0]), enable_wire1},
+		w_anode71w = {(w_anode71w[2] & data_wire[2]), (w_anode71w[1] & data_wire[1]), (w_anode71w[0] & (~ data_wire[0])), enable_wire1},
+		w_anode81w = {(w_anode81w[2] & data_wire[2]), (w_anode81w[1] & data_wire[1]), (w_anode81w[0] & data_wire[0]), enable_wire1},
+		w_anode91w = {(w_anode91w[2] & (~ data_wire[2])), (w_anode91w[1] & (~ data_wire[1])), (w_anode91w[0] & (~ data_wire[0])), enable_wire2};
 endmodule //lpm_decode0_decode
 //VALID FILE
 
@@ -118,7 +113,6 @@ endmodule //lpm_decode0_decode
 // synopsys translate_on
 module lpm_decode0 (
 	data,
-	enable,
 	eq1,
 	eq2,
 	eq3,
@@ -130,7 +124,6 @@ module lpm_decode0 (
 	eq9)/* synthesis synthesis_clearbox = 1 */;
 
 	input	[3:0]  data;
-	input	  enable;
 	output	  eq1;
 	output	  eq2;
 	output	  eq3;
@@ -163,7 +156,6 @@ module lpm_decode0 (
 
 	lpm_decode0_decode	lpm_decode0_decode_component (
 				.data (data),
-				.enable (enable),
 				.eq (sub_wire0));
 
 endmodule
@@ -172,7 +164,7 @@ endmodule
 // CNX file retrieval info
 // ============================================================
 // Retrieval info: PRIVATE: BaseDec NUMERIC "1"
-// Retrieval info: PRIVATE: EnableInput NUMERIC "1"
+// Retrieval info: PRIVATE: EnableInput NUMERIC "0"
 // Retrieval info: PRIVATE: INTENDED_DEVICE_FAMILY STRING "Cyclone IV E"
 // Retrieval info: PRIVATE: LPM_PIPELINE NUMERIC "0"
 // Retrieval info: PRIVATE: Latency NUMERIC "0"
@@ -203,7 +195,6 @@ endmodule
 // Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "4"
 // Retrieval info: USED_PORT: @eq 0 0 16 0 OUTPUT NODEFVAL "@eq[15..0]"
 // Retrieval info: USED_PORT: data 0 0 4 0 INPUT NODEFVAL "data[3..0]"
-// Retrieval info: USED_PORT: enable 0 0 0 0 INPUT NODEFVAL "enable"
 // Retrieval info: USED_PORT: eq1 0 0 0 0 OUTPUT NODEFVAL "eq1"
 // Retrieval info: USED_PORT: eq2 0 0 0 0 OUTPUT NODEFVAL "eq2"
 // Retrieval info: USED_PORT: eq3 0 0 0 0 OUTPUT NODEFVAL "eq3"
@@ -214,7 +205,6 @@ endmodule
 // Retrieval info: USED_PORT: eq8 0 0 0 0 OUTPUT NODEFVAL "eq8"
 // Retrieval info: USED_PORT: eq9 0 0 0 0 OUTPUT NODEFVAL "eq9"
 // Retrieval info: CONNECT: @data 0 0 4 0 data 0 0 4 0
-// Retrieval info: CONNECT: @enable 0 0 0 0 enable 0 0 0 0
 // Retrieval info: CONNECT: eq1 0 0 0 0 @eq 0 0 1 1
 // Retrieval info: CONNECT: eq2 0 0 0 0 @eq 0 0 1 2
 // Retrieval info: CONNECT: eq3 0 0 0 0 @eq 0 0 1 3

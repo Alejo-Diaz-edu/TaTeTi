@@ -43,7 +43,6 @@ ENTITY lpm_decode0 IS
 	PORT
 	(
 		data		: IN STD_LOGIC_VECTOR (3 DOWNTO 0);
-		enable		: IN STD_LOGIC ;
 		eq1		: OUT STD_LOGIC ;
 		eq2		: OUT STD_LOGIC ;
 		eq3		: OUT STD_LOGIC ;
@@ -80,7 +79,6 @@ ARCHITECTURE SYN OF lpm_decode0 IS
 	);
 	PORT (
 			data	: IN STD_LOGIC_VECTOR (3 DOWNTO 0);
-			enable	: IN STD_LOGIC ;
 			eq	: OUT STD_LOGIC_VECTOR (15 DOWNTO 0)
 	);
 	END COMPONENT;
@@ -113,7 +111,6 @@ BEGIN
 	)
 	PORT MAP (
 		data => data,
-		enable => enable,
 		eq => sub_wire0
 	);
 
@@ -125,7 +122,7 @@ END SYN;
 -- CNX file retrieval info
 -- ============================================================
 -- Retrieval info: PRIVATE: BaseDec NUMERIC "1"
--- Retrieval info: PRIVATE: EnableInput NUMERIC "1"
+-- Retrieval info: PRIVATE: EnableInput NUMERIC "0"
 -- Retrieval info: PRIVATE: INTENDED_DEVICE_FAMILY STRING "Cyclone IV E"
 -- Retrieval info: PRIVATE: LPM_PIPELINE NUMERIC "0"
 -- Retrieval info: PRIVATE: Latency NUMERIC "0"
@@ -156,7 +153,6 @@ END SYN;
 -- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "4"
 -- Retrieval info: USED_PORT: @eq 0 0 16 0 OUTPUT NODEFVAL "@eq[15..0]"
 -- Retrieval info: USED_PORT: data 0 0 4 0 INPUT NODEFVAL "data[3..0]"
--- Retrieval info: USED_PORT: enable 0 0 0 0 INPUT NODEFVAL "enable"
 -- Retrieval info: USED_PORT: eq1 0 0 0 0 OUTPUT NODEFVAL "eq1"
 -- Retrieval info: USED_PORT: eq2 0 0 0 0 OUTPUT NODEFVAL "eq2"
 -- Retrieval info: USED_PORT: eq3 0 0 0 0 OUTPUT NODEFVAL "eq3"
@@ -167,7 +163,6 @@ END SYN;
 -- Retrieval info: USED_PORT: eq8 0 0 0 0 OUTPUT NODEFVAL "eq8"
 -- Retrieval info: USED_PORT: eq9 0 0 0 0 OUTPUT NODEFVAL "eq9"
 -- Retrieval info: CONNECT: @data 0 0 4 0 data 0 0 4 0
--- Retrieval info: CONNECT: @enable 0 0 0 0 enable 0 0 0 0
 -- Retrieval info: CONNECT: eq1 0 0 0 0 @eq 0 0 1 1
 -- Retrieval info: CONNECT: eq2 0 0 0 0 @eq 0 0 1 2
 -- Retrieval info: CONNECT: eq3 0 0 0 0 @eq 0 0 1 3

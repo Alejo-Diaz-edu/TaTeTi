@@ -17,7 +17,6 @@ component lpm_decode0
 	PORT
 	(
 		data		: IN STD_LOGIC_VECTOR (3 DOWNTO 0);
-		enable		: IN STD_LOGIC ;
 		eq1		: OUT STD_LOGIC ;
 		eq2		: OUT STD_LOGIC ;
 		eq3		: OUT STD_LOGIC ;
