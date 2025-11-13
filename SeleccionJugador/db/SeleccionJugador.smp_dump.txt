@@ -1,5 +1,5 @@
 
-State Machine - |ModuloSeleccionJugador|SeleccionJugador:inst|fstate
+State Machine - |PruebaSeleccion|ModuloSeleccionJugador:inst|SeleccionJugador:inst|fstate
 Name fstate.Oscioso1 fstate.Oscioso2 fstate.JuegaP2 fstate.JuegaP1 
 fstate.JuegaP1 0 0 0 0 
 fstate.JuegaP2 0 0 1 1 

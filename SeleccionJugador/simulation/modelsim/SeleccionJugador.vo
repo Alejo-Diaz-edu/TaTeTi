@@ -1,0 +1,429 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus II 64-Bit"
+// VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
+
+// DATE "11/13/2025 15:21:25"
+
+// 
+// Device: Altera EP4CE22F17C6 Package FBGA256
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module PruebaSeleccion (
+	Jugador,
+	reset,
+	clock,
+	Enable,
+	in3,
+	in2,
+	in1,
+	in0,
+	Hab);
+output 	Jugador;
+input 	reset;
+input 	clock;
+input 	Enable;
+input 	in3;
+input 	in2;
+input 	in1;
+input 	in0;
+output 	Hab;
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \inst|inst|fstate.Oscioso2~q ;
+wire \inst|inst|reg_fstate.JuegaP1~0_combout ;
+wire \inst|inst|reg_fstate.Oscioso2~0_combout ;
+wire \in1~input_o ;
+wire \clock~input_o ;
+wire \Jugador~output_o ;
+wire \Hab~output_o ;
+wire \reset~input_o ;
+wire \inst|inst|reg_fstate.Oscioso1~0_combout ;
+wire \in0~input_o ;
+wire \in3~input_o ;
+wire \in2~input_o ;
+wire \inst|inst|process_1~0_combout ;
+wire \inst|inst|reg_fstate.Oscioso1~1_combout ;
+wire \Enable~input_o ;
+wire \inst|inst|reg_fstate.JuegaP1~1_combout ;
+wire \inst|inst|fstate.JuegaP1~q ;
+wire \inst|inst|reg_fstate.Oscioso1~2_combout ;
+wire \inst|inst|fstate.Oscioso1~q ;
+wire \inst|inst|Jugador~0_combout ;
+wire \inst|inst|reg_fstate.JuegaP2~0_combout ;
+wire \inst|inst|reg_fstate.JuegaP2~1_combout ;
+wire \inst|inst|fstate.JuegaP2~q ;
+wire \inst|inst|Hab~0_combout ;
+
+
+dffeas \inst|inst|fstate.Oscioso2 (
+	.clk(\clock~input_o ),
+	.d(\inst|inst|reg_fstate.Oscioso2~0_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst|inst|fstate.Oscioso2~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst|inst|fstate.Oscioso2 .is_wysiwyg = "true";
+defparam \inst|inst|fstate.Oscioso2 .power_up = "low";
+// synopsys translate_on
+
+cycloneive_lcell_comb \inst|inst|reg_fstate.JuegaP1~0 (
+// Equation(s):
+// \inst|inst|reg_fstate.JuegaP1~0_combout  = (\reset~input_o ) # ((\inst|inst|fstate.Oscioso2~q  & !\Enable~input_o ))
+
+	.dataa(\reset~input_o ),
+	.datab(\inst|inst|fstate.Oscioso2~q ),
+	.datac(gnd),
+	.datad(\Enable~input_o ),
+	.cin(gnd),
+	.combout(\inst|inst|reg_fstate.JuegaP1~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|inst|reg_fstate.JuegaP1~0 .lut_mask = 16'hAAEE;
+defparam \inst|inst|reg_fstate.JuegaP1~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneive_lcell_comb \inst|inst|reg_fstate.Oscioso2~0 (
+// Equation(s):
+// \inst|inst|reg_fstate.Oscioso2~0_combout  = (\inst|inst|fstate.JuegaP2~q  & ((\inst|inst|reg_fstate.Oscioso1~1_combout ) # ((\inst|inst|reg_fstate.Oscioso1~0_combout  & \inst|inst|fstate.Oscioso2~q )))) # (!\inst|inst|fstate.JuegaP2~q  & 
+// (\inst|inst|reg_fstate.Oscioso1~0_combout  & (\inst|inst|fstate.Oscioso2~q )))
+
+	.dataa(\inst|inst|fstate.JuegaP2~q ),
+	.datab(\inst|inst|reg_fstate.Oscioso1~0_combout ),
+	.datac(\inst|inst|fstate.Oscioso2~q ),
+	.datad(\inst|inst|reg_fstate.Oscioso1~1_combout ),
+	.cin(gnd),
+	.combout(\inst|inst|reg_fstate.Oscioso2~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|inst|reg_fstate.Oscioso2~0 .lut_mask = 16'hEAC0;
+defparam \inst|inst|reg_fstate.Oscioso2~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneive_io_ibuf \in1~input (
+	.i(in1),
+	.ibar(gnd),
+	.o(\in1~input_o ));
+// synopsys translate_off
+defparam \in1~input .bus_hold = "false";
+defparam \in1~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_io_ibuf \clock~input (
+	.i(clock),
+	.ibar(gnd),
+	.o(\clock~input_o ));
+// synopsys translate_off
+defparam \clock~input .bus_hold = "false";
+defparam \clock~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_io_obuf \Jugador~output (
+	.i(!\inst|inst|Jugador~0_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Jugador~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Jugador~output .bus_hold = "false";
+defparam \Jugador~output .open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_io_obuf \Hab~output (
+	.i(!\inst|inst|Hab~0_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Hab~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Hab~output .bus_hold = "false";
+defparam \Hab~output .open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_io_ibuf \reset~input (
+	.i(reset),
+	.ibar(gnd),
+	.o(\reset~input_o ));
+// synopsys translate_off
+defparam \reset~input .bus_hold = "false";
+defparam \reset~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_lcell_comb \inst|inst|reg_fstate.Oscioso1~0 (
+// Equation(s):
+// \inst|inst|reg_fstate.Oscioso1~0_combout  = (\Enable~input_o  & !\reset~input_o )
+
+	.dataa(\Enable~input_o ),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(\reset~input_o ),
+	.cin(gnd),
+	.combout(\inst|inst|reg_fstate.Oscioso1~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|inst|reg_fstate.Oscioso1~0 .lut_mask = 16'h00AA;
+defparam \inst|inst|reg_fstate.Oscioso1~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneive_io_ibuf \in0~input (
+	.i(in0),
+	.ibar(gnd),
+	.o(\in0~input_o ));
+// synopsys translate_off
+defparam \in0~input .bus_hold = "false";
+defparam \in0~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_io_ibuf \in3~input (
+	.i(in3),
+	.ibar(gnd),
+	.o(\in3~input_o ));
+// synopsys translate_off
+defparam \in3~input .bus_hold = "false";
+defparam \in3~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_io_ibuf \in2~input (
+	.i(in2),
+	.ibar(gnd),
+	.o(\in2~input_o ));
+// synopsys translate_off
+defparam \in2~input .bus_hold = "false";
+defparam \in2~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_lcell_comb \inst|inst|process_1~0 (
+// Equation(s):
+// \inst|inst|process_1~0_combout  = (\in1~input_o  & (((!\in2~input_o ) # (!\in3~input_o )))) # (!\in1~input_o  & (\in0~input_o  & ((!\in2~input_o ) # (!\in3~input_o ))))
+
+	.dataa(\in1~input_o ),
+	.datab(\in0~input_o ),
+	.datac(\in3~input_o ),
+	.datad(\in2~input_o ),
+	.cin(gnd),
+	.combout(\inst|inst|process_1~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|inst|process_1~0 .lut_mask = 16'h0EEE;
+defparam \inst|inst|process_1~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneive_lcell_comb \inst|inst|reg_fstate.Oscioso1~1 (
+// Equation(s):
+// \inst|inst|reg_fstate.Oscioso1~1_combout  = (\Enable~input_o  & (\inst|inst|process_1~0_combout  & !\reset~input_o ))
+
+	.dataa(\Enable~input_o ),
+	.datab(\inst|inst|process_1~0_combout ),
+	.datac(gnd),
+	.datad(\reset~input_o ),
+	.cin(gnd),
+	.combout(\inst|inst|reg_fstate.Oscioso1~1_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|inst|reg_fstate.Oscioso1~1 .lut_mask = 16'h0088;
+defparam \inst|inst|reg_fstate.Oscioso1~1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneive_io_ibuf \Enable~input (
+	.i(Enable),
+	.ibar(gnd),
+	.o(\Enable~input_o ));
+// synopsys translate_off
+defparam \Enable~input .bus_hold = "false";
+defparam \Enable~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_lcell_comb \inst|inst|reg_fstate.JuegaP1~1 (
+// Equation(s):
+// \inst|inst|reg_fstate.JuegaP1~1_combout  = (!\inst|inst|reg_fstate.JuegaP1~0_combout  & ((\inst|inst|fstate.JuegaP1~q ) # ((\Enable~input_o  & \inst|inst|process_1~0_combout ))))
+
+	.dataa(\inst|inst|reg_fstate.JuegaP1~0_combout ),
+	.datab(\Enable~input_o ),
+	.datac(\inst|inst|process_1~0_combout ),
+	.datad(\inst|inst|fstate.JuegaP1~q ),
+	.cin(gnd),
+	.combout(\inst|inst|reg_fstate.JuegaP1~1_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|inst|reg_fstate.JuegaP1~1 .lut_mask = 16'h5540;
+defparam \inst|inst|reg_fstate.JuegaP1~1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+dffeas \inst|inst|fstate.JuegaP1 (
+	.clk(\clock~input_o ),
+	.d(\inst|inst|reg_fstate.JuegaP1~1_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst|inst|fstate.JuegaP1~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst|inst|fstate.JuegaP1 .is_wysiwyg = "true";
+defparam \inst|inst|fstate.JuegaP1 .power_up = "low";
+// synopsys translate_on
+
+cycloneive_lcell_comb \inst|inst|reg_fstate.Oscioso1~2 (
+// Equation(s):
+// \inst|inst|reg_fstate.Oscioso1~2_combout  = (\inst|inst|fstate.Oscioso1~q  & ((\inst|inst|reg_fstate.Oscioso1~0_combout ) # ((\inst|inst|reg_fstate.Oscioso1~1_combout  & !\inst|inst|fstate.JuegaP1~q )))) # (!\inst|inst|fstate.Oscioso1~q  & 
+// (((\inst|inst|reg_fstate.Oscioso1~1_combout  & !\inst|inst|fstate.JuegaP1~q ))))
+
+	.dataa(\inst|inst|fstate.Oscioso1~q ),
+	.datab(\inst|inst|reg_fstate.Oscioso1~0_combout ),
+	.datac(\inst|inst|reg_fstate.Oscioso1~1_combout ),
+	.datad(\inst|inst|fstate.JuegaP1~q ),
+	.cin(gnd),
+	.combout(\inst|inst|reg_fstate.Oscioso1~2_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|inst|reg_fstate.Oscioso1~2 .lut_mask = 16'h88F8;
+defparam \inst|inst|reg_fstate.Oscioso1~2 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+dffeas \inst|inst|fstate.Oscioso1 (
+	.clk(\clock~input_o ),
+	.d(\inst|inst|reg_fstate.Oscioso1~2_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst|inst|fstate.Oscioso1~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst|inst|fstate.Oscioso1 .is_wysiwyg = "true";
+defparam \inst|inst|fstate.Oscioso1 .power_up = "low";
+// synopsys translate_on
+
+cycloneive_lcell_comb \inst|inst|Jugador~0 (
+// Equation(s):
+// \inst|inst|Jugador~0_combout  = (\inst|inst|fstate.Oscioso1~q ) # ((\reset~input_o ) # (!\inst|inst|fstate.JuegaP1~q ))
+
+	.dataa(\inst|inst|fstate.Oscioso1~q ),
+	.datab(\reset~input_o ),
+	.datac(gnd),
+	.datad(\inst|inst|fstate.JuegaP1~q ),
+	.cin(gnd),
+	.combout(\inst|inst|Jugador~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|inst|Jugador~0 .lut_mask = 16'hEEFF;
+defparam \inst|inst|Jugador~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneive_lcell_comb \inst|inst|reg_fstate.JuegaP2~0 (
+// Equation(s):
+// \inst|inst|reg_fstate.JuegaP2~0_combout  = (\inst|inst|fstate.JuegaP2~q ) # ((\inst|inst|fstate.Oscioso1~q  & !\Enable~input_o ))
+
+	.dataa(\inst|inst|fstate.Oscioso1~q ),
+	.datab(\Enable~input_o ),
+	.datac(\inst|inst|fstate.JuegaP2~q ),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\inst|inst|reg_fstate.JuegaP2~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|inst|reg_fstate.JuegaP2~0 .lut_mask = 16'hF2F2;
+defparam \inst|inst|reg_fstate.JuegaP2~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneive_lcell_comb \inst|inst|reg_fstate.JuegaP2~1 (
+// Equation(s):
+// \inst|inst|reg_fstate.JuegaP2~1_combout  = (!\reset~input_o  & (\inst|inst|reg_fstate.JuegaP2~0_combout  & ((!\Enable~input_o ) # (!\inst|inst|process_1~0_combout ))))
+
+	.dataa(\reset~input_o ),
+	.datab(\inst|inst|process_1~0_combout ),
+	.datac(\Enable~input_o ),
+	.datad(\inst|inst|reg_fstate.JuegaP2~0_combout ),
+	.cin(gnd),
+	.combout(\inst|inst|reg_fstate.JuegaP2~1_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|inst|reg_fstate.JuegaP2~1 .lut_mask = 16'h1500;
+defparam \inst|inst|reg_fstate.JuegaP2~1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+dffeas \inst|inst|fstate.JuegaP2 (
+	.clk(\clock~input_o ),
+	.d(\inst|inst|reg_fstate.JuegaP2~1_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst|inst|fstate.JuegaP2~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst|inst|fstate.JuegaP2 .is_wysiwyg = "true";
+defparam \inst|inst|fstate.JuegaP2 .power_up = "low";
+// synopsys translate_on
+
+cycloneive_lcell_comb \inst|inst|Hab~0 (
+// Equation(s):
+// \inst|inst|Hab~0_combout  = (\reset~input_o ) # ((\inst|inst|fstate.JuegaP2~q ) # (!\inst|inst|fstate.JuegaP1~q ))
+
+	.dataa(\reset~input_o ),
+	.datab(\inst|inst|fstate.JuegaP2~q ),
+	.datac(gnd),
+	.datad(\inst|inst|fstate.JuegaP1~q ),
+	.cin(gnd),
+	.combout(\inst|inst|Hab~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|inst|Hab~0 .lut_mask = 16'hEEFF;
+defparam \inst|inst|Hab~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+assign Jugador = \Jugador~output_o ;
+
+assign Hab = \Hab~output_o ;
+
+endmodule
