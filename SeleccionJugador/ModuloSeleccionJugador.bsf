@@ -89,8 +89,8 @@ applicable agreement for further details.
 	(port
 		(pt 160 48)
 		(output)
-		(text "Hab/Botor" (rect 0 0 56 14)(font "Arial" (font_size 8)))
-		(text "Hab/Botor" (rect 83 43 139 57)(font "Arial" (font_size 8)))
+		(text "Hab/Boton" (rect 0 0 59 14)(font "Arial" (font_size 8)))
+		(text "Hab/Boton" (rect 80 43 139 57)(font "Arial" (font_size 8)))
 		(line (pt 160 48)(pt 144 48))
 	)
 	(drawing

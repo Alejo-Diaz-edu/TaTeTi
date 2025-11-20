@@ -1,4 +1,17 @@
-|SeleccionJugador
+|ModuloSeleccionJugador
+Jugador <= SeleccionJugador:inst.Jugador
+reset => SeleccionJugador:inst.reset
+clock => SeleccionJugador:inst.clock
+Enable => SeleccionJugador:inst.Enable
+in2 => inst3.IN0
+in3 => inst2.IN0
+in0 => inst6.IN0
+in1 => inst6.IN1
+CAMBIO => SeleccionJugador:inst.JugadaValida
+Hab/Boton <= SeleccionJugador:inst.Hab
+
+
+|ModuloSeleccionJugador|SeleccionJugador:inst
 reset => reg_fstate.JuegaP1.OUTPUTSELECT
 reset => reg_fstate.JuegaP2.OUTPUTSELECT
 reset => reg_fstate.Oscioso2.OUTPUTSELECT

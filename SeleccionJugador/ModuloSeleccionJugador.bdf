@@ -135,7 +135,7 @@ applicable agreement for further details.
 	(input)
 	(rect 48 168 216 184)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "CAMBIO" (rect 5 0 48 12)(font "Arial" ))
+	(text "CAMBIO" (rect 5 0 47 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -167,7 +167,7 @@ applicable agreement for further details.
 	(output)
 	(rect 728 136 904 152)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "Hab/Botor" (rect 90 0 139 12)(font "Arial" ))
+	(text "HabOBoton" (rect 90 0 146 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))

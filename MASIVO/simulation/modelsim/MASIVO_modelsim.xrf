@@ -1,0 +1,10 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Administrador/Desktop/TaTeTi/SeleccionJugador/PruebaSeleccion.bdf
+source_file = 1, C:/Users/Administrador/Desktop/TaTeTi/Jugada/Jugada1.bdf
+source_file = 1, C:/Users/Administrador/Desktop/TaTeTi/Jugada/BloqueJugada1.bdf
+source_file = 1, C:/Users/Administrador/Desktop/TaTeTi/MASIVO/MASIVO.bdf
+source_file = 1, C:/Users/Administrador/Desktop/TaTeTi/MASIVO/db/MASIVO.cbx.xml
+design_name = MASIVO
+instance = comp, \OUT~output\, OUT~output, MASIVO, 1
+instance = comp, \IN1~input\, IN1~input, MASIVO, 1
+instance = comp, \IN2~input\, IN2~input, MASIVO, 1

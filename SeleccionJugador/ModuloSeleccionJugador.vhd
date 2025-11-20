@@ -14,7 +14,7 @@
 
 -- PROGRAM		"Quartus II 64-Bit"
 -- VERSION		"Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
--- CREATED		"Mon Nov 10 16:20:55 2025"
+-- CREATED		"Thu Nov 20 15:41:30 2025"
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.all; 
@@ -25,13 +25,15 @@ ENTITY ModuloSeleccionJugador IS
 	PORT
 	(
 		Enable :  IN  STD_LOGIC;
-		in0 :  IN  STD_LOGIC;
-		in1 :  IN  STD_LOGIC;
-		in2 :  IN  STD_LOGIC;
-		in3 :  IN  STD_LOGIC;
 		clock :  IN  STD_LOGIC;
 		reset :  IN  STD_LOGIC;
-		Jugador :  OUT  STD_LOGIC
+		in3 :  IN  STD_LOGIC;
+		in2 :  IN  STD_LOGIC;
+		in1 :  IN  STD_LOGIC;
+		in0 :  IN  STD_LOGIC;
+		CAMBIO :  IN  STD_LOGIC;
+		Jugador :  OUT  STD_LOGIC;
+		HabOBoton :  OUT  STD_LOGIC
 	);
 END ModuloSeleccionJugador;
 
@@ -42,7 +44,9 @@ COMPONENT seleccionjugador
 		 clock : IN STD_LOGIC;
 		 Enable : IN STD_LOGIC;
 		 Jugada : IN STD_LOGIC;
-		 Jugador : OUT STD_LOGIC
+		 JugadaValida : IN STD_LOGIC;
+		 Jugador : OUT STD_LOGIC;
+		 Hab : OUT STD_LOGIC
 	);
 END COMPONENT;
 
@@ -62,21 +66,23 @@ PORT MAP(reset => reset,
 		 clock => clock,
 		 Enable => Enable,
 		 Jugada => SYNTHESIZED_WIRE_0,
-		 Jugador => Jugador);
+		 JugadaValida => CAMBIO,
+		 Jugador => Jugador,
+		 Hab => HabOBoton);
 
 
-SYNTHESIZED_WIRE_2 <= NOT(in0);
+SYNTHESIZED_WIRE_2 <= NOT(in3);
 
 
 
-SYNTHESIZED_WIRE_1 <= NOT(in1);
+SYNTHESIZED_WIRE_1 <= NOT(in2);
 
 
 
 SYNTHESIZED_WIRE_3 <= SYNTHESIZED_WIRE_1 OR SYNTHESIZED_WIRE_2;
 
 
-SYNTHESIZED_WIRE_4 <= in3 OR in2;
+SYNTHESIZED_WIRE_4 <= in0 OR in1;
 
 
 SYNTHESIZED_WIRE_0 <= SYNTHESIZED_WIRE_3 AND SYNTHESIZED_WIRE_4;

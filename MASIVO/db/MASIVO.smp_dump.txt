@@ -1,0 +1,17 @@
+
+State Machine - |MASIVO|Jugada1:inst1|JugacionMachine:b2v_inst|fstate
+Name fstate.CambioJ fstate.Verificar fstate.Ganar fstate.Punto fstate.Marcar fstate.Error fstate.Idle 
+fstate.Idle 0 0 0 0 0 0 0 
+fstate.Error 0 0 0 0 0 1 1 
+fstate.Marcar 0 0 0 0 1 0 1 
+fstate.Punto 0 0 0 1 0 0 1 
+fstate.Ganar 0 0 1 0 0 0 1 
+fstate.Verificar 0 1 0 0 0 0 1 
+fstate.CambioJ 1 0 0 0 0 0 1 
+
+State Machine - |MASIVO|ModuloSeleccionJugador:inst|SeleccionJugador:b2v_inst|fstate
+Name fstate.Oscioso1 fstate.Oscioso2 fstate.JuegaP2 fstate.JuegaP1 
+fstate.JuegaP1 0 0 0 0 
+fstate.JuegaP2 0 0 1 1 
+fstate.Oscioso2 0 1 0 1 
+fstate.Oscioso1 1 0 0 1 

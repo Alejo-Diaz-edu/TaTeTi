@@ -1,0 +1,146 @@
+|MASIVO
+Jugador <= ModuloSeleccionJugador:inst.Jugador
+Enable => ModuloSeleccionJugador:inst.Enable
+Clock => ModuloSeleccionJugador:inst.clock
+Clock => Jugada1:inst1.clock
+Reset => ModuloSeleccionJugador:inst.reset
+Reset => Jugada1:inst1.reset
+in3 => ModuloSeleccionJugador:inst.in3
+in2 => ModuloSeleccionJugador:inst.in2
+in1 => ModuloSeleccionJugador:inst.in1
+in0 => ModuloSeleccionJugador:inst.in0
+Win => Jugada1:inst1.Win
+Habilitada => Jugada1:inst1.Habilitada
+POSenable => Jugada1:inst1.POSenable
+Ganador_Jugador_1 => Jugada1:inst1.Ganador_Jugador_1
+Ganador_Jugador_2 => Jugada1:inst1.Ganador_Jugador_2
+HabOBoton <= ModuloSeleccionJugador:inst.HabOBoton
+final_win <= Jugada1:inst1.final_win
+Cambio <= Jugada1:inst1.Cambio
+err <= Jugada1:inst1.err
+Verificacion <= Jugada1:inst1.Verificacion
+PuntoP1[0] <= Jugada1:inst1.PuntoP1[0]
+PuntoP1[1] <= Jugada1:inst1.PuntoP1[1]
+PuntoP1[2] <= Jugada1:inst1.PuntoP1[2]
+PuntoP1[3] <= Jugada1:inst1.PuntoP1[3]
+PuntoP2[0] <= Jugada1:inst1.PuntoP2[0]
+PuntoP2[1] <= Jugada1:inst1.PuntoP2[1]
+PuntoP2[2] <= Jugada1:inst1.PuntoP2[2]
+PuntoP2[3] <= Jugada1:inst1.PuntoP2[3]
+
+
+|MASIVO|ModuloSeleccionJugador:inst
+Enable => seleccionjugador:b2v_inst.Enable
+clock => seleccionjugador:b2v_inst.clock
+reset => seleccionjugador:b2v_inst.reset
+in3 => SYNTHESIZED_WIRE_3.IN0
+in2 => SYNTHESIZED_WIRE_3.IN1
+in1 => SYNTHESIZED_WIRE_4.IN0
+in0 => SYNTHESIZED_WIRE_4.IN1
+CAMBIO => seleccionjugador:b2v_inst.JugadaValida
+Jugador <= seleccionjugador:b2v_inst.Jugador
+HabOBoton <= seleccionjugador:b2v_inst.Hab
+
+
+|MASIVO|ModuloSeleccionJugador:inst|SeleccionJugador:b2v_inst
+reset => reg_fstate.JuegaP1.OUTPUTSELECT
+reset => reg_fstate.JuegaP2.OUTPUTSELECT
+reset => reg_fstate.Oscioso2.OUTPUTSELECT
+reset => reg_fstate.Oscioso1.OUTPUTSELECT
+reset => Jugador.OUTPUTSELECT
+reset => Hab.OUTPUTSELECT
+clock => fstate~1.DATAIN
+Enable => process_1.IN0
+Enable => process_1.IN0
+Enable => process_1.IN0
+Enable => reg_fstate.OUTPUTSELECT
+Enable => reg_fstate.OUTPUTSELECT
+Jugada => process_1.IN1
+JugadaValida => process_1.IN1
+JugadaValida => process_1.IN1
+Jugador <= Jugador.DB_MAX_OUTPUT_PORT_TYPE
+Hab <= Hab.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MASIVO|Jugada1:inst1
+reset => jugacionmachine:b2v_inst.reset
+reset => contador_modn:b2v_inst4.reset
+reset => contador_modn:b2v_inst5.reset
+clock => jugacionmachine:b2v_inst.clock
+Boton => jugacionmachine:b2v_inst.Boton
+Win => jugacionmachine:b2v_inst.Win
+Habilitada => jugacionmachine:b2v_inst.Habilitada
+POSenable => jugacionmachine:b2v_inst.POSenable
+Ganador_Jugador_1 => contador_modn:b2v_inst4.clk
+Ganador_Jugador_2 => contador_modn:b2v_inst5.clk
+final_win <= jugacionmachine:b2v_inst.final_win
+Cambio <= jugacionmachine:b2v_inst.Cambio
+err <= jugacionmachine:b2v_inst.err
+Verificacion <= jugacionmachine:b2v_inst.Verificacion
+PuntoP1[0] <= contador_modn:b2v_inst4.count[0]
+PuntoP1[1] <= contador_modn:b2v_inst4.count[1]
+PuntoP1[2] <= contador_modn:b2v_inst4.count[2]
+PuntoP1[3] <= contador_modn:b2v_inst4.count[3]
+PuntoP2[0] <= contador_modn:b2v_inst5.count[0]
+PuntoP2[1] <= contador_modn:b2v_inst5.count[1]
+PuntoP2[2] <= contador_modn:b2v_inst5.count[2]
+PuntoP2[3] <= contador_modn:b2v_inst5.count[3]
+
+
+|MASIVO|Jugada1:inst1|JugacionMachine:b2v_inst
+reset => reg_fstate.Verificar.OUTPUTSELECT
+reset => reg_fstate.Error.OUTPUTSELECT
+reset => reg_fstate.Marcar.OUTPUTSELECT
+reset => reg_fstate.Punto.OUTPUTSELECT
+reset => reg_fstate.Ganar.OUTPUTSELECT
+reset => reg_fstate.Idle.OUTPUTSELECT
+reset => reg_fstate.CambioJ.OUTPUTSELECT
+reset => final_win.OUTPUTSELECT
+reset => Cambio.OUTPUTSELECT
+reset => err.OUTPUTSELECT
+reset => Verificacion.OUTPUTSELECT
+clock => fstate~1.DATAIN
+Boton => Selector0.IN3
+Boton => Selector1.IN2
+Win => process_1.IN0
+Win => reg_fstate.DATAB
+Win => Selector2.IN2
+Habilitada => process_1.IN0
+Habilitada => process_1.IN0
+POSenable => process_1.IN1
+POSenable => process_1.IN1
+win3 => process_1.IN1
+final_win <= final_win.DB_MAX_OUTPUT_PORT_TYPE
+Cambio <= Cambio.DB_MAX_OUTPUT_PORT_TYPE
+err <= err.DB_MAX_OUTPUT_PORT_TYPE
+Verificacion <= Verificacion.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MASIVO|Jugada1:inst1|Contador_ModN:b2v_inst4
+clk => cnt[0].CLK
+clk => cnt[1].CLK
+reset => cnt[0].ACLR
+reset => cnt[1].ACLR
+enable => cnt[0].ENA
+enable => cnt[1].ENA
+fin <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+count[0] <= cnt[0].DB_MAX_OUTPUT_PORT_TYPE
+count[1] <= cnt[1].DB_MAX_OUTPUT_PORT_TYPE
+count[2] <= <GND>
+count[3] <= <GND>
+
+
+|MASIVO|Jugada1:inst1|Contador_ModN:b2v_inst5
+clk => cnt[0].CLK
+clk => cnt[1].CLK
+reset => cnt[0].ACLR
+reset => cnt[1].ACLR
+enable => cnt[0].ENA
+enable => cnt[1].ENA
+fin <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+count[0] <= cnt[0].DB_MAX_OUTPUT_PORT_TYPE
+count[1] <= cnt[1].DB_MAX_OUTPUT_PORT_TYPE
+count[2] <= <GND>
+count[3] <= <GND>
+
+
