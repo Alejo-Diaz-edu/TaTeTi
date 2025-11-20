@@ -1,0 +1,23 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+
+entity Jugada is
+generic
+(
+	WIDTH	: integer  :=	18
+);
+
+
+port
+(
+	<output_enable> : in std_logic;
+	clk :in std_logic;
+	<data> : in std_logic_vector(WIDTH-1 downto 0);
+);
+end Jugada;
+
+architecture rtl of Jugada is
+begin
+
+end rtl;

@@ -1,0 +1,130 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\fede_\OneDrive\Documentos\ProyectosQuartus\tateti\Jugada\simulation\qsim
+Ehard_block
+Z1 w1763064431
+Z2 DPx4 ieee 16 vital_primitives 0 22 9W@YP9_VCb?_GCJ8e:;YQ0
+Z3 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 Pha:T]_MmzTJCYhSbeLPQ1
+Z4 DPx4 ieee 12 vital_timing 0 22 7h8zz2S4HVg:a;2TBMI[j1
+Z5 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z6 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z7 DPx10 cycloneive 21 cycloneive_components 0 22 mVG;b;]=zAIVfAk:WJ`El1
+Z8 dC:\Users\fede_\OneDrive\Documentos\ProyectosQuartus\tateti\Jugada\simulation\qsim
+Z9 8Jugada.vho
+Z10 FJugada.vho
+l0
+L34
+ViB[@XD6>4f^a@az=ll8LZ1
+Z11 OV;C;10.1d;51
+32
+Z12 !s108 1763064433.781000
+Z13 !s90 -work|work|Jugada.vho|
+Z14 !s107 Jugada.vho|
+Z15 o-work work -O0
+Z16 tExplicit 1
+!s100 RC4@N3XiSMdQMTf3Z;=id0
+!i10b 1
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 10 hard_block 0 22 iB[@XD6>4f^a@az=ll8LZ1
+l64
+L50
+VhZ4711OZWWPD=Sj=TIZU22
+!s100 ^Wl>I7QP@V:CC=<0N^P>?2
+R11
+32
+R12
+R13
+R14
+R15
+R16
+!i10b 1
+Ejugada1
+R1
+R3
+R7
+R2
+Z17 DPx6 altera 11 dffeas_pack 0 22 Giz7C_dB_=WZS^1=3P8073
+R4
+R5
+R6
+Z18 DPx6 altera 28 altera_primitives_components 0 22 W]_:GkoiISnEn83KNb:3:2
+R8
+R9
+R10
+l0
+L79
+VgEU;Hkf4AU4RiRfa6VWH51
+R11
+32
+R12
+R13
+R14
+R15
+R16
+!s100 PhM]hH[_=l<oZF;4Q7`Wi0
+!i10b 1
+Astructure
+R3
+R7
+R2
+R17
+R4
+R5
+R6
+R18
+DEx4 work 7 jugada1 0 22 gEU;Hkf4AU4RiRfa6VWH51
+l208
+L119
+VT<NL3:J:FW6H]g7>ER1_d2
+!s100 TMS:^N6^W]1JVlOo8LNdB0
+R11
+32
+R12
+R13
+R14
+R15
+R16
+!i10b 1
+Ejugada1_vhd_vec_tst
+Z19 w1763064428
+R5
+R6
+R8
+Z20 8Waveform.vwf.vht
+Z21 FWaveform.vwf.vht
+l0
+L31
+V89RT^bBKWd`R_1Rcn@mO[0
+!s100 Ic:CRGzhg2aZQo?Pndb6k1
+R11
+32
+!i10b 1
+Z22 !s108 1763064434.087000
+Z23 !s90 -work|work|Waveform.vwf.vht|
+Z24 !s107 Waveform.vwf.vht|
+R15
+R16
+Ajugada1_arch
+R5
+R6
+Z25 DEx4 work 19 jugada1_vhd_vec_tst 0 22 89RT^bBKWd`R_1Rcn@mO[0
+l66
+L33
+VH<ZF^YRNhXZ2W0dZXMkP]1
+!s100 c43@fCPcV075PF<Q8L3JZ3
+R11
+32
+!i10b 1
+R22
+R23
+R24
+R15
+R16
