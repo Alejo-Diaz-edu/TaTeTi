@@ -1,0 +1,260 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 264 528)
+	(text "jugadas_full" (rect 5 0 73 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 496 25 508)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Jugador" (rect 0 0 46 14)(font "Arial" (font_size 8)))
+		(text "Jugador" (rect 21 27 67 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "RESET_GENERAL" (rect 0 0 101 14)(font "Arial" (font_size 8)))
+		(text "RESET_GENERAL" (rect 21 43 122 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Habilitado" (rect 0 0 54 14)(font "Arial" (font_size 8)))
+		(text "Habilitado" (rect 21 59 75 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "CLK" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "CLK" (rect 21 75 44 89)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "data[3..0]" (rect 0 0 53 14)(font "Arial" (font_size 8)))
+		(text "data[3..0]" (rect 21 91 74 105)(font "Arial" (font_size 8)))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 248 32)
+		(output)
+		(text "Fin" (rect 0 0 16 14)(font "Arial" (font_size 8)))
+		(text "Fin" (rect 211 27 227 41)(font "Arial" (font_size 8)))
+		(line (pt 248 32)(pt 232 32))
+	)
+	(port
+		(pt 248 48)
+		(output)
+		(text "1_led_5" (rect 0 0 44 14)(font "Arial" (font_size 8)))
+		(text "1_led_5" (rect 183 43 227 57)(font "Arial" (font_size 8)))
+		(line (pt 248 48)(pt 232 48))
+	)
+	(port
+		(pt 248 64)
+		(output)
+		(text "2_led_5" (rect 0 0 44 14)(font "Arial" (font_size 8)))
+		(text "2_led_5" (rect 183 59 227 73)(font "Arial" (font_size 8)))
+		(line (pt 248 64)(pt 232 64))
+	)
+	(port
+		(pt 248 80)
+		(output)
+		(text "ocupado_led_5" (rect 0 0 87 14)(font "Arial" (font_size 8)))
+		(text "ocupado_led_5" (rect 140 75 227 89)(font "Arial" (font_size 8)))
+		(line (pt 248 80)(pt 232 80))
+	)
+	(port
+		(pt 248 96)
+		(output)
+		(text "1_led_6" (rect 0 0 44 14)(font "Arial" (font_size 8)))
+		(text "1_led_6" (rect 183 91 227 105)(font "Arial" (font_size 8)))
+		(line (pt 248 96)(pt 232 96))
+	)
+	(port
+		(pt 248 112)
+		(output)
+		(text "2_led_6" (rect 0 0 44 14)(font "Arial" (font_size 8)))
+		(text "2_led_6" (rect 183 107 227 121)(font "Arial" (font_size 8)))
+		(line (pt 248 112)(pt 232 112))
+	)
+	(port
+		(pt 248 128)
+		(output)
+		(text "ocupado_led_6" (rect 0 0 87 14)(font "Arial" (font_size 8)))
+		(text "ocupado_led_6" (rect 140 123 227 137)(font "Arial" (font_size 8)))
+		(line (pt 248 128)(pt 232 128))
+	)
+	(port
+		(pt 248 144)
+		(output)
+		(text "1_led_7" (rect 0 0 44 14)(font "Arial" (font_size 8)))
+		(text "1_led_7" (rect 183 139 227 153)(font "Arial" (font_size 8)))
+		(line (pt 248 144)(pt 232 144))
+	)
+	(port
+		(pt 248 160)
+		(output)
+		(text "2_led_7" (rect 0 0 44 14)(font "Arial" (font_size 8)))
+		(text "2_led_7" (rect 183 155 227 169)(font "Arial" (font_size 8)))
+		(line (pt 248 160)(pt 232 160))
+	)
+	(port
+		(pt 248 176)
+		(output)
+		(text "ocupado_led_7" (rect 0 0 87 14)(font "Arial" (font_size 8)))
+		(text "ocupado_led_7" (rect 140 171 227 185)(font "Arial" (font_size 8)))
+		(line (pt 248 176)(pt 232 176))
+	)
+	(port
+		(pt 248 192)
+		(output)
+		(text "1_led_9" (rect 0 0 44 14)(font "Arial" (font_size 8)))
+		(text "1_led_9" (rect 183 187 227 201)(font "Arial" (font_size 8)))
+		(line (pt 248 192)(pt 232 192))
+	)
+	(port
+		(pt 248 208)
+		(output)
+		(text "2_led_9" (rect 0 0 44 14)(font "Arial" (font_size 8)))
+		(text "2_led_9" (rect 183 203 227 217)(font "Arial" (font_size 8)))
+		(line (pt 248 208)(pt 232 208))
+	)
+	(port
+		(pt 248 224)
+		(output)
+		(text "ocupado_led_9" (rect 0 0 87 14)(font "Arial" (font_size 8)))
+		(text "ocupado_led_9" (rect 140 219 227 233)(font "Arial" (font_size 8)))
+		(line (pt 248 224)(pt 232 224))
+	)
+	(port
+		(pt 248 240)
+		(output)
+		(text "1_led_10" (rect 0 0 51 14)(font "Arial" (font_size 8)))
+		(text "1_led_10" (rect 176 235 227 249)(font "Arial" (font_size 8)))
+		(line (pt 248 240)(pt 232 240))
+	)
+	(port
+		(pt 248 256)
+		(output)
+		(text "2_led_10" (rect 0 0 51 14)(font "Arial" (font_size 8)))
+		(text "2_led_10" (rect 176 251 227 265)(font "Arial" (font_size 8)))
+		(line (pt 248 256)(pt 232 256))
+	)
+	(port
+		(pt 248 272)
+		(output)
+		(text "ocupado_led_10" (rect 0 0 94 14)(font "Arial" (font_size 8)))
+		(text "ocupado_led_10" (rect 133 267 227 281)(font "Arial" (font_size 8)))
+		(line (pt 248 272)(pt 232 272))
+	)
+	(port
+		(pt 248 288)
+		(output)
+		(text "1_led_11" (rect 0 0 51 14)(font "Arial" (font_size 8)))
+		(text "1_led_11" (rect 176 283 227 297)(font "Arial" (font_size 8)))
+		(line (pt 248 288)(pt 232 288))
+	)
+	(port
+		(pt 248 304)
+		(output)
+		(text "2_led_11" (rect 0 0 51 14)(font "Arial" (font_size 8)))
+		(text "2_led_11" (rect 176 299 227 313)(font "Arial" (font_size 8)))
+		(line (pt 248 304)(pt 232 304))
+	)
+	(port
+		(pt 248 320)
+		(output)
+		(text "ocupado_led_11" (rect 0 0 94 14)(font "Arial" (font_size 8)))
+		(text "ocupado_led_11" (rect 133 315 227 329)(font "Arial" (font_size 8)))
+		(line (pt 248 320)(pt 232 320))
+	)
+	(port
+		(pt 248 336)
+		(output)
+		(text "1_led_13" (rect 0 0 51 14)(font "Arial" (font_size 8)))
+		(text "1_led_13" (rect 176 331 227 345)(font "Arial" (font_size 8)))
+		(line (pt 248 336)(pt 232 336))
+	)
+	(port
+		(pt 248 352)
+		(output)
+		(text "2_led_13" (rect 0 0 51 14)(font "Arial" (font_size 8)))
+		(text "2_led_13" (rect 176 347 227 361)(font "Arial" (font_size 8)))
+		(line (pt 248 352)(pt 232 352))
+	)
+	(port
+		(pt 248 368)
+		(output)
+		(text "ocupado_led_13" (rect 0 0 94 14)(font "Arial" (font_size 8)))
+		(text "ocupado_led_13" (rect 133 363 227 377)(font "Arial" (font_size 8)))
+		(line (pt 248 368)(pt 232 368))
+	)
+	(port
+		(pt 248 384)
+		(output)
+		(text "1_led_14" (rect 0 0 51 14)(font "Arial" (font_size 8)))
+		(text "1_led_14" (rect 176 379 227 393)(font "Arial" (font_size 8)))
+		(line (pt 248 384)(pt 232 384))
+	)
+	(port
+		(pt 248 400)
+		(output)
+		(text "2_led_14" (rect 0 0 51 14)(font "Arial" (font_size 8)))
+		(text "2_led_14" (rect 176 395 227 409)(font "Arial" (font_size 8)))
+		(line (pt 248 400)(pt 232 400))
+	)
+	(port
+		(pt 248 416)
+		(output)
+		(text "ocupado_led_14" (rect 0 0 94 14)(font "Arial" (font_size 8)))
+		(text "ocupado_led_14" (rect 133 411 227 425)(font "Arial" (font_size 8)))
+		(line (pt 248 416)(pt 232 416))
+	)
+	(port
+		(pt 248 432)
+		(output)
+		(text "1_led_15" (rect 0 0 51 14)(font "Arial" (font_size 8)))
+		(text "1_led_15" (rect 176 427 227 441)(font "Arial" (font_size 8)))
+		(line (pt 248 432)(pt 232 432))
+	)
+	(port
+		(pt 248 448)
+		(output)
+		(text "2_led_15" (rect 0 0 51 14)(font "Arial" (font_size 8)))
+		(text "2_led_15" (rect 176 443 227 457)(font "Arial" (font_size 8)))
+		(line (pt 248 448)(pt 232 448))
+	)
+	(port
+		(pt 248 464)
+		(output)
+		(text "ocupado_led_15" (rect 0 0 94 14)(font "Arial" (font_size 8)))
+		(text "ocupado_led_15" (rect 133 459 227 473)(font "Arial" (font_size 8)))
+		(line (pt 248 464)(pt 232 464))
+	)
+	(drawing
+		(rectangle (rect 16 16 232 496))
+	)
+)

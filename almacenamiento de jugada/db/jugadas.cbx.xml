@@ -1,5 +1,25 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="jugadas">
+		<CBX_INST_ENTRY INSTANCE_NAME="|Bloque_final|jugadas_full:inst|Almace2:inst7|lpm_mux0:inst4|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_i7e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Bloque_final|jugadas_full:inst|Almace2:inst8|lpm_mux0:inst3|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_i7e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Bloque_final|jugadas_full:inst|Almace2:inst1|lpm_mux0:inst3|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_i7e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Bloque_final|jugadas_full:inst|Almace2:inst4|lpm_mux0:inst4|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_i7e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Bloque_final|jugadas_full:inst|Almace2:inst5|lpm_mux0:inst3|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_i7e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Bloque_final|jugadas_full:inst|Almace2:inst8|lpm_mux0:inst4|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_i7e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Bloque_final|jugadas_full:inst|Almace2:inst9|lpm_mux0:inst3|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_i7e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Bloque_final|jugadas_full:inst|Almace2:inst11|lpm_mux0:inst3|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_i7e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Bloque_final|jugadas_full:inst|Almace2:inst1|lpm_mux0:inst4|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_i7e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Bloque_final|jugadas_full:inst|Almace2:inst2|lpm_mux0:inst3|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_i7e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Bloque_final|jugadas_full:inst|Almace2:inst5|lpm_mux0:inst4|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_i7e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Bloque_final|jugadas_full:inst|Almace2:inst9|lpm_mux0:inst4|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_i7e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Bloque_final|jugadas_full:inst|lpm_decode0:inst|lpm_decode:LPM_DECODE_component" CBX_FILE_NAME="decode_ucf.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Bloque_final|jugadas_full:inst|Almace2:inst11|lpm_mux0:inst4|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_i7e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Bloque_final|jugadas_full:inst|Almace2:inst2|lpm_mux0:inst4|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_i7e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Bloque_final|jugadas_full:inst|Almace2:inst3|lpm_mux0:inst3|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_i7e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Bloque_final|jugadas_full:inst|Almace2:inst7|lpm_mux0:inst3|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_i7e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Bloque_final|jugadas_full:inst|lpm_counter0:inst10|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_5mi.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Bloque_final|jugadas_full:inst|Almace2:inst3|lpm_mux0:inst4|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_i7e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Bloque_final|jugadas_full:inst|Almace2:inst4|lpm_mux0:inst3|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_i7e.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

@@ -1,14 +1,9 @@
-LPM_DECODES=16
-LPM_TYPE=LPM_DECODE
-LPM_WIDTH=4
+LPM_DIRECTION=UP
+LPM_PORT_UPDOWN=PORT_UNUSED
+LPM_TYPE=LPM_COUNTER
+LPM_WIDTH=2
 DEVICE_FAMILY="Cyclone IV E"
-data
-eq
-eq
-eq
-eq
-eq
-eq
-eq
-eq
-eq
+aclr
+clock
+cout
+q

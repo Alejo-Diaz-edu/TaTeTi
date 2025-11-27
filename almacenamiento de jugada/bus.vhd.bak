@@ -1,0 +1,22 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity pack_bus_9bit is
+    port(
+        b0 : in  std_logic;
+        b1 : in  std_logic;
+        b2 : in  std_logic;
+        b3 : in  std_logic;
+        b4 : in  std_logic;
+        b5 : in  std_logic;
+        b6 : in  std_logic;
+        b7 : in  std_logic;
+        b8 : in  std_logic;
+        bus_out : out std_logic_vector(8 downto 0)
+    );
+end entity;
+
+architecture rtl of pack_bus_9bit is
+begin
+    bus_out <= b8 & b7 & b6 & b5 & b4 & b3 & b2 & b1 & b0;
+end rtl;
