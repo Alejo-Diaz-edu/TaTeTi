@@ -9,17 +9,11 @@ entity DecoLuces is
 		E1	   : in std_logic_vector (9 downto 1);
 		E0	   : in std_logic_vector (9 downto 1);
 		vidas_j1: in std_logic_vector (3 downto 1);
-		vidas_j2: in std_logic_vector (3 downto 1);  -- Corregido nombre duplicado
+		vidas_j2: in std_logic_vector (3 downto 1);
 		turno: in std_logic;  -- '0' = jugador 1, '1' = jugador 2
 		color_j1 : in std_logic_vector(23 downto 0);
 		color_j2 : in std_logic_vector(23 downto 0);
 		CLKBIT	: in std_logic;
-		
-	--E1E0
-	-- 00 => Celda Vacía
-	-- 01 => Jugador 1
-	-- 10 => Jugador 2
-	-- 11 => ""IA""
 	
 		ERROR : in std_logic_vector (16 downto 1); 
 	-- SI HAY ERROR, ERROR => 1, sino, ERROR => 0. 
@@ -49,114 +43,108 @@ begin
 
 -- Proceso combinacional para asignar colores a los LEDs según las entradas
 process (E1, E0, vidas_j1, vidas_j2, turno, color_j1, color_j2)
-    variable estado_celda : std_logic_vector(1 downto 0);
 begin
-    -- Mapeo de la matriz 4x4:
-    -- Confirmado con pruebas:
-    -- 111100000 → LEDs 0,4,8,1: E1(9)→0, E1(8)→4, E1(7)→8, E1(6)→1
-    -- 000111000 → LEDs 1,5,9: E1(6)→1, E1(5)→5, E1(4)→9
+    -- Nueva lógica de entradas:
+    -- E1(i) = '1' → Jugador 1 ocupa la celda i
+    -- E0(i) = '1' → Jugador 2 ocupa la celda i
+    -- Ambos = '0' → Celda vacía
     --
-    -- La numeración de celdas en E1/E0 es:
-    -- Celda 9 | Celda 8 | Celda 7 
-    -- Celda 6 | Celda 5 | Celda 4 
-    -- Celda 3 | Celda 2 | Celda 1
+    -- La numeración de celdas en E1/E0 es (bit más significativo = 9):
+    -- Fila superior: Celdas 1, 2, 3 (bits menos significativos)
+    -- Fila media: Celdas 4, 5, 6
+    -- Fila inferior: Celdas 7, 8, 9 (bits más significativos)
     --
-    -- Patrón detectado: zigzag vertical
-    -- Col1↓: 9→0, 8→4, 7→8
-    -- Col2↑: 6→1, 5→5, 4→9
-    -- Col3↓: 3→2, 2→6, 1→10
-    --
-    -- Mapeo a LEDs físicos (índice en array):
+    -- Mapeo a LEDs físicos (patrón zigzag):
     -- LED 0  | LED 1  | LED 2  | LED 3  (vidas_j2(1))
     -- LED 4  | LED 5  | LED 6  | LED 7  (vidas_j2(2))
     -- LED 8  | LED 9  | LED 10 | LED 11 (vidas_j2(3))
     -- LED 12 | LED 13 | LED 14 | LED 15 (turno)
     -- (vidas_j1(1)) (vidas_j1(2)) (vidas_j1(3))
     
-    -- Tablero de juego 3x3 - mapeo zigzag vertical confirmado
-    -- Columna 1 (descendente)
-    estado_celda := E1(9) & E0(9);
-    case estado_celda is
-        when "00" => leds(0) <= COLOR_VACIO;
-        when "01" => leds(0) <= color_j1;
-        when "10" => leds(0) <= color_j2;
-        when "11" => leds(0) <= COLOR_IA;
-        when others => leds(0) <= COLOR_VACIO;
-    end case;
+    -- Tablero de juego 3x3 - mapeo zigzag vertical
+    -- Columna 1 (izquierda, descendente): Celdas 3→LED0, 2→LED4, 1→LED8
+    -- Celda 3 → LED 0
+    if E1(3) = '1' then
+        leds(0) <= color_j1;
+    elsif E0(3) = '1' then
+        leds(0) <= color_j2;
+    else
+        leds(0) <= COLOR_VACIO;
+    end if;
     
-    estado_celda := E1(8) & E0(8);
-    case estado_celda is
-        when "00" => leds(4) <= COLOR_VACIO;
-        when "01" => leds(4) <= color_j1;
-        when "10" => leds(4) <= color_j2;
-        when "11" => leds(4) <= COLOR_IA;
-        when others => leds(4) <= COLOR_VACIO;
-    end case;
+    -- Celda 2 → LED 4
+    if E1(2) = '1' then
+        leds(4) <= color_j1;
+    elsif E0(2) = '1' then
+        leds(4) <= color_j2;
+    else
+        leds(4) <= COLOR_VACIO;
+    end if;
     
-    estado_celda := E1(7) & E0(7);
-    case estado_celda is
-        when "00" => leds(8) <= COLOR_VACIO;
-        when "01" => leds(8) <= color_j1;
-        when "10" => leds(8) <= color_j2;
-        when "11" => leds(8) <= COLOR_IA;
-        when others => leds(8) <= COLOR_VACIO;
-    end case;
+    -- Celda 1 → LED 8
+    if E1(1) = '1' then
+        leds(8) <= color_j1;
+    elsif E0(1) = '1' then
+        leds(8) <= color_j2;
+    else
+        leds(8) <= COLOR_VACIO;
+    end if;
     
-    -- Columna 2 (ascendente)
-    estado_celda := E1(6) & E0(6);
-    case estado_celda is
-        when "00" => leds(1) <= COLOR_VACIO;
-        when "01" => leds(1) <= color_j1;
-        when "10" => leds(1) <= color_j2;
-        when "11" => leds(1) <= COLOR_IA;
-        when others => leds(1) <= COLOR_VACIO;
-    end case;
+    -- Columna 2 (centro, ascendente): Celdas 4→LED1, 5→LED5, 6→LED9
+    -- Celda 4 → LED 1
+    if E1(4) = '1' then
+        leds(1) <= color_j1;
+    elsif E0(4) = '1' then
+        leds(1) <= color_j2;
+    else
+        leds(1) <= COLOR_VACIO;
+    end if;
     
-    estado_celda := E1(5) & E0(5);
-    case estado_celda is
-        when "00" => leds(5) <= COLOR_VACIO;
-        when "01" => leds(5) <= color_j1;
-        when "10" => leds(5) <= color_j2;
-        when "11" => leds(5) <= COLOR_IA;
-        when others => leds(5) <= COLOR_VACIO;
-    end case;
+    -- Celda 5 → LED 5
+    if E1(5) = '1' then
+        leds(5) <= color_j1;
+    elsif E0(5) = '1' then
+        leds(5) <= color_j2;
+    else
+        leds(5) <= COLOR_VACIO;
+    end if;
     
-    estado_celda := E1(4) & E0(4);
-    case estado_celda is
-        when "00" => leds(9) <= COLOR_VACIO;
-        when "01" => leds(9) <= color_j1;
-        when "10" => leds(9) <= color_j2;
-        when "11" => leds(9) <= COLOR_IA;
-        when others => leds(9) <= COLOR_VACIO;
-    end case;
+    -- Celda 6 → LED 9
+    if E1(6) = '1' then
+        leds(9) <= color_j1;
+    elsif E0(6) = '1' then
+        leds(9) <= color_j2;
+    else
+        leds(9) <= COLOR_VACIO;
+    end if;
     
-    -- Columna 3 (descendente) - extrapolado del patrón
-    estado_celda := E1(3) & E0(3);
-    case estado_celda is
-        when "00" => leds(2) <= COLOR_VACIO;
-        when "01" => leds(2) <= color_j1;
-        when "10" => leds(2) <= color_j2;
-        when "11" => leds(2) <= COLOR_IA;
-        when others => leds(2) <= COLOR_VACIO;
-    end case;
+    -- Columna 3 (derecha, descendente): Celdas 9→LED2, 8→LED6, 7→LED10
+    -- Celda 9 → LED 2
+    if E1(9) = '1' then
+        leds(2) <= color_j1;
+    elsif E0(9) = '1' then
+        leds(2) <= color_j2;
+    else
+        leds(2) <= COLOR_VACIO;
+    end if;
     
-    estado_celda := E1(2) & E0(2);
-    case estado_celda is
-        when "00" => leds(6) <= COLOR_VACIO;
-        when "01" => leds(6) <= color_j1;
-        when "10" => leds(6) <= color_j2;
-        when "11" => leds(6) <= COLOR_IA;
-        when others => leds(6) <= COLOR_VACIO;
-    end case;
+    -- Celda 8 → LED 6
+    if E1(8) = '1' then
+        leds(6) <= color_j1;
+    elsif E0(8) = '1' then
+        leds(6) <= color_j2;
+    else
+        leds(6) <= COLOR_VACIO;
+    end if;
     
-    estado_celda := E1(1) & E0(1);
-    case estado_celda is
-        when "00" => leds(10) <= COLOR_VACIO;
-        when "01" => leds(10) <= color_j1;
-        when "10" => leds(10) <= color_j2;
-        when "11" => leds(10) <= COLOR_IA;
-        when others => leds(10) <= COLOR_VACIO;
-    end case;
+    -- Celda 7 → LED 10
+    if E1(7) = '1' then
+        leds(10) <= color_j1;
+    elsif E0(7) = '1' then
+        leds(10) <= color_j2;
+    else
+        leds(10) <= COLOR_VACIO;
+    end if;
     
     -- Vidas jugador 2 (columna derecha: LEDs 3, 7, 11) - CORREGIDO
     if vidas_j2(1) = '1' then
